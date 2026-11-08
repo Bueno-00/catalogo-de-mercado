@@ -3,8 +3,9 @@
  "categorias": 41,
  "caminhos": {
   "zero_shot_1_5b": {
-   "nome": "IA sem treino (1,5 B)",
-   "descricao": "Qwen2.5-1.5B-Instruct, zero-shot, lista de categorias no prompt",
+   "nome": "IA sem treino (Qwen 1,5 B)",
+   "nome_en": "AI, no training (Qwen 1.5B)",
+   "versao": "v1",
    "acuracia": 0.27473219911783237,
    "f1_macro": 0.24601332133688483,
    "acuracia_ic95": [
@@ -15,17 +16,25 @@
     0.2226773309797242,
     0.261920936436824
    ],
-   "ms_por_item_lote_gpu": 117.78,
-   "ms_um_a_um_gpu": 470.2,
-   "lote": 32,
-   "gpu_seg_por_1000": 117.8,
-   "custo": "GPU T4 (grátis no Kaggle)",
+   "acuracia_revisada": 0.30245746691871456,
+   "acuracia_revisada_ic95": [
+    0.28040327662255826,
+    0.32451165721487085
+   ],
+   "ms_lote": 117.78,
+   "ms_um": 470.2,
+   "hardware": "gpu",
    "fora_da_lista": {
     "fora": 256,
     "cortadas_validas": 52,
     "total": 1587
    },
-   "fora_da_lista_kaggle": 308,
+   "erros": {
+    "total": 1151,
+    "rotulo_errado": 66,
+    "ambiguo": 78,
+    "aceitos_na_revisao": 48
+   },
    "por_categoria": {
     "achocolatado": {
      "precisao": 0.058823529411764705,
@@ -318,8 +327,9 @@
    ]
   },
   "zero_shot_7b_4bit": {
-   "nome": "IA sem treino (7 B)",
-   "descricao": "Qwen2.5-7B-Instruct em 4 bits, zero-shot (extra)",
+   "nome": "IA maior sem treino (Qwen 7 B)",
+   "nome_en": "Bigger AI, no training (Qwen 7B)",
+   "versao": "v1",
    "acuracia": 0.6691871455576559,
    "f1_macro": 0.653351403727749,
    "acuracia_ic95": [
@@ -330,17 +340,25 @@
     0.6274238539972664,
     0.6737830036656511
    ],
-   "ms_por_item_lote_gpu": 491.22,
-   "ms_um_a_um_gpu": 1065.8,
-   "lote": 24,
-   "gpu_seg_por_1000": 491.2,
-   "custo": "GPU T4 (grátis no Kaggle)",
+   "acuracia_revisada": 0.7385003150598614,
+   "acuracia_revisada_ic95": [
+    0.7164461247637051,
+    0.7599401386263389
+   ],
+   "ms_lote": 491.22,
+   "ms_um": 1065.8,
+   "hardware": "gpu",
    "fora_da_lista": {
     "fora": 2,
     "cortadas_validas": 71,
     "total": 1587
    },
-   "fora_da_lista_kaggle": 73,
+   "erros": {
+    "total": 525,
+    "rotulo_errado": 66,
+    "ambiguo": 78,
+    "aceitos_na_revisao": 114
+   },
    "por_categoria": {
     "achocolatado": {
      "precisao": 0.2692307692307692,
@@ -633,8 +651,9 @@
    ]
   },
   "tfidf": {
-   "nome": "Clássico (TF-IDF)",
-   "descricao": "TF-IDF de palavras e pedaços + regressão logística, CPU",
+   "nome": "Clássico v1 (TF-IDF + regressão logística)",
+   "nome_en": "Classic v1 (TF-IDF + logistic regression)",
+   "versao": "v1",
    "acuracia": 0.7580340264650284,
    "f1_macro": 0.7540033448593935,
    "acuracia_ic95": [
@@ -645,10 +664,20 @@
     0.727184957136233,
     0.7744234056523336
    ],
-   "ms_por_item_lote_cpu": 0.3694098327771327,
-   "ms_um_a_um_cpu": 8.232826017774642,
-   "treino_seg_cpu": 28.7,
-   "custo": "CPU comum (ou o navegador); sem GPU",
+   "acuracia_revisada": 0.8065532451165721,
+   "acuracia_revisada_ic95": [
+    0.7876496534341525,
+    0.8267170762444864
+   ],
+   "ms_lote": 0.3694098327771327,
+   "ms_um": 8.232826017774642,
+   "hardware": "cpu",
+   "erros": {
+    "total": 384,
+    "rotulo_errado": 64,
+    "ambiguo": 45,
+    "aceitos_na_revisao": 83
+   },
    "por_categoria": {
     "achocolatado": {
      "precisao": 0.9333333333333333,
@@ -941,8 +970,9 @@
    ]
   },
   "lora_1_5b": {
-   "nome": "IA ajustada (LoRA)",
-   "descricao": "Qwen2.5-1.5B-Instruct + adapter LoRA treinado no treino",
+   "nome": "IA ajustada v1 (LoRA que escreve a resposta)",
+   "nome_en": "Tuned AI v1 (LoRA writing the answer)",
+   "versao": "v1",
    "acuracia": 0.7889098928796471,
    "f1_macro": 0.7681343088472361,
    "acuracia_ic95": [
@@ -953,11 +983,19 @@
     0.7418355354313317,
     0.7895018855594107
    ],
-   "ms_por_item_lote_gpu": 36.8,
-   "ms_um_a_um_gpu": 713.4,
-   "lote": 64,
-   "gpu_seg_por_1000": 36.8,
-   "custo": "GPU T4 (grátis no Kaggle)",
+   "acuracia_revisada": 0.8399495904221802,
+   "acuracia_revisada_ic95": [
+    0.8216761184625079,
+    0.8582230623818525
+   ],
+   "ms_lote": 36.8,
+   "ms_um": 713.4,
+   "hardware": "gpu",
+   "fora_da_lista": {
+    "fora": 2,
+    "cortadas_validas": 44,
+    "total": 1587
+   },
    "treino": {
     "min": 8.2,
     "passos": 346,
@@ -969,89 +1007,12 @@
     "parametros_treinaveis": 18464768,
     "parametros_total": 1562179072
    },
-   "historico_treino": [
-    {
-     "passo": 25,
-     "perda_treino": 1.241,
-     "min": 0.6
-    },
-    {
-     "passo": 50,
-     "perda_treino": 0.1722,
-     "min": 1.1
-    },
-    {
-     "passo": 75,
-     "perda_treino": 0.1497,
-     "min": 1.7
-    },
-    {
-     "passo": 100,
-     "perda_treino": 0.1153,
-     "min": 2.2
-    },
-    {
-     "passo": 125,
-     "perda_treino": 0.1083,
-     "min": 2.8
-    },
-    {
-     "passo": 150,
-     "perda_treino": 0.0922,
-     "min": 3.3
-    },
-    {
-     "epoca": 1,
-     "perda_validacao": 0.0927,
-     "min": 4.1
-    },
-    {
-     "passo": 175,
-     "perda_treino": 0.0997,
-     "min": 4.2
-    },
-    {
-     "passo": 200,
-     "perda_treino": 0.0633,
-     "min": 4.7
-    },
-    {
-     "passo": 225,
-     "perda_treino": 0.0556,
-     "min": 5.3
-    },
-    {
-     "passo": 250,
-     "perda_treino": 0.059,
-     "min": 5.8
-    },
-    {
-     "passo": 275,
-     "perda_treino": 0.0605,
-     "min": 6.4
-    },
-    {
-     "passo": 300,
-     "perda_treino": 0.0619,
-     "min": 6.9
-    },
-    {
-     "passo": 325,
-     "perda_treino": 0.0529,
-     "min": 7.5
-    },
-    {
-     "epoca": 2,
-     "perda_validacao": 0.0812,
-     "min": 8.2
-    }
-   ],
-   "fora_da_lista": {
-    "fora": 2,
-    "cortadas_validas": 44,
-    "total": 1587
+   "erros": {
+    "total": 335,
+    "rotulo_errado": 63,
+    "ambiguo": 45,
+    "aceitos_na_revisao": 88
    },
-   "fora_da_lista_kaggle": 46,
    "por_categoria": {
     "achocolatado": {
      "precisao": 0.6666666666666666,
@@ -1342,22 +1303,3850 @@
      "vezes": 5
     }
    ]
+  },
+  "classico_v2": {
+   "nome": "Clássico v2 (+ quantidade)",
+   "nome_en": "Classic v2 (+ quantity)",
+   "versao": "v2",
+   "acuracia": 0.7908002520478891,
+   "f1_macro": 0.7753713106727593,
+   "acuracia_ic95": [
+    0.7706364209199748,
+    0.8115942028985508
+   ],
+   "f1_macro_ic95": [
+    0.7494792355864153,
+    0.7939754881870628
+   ],
+   "acuracia_revisada": 0.8418399495904222,
+   "acuracia_revisada_ic95": [
+    0.8235664776307499,
+    0.8601134215500945
+   ],
+   "ms_lote": 0.1606146494547526,
+   "ms_um": 3.5733359400182962,
+   "hardware": "cpu",
+   "erros": {
+    "total": 332,
+    "rotulo_errado": 67,
+    "ambiguo": 46,
+    "aceitos_na_revisao": 84
+   },
+   "por_categoria": {
+    "achocolatado": {
+     "precisao": 0.9333333333333333,
+     "recall": 0.875,
+     "f1": 0.9032258064516129,
+     "n": 16
+    },
+    "acucar_adocante": {
+     "precisao": 0.9565217391304348,
+     "recall": 0.8148148148148148,
+     "f1": 0.88,
+     "n": 27
+    },
+    "aguas": {
+     "precisao": 0.9090909090909091,
+     "recall": 1.0,
+     "f1": 0.9523809523809523,
+     "n": 10
+    },
+    "alcoolicas": {
+     "precisao": 0.6,
+     "recall": 0.35294117647058826,
+     "f1": 0.4444444444444444,
+     "n": 17
+    },
+    "balas_doces": {
+     "precisao": 0.5526315789473685,
+     "recall": 0.44680851063829785,
+     "f1": 0.49411764705882355,
+     "n": 47
+    },
+    "barras": {
+     "precisao": 0.8181818181818182,
+     "recall": 0.8181818181818182,
+     "f1": 0.8181818181818182,
+     "n": 33
+    },
+    "bebidas_vegetais": {
+     "precisao": 0.9090909090909091,
+     "recall": 0.7142857142857143,
+     "f1": 0.8,
+     "n": 14
+    },
+    "biscoitos": {
+     "precisao": 0.7152317880794702,
+     "recall": 0.7941176470588235,
+     "f1": 0.7526132404181185,
+     "n": 136
+    },
+    "bolos_panetones": {
+     "precisao": 0.8775510204081632,
+     "recall": 0.9772727272727273,
+     "f1": 0.9247311827956989,
+     "n": 44
+    },
+    "cafe": {
+     "precisao": 0.9166666666666666,
+     "recall": 0.8461538461538461,
+     "f1": 0.88,
+     "n": 26
+    },
+    "carnes_frios": {
+     "precisao": 0.819672131147541,
+     "recall": 0.9433962264150944,
+     "f1": 0.8771929824561403,
+     "n": 53
+    },
+    "castanhas": {
+     "precisao": 0.7272727272727273,
+     "recall": 0.75,
+     "f1": 0.7384615384615385,
+     "n": 32
+    },
+    "cereais_matinais": {
+     "precisao": 0.7346938775510204,
+     "recall": 0.7659574468085106,
+     "f1": 0.75,
+     "n": 47
+    },
+    "cervejas": {
+     "precisao": 0.6296296296296297,
+     "recall": 0.85,
+     "f1": 0.723404255319149,
+     "n": 20
+    },
+    "chas": {
+     "precisao": 0.9615384615384616,
+     "recall": 0.9615384615384616,
+     "f1": 0.9615384615384616,
+     "n": 26
+    },
+    "chocolates": {
+     "precisao": 0.6351351351351351,
+     "recall": 0.6266666666666667,
+     "f1": 0.6308724832214765,
+     "n": 75
+    },
+    "conservas": {
+     "precisao": 0.5,
+     "recall": 0.5,
+     "f1": 0.5,
+     "n": 12
+    },
+    "energeticos": {
+     "precisao": 0.6,
+     "recall": 0.6,
+     "f1": 0.6,
+     "n": 10
+    },
+    "farinhas": {
+     "precisao": 0.8666666666666667,
+     "recall": 0.7428571428571429,
+     "f1": 0.8,
+     "n": 35
+    },
+    "geleias_mel": {
+     "precisao": 0.725,
+     "recall": 0.58,
+     "f1": 0.6444444444444445,
+     "n": 50
+    },
+    "graos": {
+     "precisao": 0.7619047619047619,
+     "recall": 0.8205128205128205,
+     "f1": 0.7901234567901234,
+     "n": 39
+    },
+    "hortifruti": {
+     "precisao": 0.3,
+     "recall": 0.25,
+     "f1": 0.2727272727272727,
+     "n": 12
+    },
+    "iogurtes": {
+     "precisao": 0.8125,
+     "recall": 0.8863636363636364,
+     "f1": 0.8478260869565217,
+     "n": 88
+    },
+    "leite_condensado_creme": {
+     "precisao": 0.6153846153846154,
+     "recall": 0.8,
+     "f1": 0.6956521739130435,
+     "n": 20
+    },
+    "leites": {
+     "precisao": 0.84375,
+     "recall": 0.782608695652174,
+     "f1": 0.8120300751879699,
+     "n": 69
+    },
+    "manteiga_margarina": {
+     "precisao": 0.9655172413793104,
+     "recall": 0.9333333333333333,
+     "f1": 0.9491525423728814,
+     "n": 30
+    },
+    "massas": {
+     "precisao": 0.875,
+     "recall": 0.6363636363636364,
+     "f1": 0.7368421052631579,
+     "n": 44
+    },
+    "molhos": {
+     "precisao": 0.9642857142857143,
+     "recall": 0.9,
+     "f1": 0.9310344827586207,
+     "n": 60
+    },
+    "oleos_azeites": {
+     "precisao": 0.95,
+     "recall": 0.9047619047619048,
+     "f1": 0.926829268292683,
+     "n": 21
+    },
+    "ovos": {
+     "precisao": 0.9,
+     "recall": 1.0,
+     "f1": 0.9473684210526315,
+     "n": 9
+    },
+    "paes": {
+     "precisao": 0.859375,
+     "recall": 0.9166666666666666,
+     "f1": 0.8870967741935484,
+     "n": 60
+    },
+    "peixes": {
+     "precisao": 0.9354838709677419,
+     "recall": 0.9666666666666667,
+     "f1": 0.9508196721311475,
+     "n": 30
+    },
+    "pratos_prontos": {
+     "precisao": 0.5263157894736842,
+     "recall": 0.5555555555555556,
+     "f1": 0.5405405405405406,
+     "n": 36
+    },
+    "queijos": {
+     "precisao": 0.9054054054054054,
+     "recall": 0.9305555555555556,
+     "f1": 0.9178082191780822,
+     "n": 72
+    },
+    "refrigerantes": {
+     "precisao": 0.8,
+     "recall": 0.7142857142857143,
+     "f1": 0.7547169811320755,
+     "n": 28
+    },
+    "salgadinhos": {
+     "precisao": 0.7878787878787878,
+     "recall": 0.9122807017543859,
+     "f1": 0.8455284552845529,
+     "n": 57
+    },
+    "sobremesas": {
+     "precisao": 0.8125,
+     "recall": 0.7222222222222222,
+     "f1": 0.7647058823529411,
+     "n": 18
+    },
+    "sorvetes": {
+     "precisao": 0.7575757575757576,
+     "recall": 0.7142857142857143,
+     "f1": 0.7352941176470589,
+     "n": 35
+    },
+    "sucos": {
+     "precisao": 0.9,
+     "recall": 0.75,
+     "f1": 0.8181818181818182,
+     "n": 36
+    },
+    "suplementos": {
+     "precisao": 0.78125,
+     "recall": 0.9090909090909091,
+     "f1": 0.8403361344537815,
+     "n": 55
+    },
+    "temperos": {
+     "precisao": 0.7941176470588235,
+     "recall": 0.7105263157894737,
+     "f1": 0.75,
+     "n": 38
+    }
+   },
+   "confusoes": [
+    {
+     "certo": "Massas e macarrão instantâneo",
+     "previsto": "Pratos prontos e congelados",
+     "vezes": 11
+    },
+    {
+     "certo": "Balas, gomas e doces",
+     "previsto": "Chocolates e bombons",
+     "vezes": 11
+    },
+    {
+     "certo": "Chocolates e bombons",
+     "previsto": "Biscoitos e bolachas",
+     "vezes": 11
+    },
+    {
+     "certo": "Leite e bebida láctea",
+     "previsto": "Iogurtes e leites fermentados",
+     "vezes": 5
+    },
+    {
+     "certo": "Vinhos e destilados",
+     "previsto": "Cervejas",
+     "vezes": 5
+    },
+    {
+     "certo": "Pratos prontos e congelados",
+     "previsto": "Carnes, frios e embutidos",
+     "vezes": 5
+    },
+    {
+     "certo": "Biscoitos e bolachas",
+     "previsto": "Chocolates e bombons",
+     "vezes": 5
+    },
+    {
+     "certo": "Sorvetes e picolés",
+     "previsto": "Biscoitos e bolachas",
+     "vezes": 4
+    }
+   ]
+  },
+  "bertimbau_q": {
+   "nome": "BERTimbau ajustado (+ quantidade)",
+   "nome_en": "Fine-tuned BERTimbau (+ quantity)",
+   "versao": "v2",
+   "acuracia": 0.724007561436673,
+   "f1_macro": 0.7079117008467978,
+   "acuracia_ic95": [
+    0.702583490863264,
+    0.7473219911783239
+   ],
+   "f1_macro_ic95": [
+    0.6794320409432323,
+    0.7317856733795179
+   ],
+   "acuracia_revisada": 0.7693761814744802,
+   "acuracia_revisada_ic95": [
+    0.7498267170762445,
+    0.789555765595463
+   ],
+   "ms_lote": 0.424,
+   "ms_um": 11.64,
+   "ms_um_cpu": 62.29,
+   "hardware": "gpu",
+   "min_treino": 1.72,
+   "epoca": 5,
+   "epocas": 6,
+   "parametros_treinaveis": 108954665,
+   "parametros_total": 108954665,
+   "erros": {
+    "total": 438,
+    "rotulo_errado": 62,
+    "ambiguo": 49,
+    "aceitos_na_revisao": 80
+   },
+   "por_categoria": {
+    "achocolatado": {
+     "precisao": 0.7142857142857143,
+     "recall": 0.625,
+     "f1": 0.6666666666666666,
+     "n": 16
+    },
+    "acucar_adocante": {
+     "precisao": 0.9583333333333334,
+     "recall": 0.8518518518518519,
+     "f1": 0.9019607843137255,
+     "n": 27
+    },
+    "aguas": {
+     "precisao": 1.0,
+     "recall": 0.9,
+     "f1": 0.9473684210526315,
+     "n": 10
+    },
+    "alcoolicas": {
+     "precisao": 0.36363636363636365,
+     "recall": 0.23529411764705882,
+     "f1": 0.2857142857142857,
+     "n": 17
+    },
+    "balas_doces": {
+     "precisao": 0.44680851063829785,
+     "recall": 0.44680851063829785,
+     "f1": 0.44680851063829785,
+     "n": 47
+    },
+    "barras": {
+     "precisao": 0.75,
+     "recall": 0.6363636363636364,
+     "f1": 0.6885245901639344,
+     "n": 33
+    },
+    "bebidas_vegetais": {
+     "precisao": 0.6153846153846154,
+     "recall": 0.5714285714285714,
+     "f1": 0.5925925925925926,
+     "n": 14
+    },
+    "biscoitos": {
+     "precisao": 0.7818181818181819,
+     "recall": 0.6323529411764706,
+     "f1": 0.6991869918699187,
+     "n": 136
+    },
+    "bolos_panetones": {
+     "precisao": 0.84,
+     "recall": 0.9545454545454546,
+     "f1": 0.8936170212765957,
+     "n": 44
+    },
+    "cafe": {
+     "precisao": 0.7333333333333333,
+     "recall": 0.8461538461538461,
+     "f1": 0.7857142857142857,
+     "n": 26
+    },
+    "carnes_frios": {
+     "precisao": 0.8245614035087719,
+     "recall": 0.8867924528301887,
+     "f1": 0.8545454545454545,
+     "n": 53
+    },
+    "castanhas": {
+     "precisao": 0.6333333333333333,
+     "recall": 0.59375,
+     "f1": 0.6129032258064516,
+     "n": 32
+    },
+    "cereais_matinais": {
+     "precisao": 0.7777777777777778,
+     "recall": 0.44680851063829785,
+     "f1": 0.5675675675675675,
+     "n": 47
+    },
+    "cervejas": {
+     "precisao": 0.5588235294117647,
+     "recall": 0.95,
+     "f1": 0.7037037037037037,
+     "n": 20
+    },
+    "chas": {
+     "precisao": 0.8214285714285714,
+     "recall": 0.8846153846153846,
+     "f1": 0.8518518518518519,
+     "n": 26
+    },
+    "chocolates": {
+     "precisao": 0.625,
+     "recall": 0.6,
+     "f1": 0.6122448979591837,
+     "n": 75
+    },
+    "conservas": {
+     "precisao": 0.5454545454545454,
+     "recall": 0.5,
+     "f1": 0.5217391304347826,
+     "n": 12
+    },
+    "energeticos": {
+     "precisao": 0.4444444444444444,
+     "recall": 0.4,
+     "f1": 0.42105263157894735,
+     "n": 10
+    },
+    "farinhas": {
+     "precisao": 0.8181818181818182,
+     "recall": 0.7714285714285715,
+     "f1": 0.7941176470588235,
+     "n": 35
+    },
+    "geleias_mel": {
+     "precisao": 0.6363636363636364,
+     "recall": 0.56,
+     "f1": 0.5957446808510638,
+     "n": 50
+    },
+    "graos": {
+     "precisao": 0.8529411764705882,
+     "recall": 0.7435897435897436,
+     "f1": 0.7945205479452054,
+     "n": 39
+    },
+    "hortifruti": {
+     "precisao": 0.5714285714285714,
+     "recall": 0.3333333333333333,
+     "f1": 0.42105263157894735,
+     "n": 12
+    },
+    "iogurtes": {
+     "precisao": 0.8170731707317073,
+     "recall": 0.7613636363636364,
+     "f1": 0.788235294117647,
+     "n": 88
+    },
+    "leite_condensado_creme": {
+     "precisao": 0.7,
+     "recall": 0.7,
+     "f1": 0.7,
+     "n": 20
+    },
+    "leites": {
+     "precisao": 0.7534246575342466,
+     "recall": 0.7971014492753623,
+     "f1": 0.7746478873239436,
+     "n": 69
+    },
+    "manteiga_margarina": {
+     "precisao": 0.9655172413793104,
+     "recall": 0.9333333333333333,
+     "f1": 0.9491525423728814,
+     "n": 30
+    },
+    "massas": {
+     "precisao": 0.8148148148148148,
+     "recall": 0.5,
+     "f1": 0.6197183098591549,
+     "n": 44
+    },
+    "molhos": {
+     "precisao": 0.84375,
+     "recall": 0.9,
+     "f1": 0.8709677419354839,
+     "n": 60
+    },
+    "oleos_azeites": {
+     "precisao": 0.9473684210526315,
+     "recall": 0.8571428571428571,
+     "f1": 0.9,
+     "n": 21
+    },
+    "ovos": {
+     "precisao": 0.9,
+     "recall": 1.0,
+     "f1": 0.9473684210526315,
+     "n": 9
+    },
+    "paes": {
+     "precisao": 0.8307692307692308,
+     "recall": 0.9,
+     "f1": 0.864,
+     "n": 60
+    },
+    "peixes": {
+     "precisao": 0.8055555555555556,
+     "recall": 0.9666666666666667,
+     "f1": 0.8787878787878788,
+     "n": 30
+    },
+    "pratos_prontos": {
+     "precisao": 0.4878048780487805,
+     "recall": 0.5555555555555556,
+     "f1": 0.5194805194805194,
+     "n": 36
+    },
+    "queijos": {
+     "precisao": 0.8666666666666667,
+     "recall": 0.9027777777777778,
+     "f1": 0.8843537414965986,
+     "n": 72
+    },
+    "refrigerantes": {
+     "precisao": 0.9411764705882353,
+     "recall": 0.5714285714285714,
+     "f1": 0.7111111111111111,
+     "n": 28
+    },
+    "salgadinhos": {
+     "precisao": 0.7966101694915254,
+     "recall": 0.8245614035087719,
+     "f1": 0.8103448275862069,
+     "n": 57
+    },
+    "sobremesas": {
+     "precisao": 0.7272727272727273,
+     "recall": 0.4444444444444444,
+     "f1": 0.5517241379310345,
+     "n": 18
+    },
+    "sorvetes": {
+     "precisao": 0.24242424242424243,
+     "recall": 0.6857142857142857,
+     "f1": 0.3582089552238806,
+     "n": 35
+    },
+    "sucos": {
+     "precisao": 0.7222222222222222,
+     "recall": 0.7222222222222222,
+     "f1": 0.7222222222222222,
+     "n": 36
+    },
+    "suplementos": {
+     "precisao": 0.7619047619047619,
+     "recall": 0.8727272727272727,
+     "f1": 0.8135593220338984,
+     "n": 55
+    },
+    "temperos": {
+     "precisao": 0.6923076923076923,
+     "recall": 0.7105263157894737,
+     "f1": 0.7012987012987013,
+     "n": 38
+    }
+   },
+   "confusoes": [
+    {
+     "certo": "Chocolates e bombons",
+     "previsto": "Sorvetes e picolés",
+     "vezes": 17
+    },
+    {
+     "certo": "Cereais matinais e aveia",
+     "previsto": "Sorvetes e picolés",
+     "vezes": 15
+    },
+    {
+     "certo": "Biscoitos e bolachas",
+     "previsto": "Sorvetes e picolés",
+     "vezes": 13
+    },
+    {
+     "certo": "Vinhos e destilados",
+     "previsto": "Cervejas",
+     "vezes": 9
+    },
+    {
+     "certo": "Massas e macarrão instantâneo",
+     "previsto": "Pratos prontos e congelados",
+     "vezes": 8
+    },
+    {
+     "certo": "Balas, gomas e doces",
+     "previsto": "Biscoitos e bolachas",
+     "vezes": 8
+    },
+    {
+     "certo": "Biscoitos e bolachas",
+     "previsto": "Chocolates e bombons",
+     "vezes": 8
+    },
+    {
+     "certo": "Biscoitos e bolachas",
+     "previsto": "Temperos, sal e caldos",
+     "vezes": 7
+    }
+   ]
+  },
+  "qwen15_lora_q": {
+   "nome": "IA ajustada v2 (LoRA classificador + quantidade)",
+   "nome_en": "Tuned AI v2 (LoRA classifier + quantity)",
+   "versao": "v2",
+   "acuracia": 0.7674858223062382,
+   "f1_macro": 0.7521445365949907,
+   "acuracia_ic95": [
+    0.7466918714555766,
+    0.7882797731568998
+   ],
+   "f1_macro_ic95": [
+    0.7246600118671992,
+    0.7759219546298783
+   ],
+   "acuracia_revisada": 0.8103339634530561,
+   "acuracia_revisada_ic95": [
+    0.7908002520478891,
+    0.8292375551354757
+   ],
+   "ms_lote": 4.381,
+   "ms_um": 43.6,
+   "ms_um_cpu": 884.96,
+   "ms_lote_adapter": 7.225,
+   "ms_um_adapter": 89.33,
+   "tempo_fundido_da_2a_rodada": true,
+   "hardware": "gpu",
+   "min_treino": 5.58,
+   "epoca": 3,
+   "epocas": 3,
+   "parametros_treinaveis": 18527744,
+   "parametros_total": 1562305024,
+   "erros": {
+    "total": 369,
+    "rotulo_errado": 57,
+    "ambiguo": 51,
+    "aceitos_na_revisao": 81
+   },
+   "por_categoria": {
+    "achocolatado": {
+     "precisao": 0.7272727272727273,
+     "recall": 0.5,
+     "f1": 0.5925925925925926,
+     "n": 16
+    },
+    "acucar_adocante": {
+     "precisao": 0.8888888888888888,
+     "recall": 0.5925925925925926,
+     "f1": 0.7111111111111111,
+     "n": 27
+    },
+    "aguas": {
+     "precisao": 0.6923076923076923,
+     "recall": 0.9,
+     "f1": 0.782608695652174,
+     "n": 10
+    },
+    "alcoolicas": {
+     "precisao": 0.6153846153846154,
+     "recall": 0.47058823529411764,
+     "f1": 0.5333333333333333,
+     "n": 17
+    },
+    "balas_doces": {
+     "precisao": 0.6097560975609756,
+     "recall": 0.5319148936170213,
+     "f1": 0.5681818181818182,
+     "n": 47
+    },
+    "barras": {
+     "precisao": 0.9259259259259259,
+     "recall": 0.7575757575757576,
+     "f1": 0.8333333333333334,
+     "n": 33
+    },
+    "bebidas_vegetais": {
+     "precisao": 0.7777777777777778,
+     "recall": 0.5,
+     "f1": 0.6086956521739131,
+     "n": 14
+    },
+    "biscoitos": {
+     "precisao": 0.65625,
+     "recall": 0.7720588235294118,
+     "f1": 0.7094594594594594,
+     "n": 136
+    },
+    "bolos_panetones": {
+     "precisao": 0.8723404255319149,
+     "recall": 0.9318181818181818,
+     "f1": 0.9010989010989011,
+     "n": 44
+    },
+    "cafe": {
+     "precisao": 0.8620689655172413,
+     "recall": 0.9615384615384616,
+     "f1": 0.9090909090909091,
+     "n": 26
+    },
+    "carnes_frios": {
+     "precisao": 0.8035714285714286,
+     "recall": 0.8490566037735849,
+     "f1": 0.8256880733944955,
+     "n": 53
+    },
+    "castanhas": {
+     "precisao": 0.7096774193548387,
+     "recall": 0.6875,
+     "f1": 0.6984126984126984,
+     "n": 32
+    },
+    "cereais_matinais": {
+     "precisao": 0.7297297297297297,
+     "recall": 0.574468085106383,
+     "f1": 0.6428571428571429,
+     "n": 47
+    },
+    "cervejas": {
+     "precisao": 0.6333333333333333,
+     "recall": 0.95,
+     "f1": 0.76,
+     "n": 20
+    },
+    "chas": {
+     "precisao": 0.96,
+     "recall": 0.9230769230769231,
+     "f1": 0.9411764705882353,
+     "n": 26
+    },
+    "chocolates": {
+     "precisao": 0.734375,
+     "recall": 0.6266666666666667,
+     "f1": 0.6762589928057554,
+     "n": 75
+    },
+    "conservas": {
+     "precisao": 0.7777777777777778,
+     "recall": 0.5833333333333334,
+     "f1": 0.6666666666666666,
+     "n": 12
+    },
+    "energeticos": {
+     "precisao": 0.7142857142857143,
+     "recall": 0.5,
+     "f1": 0.5882352941176471,
+     "n": 10
+    },
+    "farinhas": {
+     "precisao": 0.8484848484848485,
+     "recall": 0.8,
+     "f1": 0.8235294117647058,
+     "n": 35
+    },
+    "geleias_mel": {
+     "precisao": 0.6326530612244898,
+     "recall": 0.62,
+     "f1": 0.6262626262626263,
+     "n": 50
+    },
+    "graos": {
+     "precisao": 0.85,
+     "recall": 0.8717948717948718,
+     "f1": 0.8607594936708861,
+     "n": 39
+    },
+    "hortifruti": {
+     "precisao": 0.2222222222222222,
+     "recall": 0.3333333333333333,
+     "f1": 0.26666666666666666,
+     "n": 12
+    },
+    "iogurtes": {
+     "precisao": 0.8481012658227848,
+     "recall": 0.7613636363636364,
+     "f1": 0.8023952095808383,
+     "n": 88
+    },
+    "leite_condensado_creme": {
+     "precisao": 0.5862068965517241,
+     "recall": 0.85,
+     "f1": 0.6938775510204082,
+     "n": 20
+    },
+    "leites": {
+     "precisao": 0.72,
+     "recall": 0.782608695652174,
+     "f1": 0.75,
+     "n": 69
+    },
+    "manteiga_margarina": {
+     "precisao": 1.0,
+     "recall": 0.9,
+     "f1": 0.9473684210526315,
+     "n": 30
+    },
+    "massas": {
+     "precisao": 0.7714285714285715,
+     "recall": 0.6136363636363636,
+     "f1": 0.6835443037974683,
+     "n": 44
+    },
+    "molhos": {
+     "precisao": 0.9122807017543859,
+     "recall": 0.8666666666666667,
+     "f1": 0.8888888888888888,
+     "n": 60
+    },
+    "oleos_azeites": {
+     "precisao": 0.9473684210526315,
+     "recall": 0.8571428571428571,
+     "f1": 0.9,
+     "n": 21
+    },
+    "ovos": {
+     "precisao": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "n": 9
+    },
+    "paes": {
+     "precisao": 0.7916666666666666,
+     "recall": 0.95,
+     "f1": 0.8636363636363636,
+     "n": 60
+    },
+    "peixes": {
+     "precisao": 0.8529411764705882,
+     "recall": 0.9666666666666667,
+     "f1": 0.90625,
+     "n": 30
+    },
+    "pratos_prontos": {
+     "precisao": 0.4222222222222222,
+     "recall": 0.5277777777777778,
+     "f1": 0.4691358024691358,
+     "n": 36
+    },
+    "queijos": {
+     "precisao": 0.8873239436619719,
+     "recall": 0.875,
+     "f1": 0.8811188811188811,
+     "n": 72
+    },
+    "refrigerantes": {
+     "precisao": 0.95,
+     "recall": 0.6785714285714286,
+     "f1": 0.7916666666666666,
+     "n": 28
+    },
+    "salgadinhos": {
+     "precisao": 0.8928571428571429,
+     "recall": 0.8771929824561403,
+     "f1": 0.8849557522123894,
+     "n": 57
+    },
+    "sobremesas": {
+     "precisao": 0.631578947368421,
+     "recall": 0.6666666666666666,
+     "f1": 0.6486486486486487,
+     "n": 18
+    },
+    "sorvetes": {
+     "precisao": 0.7878787878787878,
+     "recall": 0.7428571428571429,
+     "f1": 0.7647058823529411,
+     "n": 35
+    },
+    "sucos": {
+     "precisao": 0.8529411764705882,
+     "recall": 0.8055555555555556,
+     "f1": 0.8285714285714286,
+     "n": 36
+    },
+    "suplementos": {
+     "precisao": 0.796875,
+     "recall": 0.9272727272727272,
+     "f1": 0.8571428571428571,
+     "n": 55
+    },
+    "temperos": {
+     "precisao": 0.7142857142857143,
+     "recall": 0.7894736842105263,
+     "f1": 0.75,
+     "n": 38
+    }
+   },
+   "confusoes": [
+    {
+     "certo": "Chocolates e bombons",
+     "previsto": "Biscoitos e bolachas",
+     "vezes": 17
+    },
+    {
+     "certo": "Cereais matinais e aveia",
+     "previsto": "Biscoitos e bolachas",
+     "vezes": 11
+    },
+    {
+     "certo": "Massas e macarrão instantâneo",
+     "previsto": "Pratos prontos e congelados",
+     "vezes": 11
+    },
+    {
+     "certo": "Pratos prontos e congelados",
+     "previsto": "Carnes, frios e embutidos",
+     "vezes": 8
+    },
+    {
+     "certo": "Biscoitos e bolachas",
+     "previsto": "Pães e torradas",
+     "vezes": 7
+    },
+    {
+     "certo": "Biscoitos e bolachas",
+     "previsto": "Chocolates e bombons",
+     "vezes": 6
+    },
+    {
+     "certo": "Vinhos e destilados",
+     "previsto": "Cervejas",
+     "vezes": 6
+    },
+    {
+     "certo": "Bebidas vegetais",
+     "previsto": "Leite e bebida láctea",
+     "vezes": 5
+    }
+   ]
+  },
+  "qwen15_lora_q5m": {
+   "nome": "IA ajustada v2, 2ª rodada (5 épocas, sem a marca; não escolhida)",
+   "nome_en": "Tuned AI v2, 2nd run (5 epochs, no brand; not chosen)",
+   "versao": "v2",
+   "acuracia": 0.7731568998109641,
+   "f1_macro": 0.755407621483048,
+   "acuracia_ic95": [
+    0.7517328292375551,
+    0.794580970384373
+   ],
+   "f1_macro_ic95": [
+    0.7277038498245404,
+    0.7753609181771471
+   ],
+   "acuracia_revisada": 0.8267170762444864,
+   "acuracia_revisada_ic95": [
+    0.8078134845620668,
+    0.8456206679269062
+   ],
+   "ms_lote": 4.381,
+   "ms_um": 43.6,
+   "ms_um_cpu": 884.96,
+   "hardware": "gpu",
+   "min_treino": 8.13,
+   "epoca": 5,
+   "epocas": 5,
+   "parametros_treinaveis": 18527744,
+   "parametros_total": 1562305024,
+   "erros": {
+    "total": 360,
+    "rotulo_errado": 67,
+    "ambiguo": 46,
+    "aceitos_na_revisao": 88
+   },
+   "por_categoria": {
+    "achocolatado": {
+     "precisao": 0.75,
+     "recall": 0.75,
+     "f1": 0.75,
+     "n": 16
+    },
+    "acucar_adocante": {
+     "precisao": 0.9473684210526315,
+     "recall": 0.6666666666666666,
+     "f1": 0.782608695652174,
+     "n": 27
+    },
+    "aguas": {
+     "precisao": 0.9090909090909091,
+     "recall": 1.0,
+     "f1": 0.9523809523809523,
+     "n": 10
+    },
+    "alcoolicas": {
+     "precisao": 0.5333333333333333,
+     "recall": 0.47058823529411764,
+     "f1": 0.5,
+     "n": 17
+    },
+    "balas_doces": {
+     "precisao": 0.5833333333333334,
+     "recall": 0.5957446808510638,
+     "f1": 0.5894736842105263,
+     "n": 47
+    },
+    "barras": {
+     "precisao": 0.96,
+     "recall": 0.7272727272727273,
+     "f1": 0.8275862068965517,
+     "n": 33
+    },
+    "bebidas_vegetais": {
+     "precisao": 0.7272727272727273,
+     "recall": 0.5714285714285714,
+     "f1": 0.64,
+     "n": 14
+    },
+    "biscoitos": {
+     "precisao": 0.7346938775510204,
+     "recall": 0.7941176470588235,
+     "f1": 0.7632508833922261,
+     "n": 136
+    },
+    "bolos_panetones": {
+     "precisao": 0.875,
+     "recall": 0.9545454545454546,
+     "f1": 0.9130434782608695,
+     "n": 44
+    },
+    "cafe": {
+     "precisao": 0.9230769230769231,
+     "recall": 0.9230769230769231,
+     "f1": 0.9230769230769231,
+     "n": 26
+    },
+    "carnes_frios": {
+     "precisao": 0.8571428571428571,
+     "recall": 0.9056603773584906,
+     "f1": 0.8807339449541285,
+     "n": 53
+    },
+    "castanhas": {
+     "precisao": 0.59375,
+     "recall": 0.59375,
+     "f1": 0.59375,
+     "n": 32
+    },
+    "cereais_matinais": {
+     "precisao": 0.7352941176470589,
+     "recall": 0.5319148936170213,
+     "f1": 0.6172839506172839,
+     "n": 47
+    },
+    "cervejas": {
+     "precisao": 0.7307692307692307,
+     "recall": 0.95,
+     "f1": 0.8260869565217391,
+     "n": 20
+    },
+    "chas": {
+     "precisao": 1.0,
+     "recall": 0.9615384615384616,
+     "f1": 0.9803921568627451,
+     "n": 26
+    },
+    "chocolates": {
+     "precisao": 0.6708860759493671,
+     "recall": 0.7066666666666667,
+     "f1": 0.6883116883116883,
+     "n": 75
+    },
+    "conservas": {
+     "precisao": 0.42857142857142855,
+     "recall": 0.5,
+     "f1": 0.46153846153846156,
+     "n": 12
+    },
+    "energeticos": {
+     "precisao": 0.5555555555555556,
+     "recall": 0.5,
+     "f1": 0.5263157894736842,
+     "n": 10
+    },
+    "farinhas": {
+     "precisao": 0.8709677419354839,
+     "recall": 0.7714285714285715,
+     "f1": 0.8181818181818182,
+     "n": 35
+    },
+    "geleias_mel": {
+     "precisao": 0.5294117647058824,
+     "recall": 0.54,
+     "f1": 0.5346534653465347,
+     "n": 50
+    },
+    "graos": {
+     "precisao": 0.8333333333333334,
+     "recall": 0.7692307692307693,
+     "f1": 0.8,
+     "n": 39
+    },
+    "hortifruti": {
+     "precisao": 0.26666666666666666,
+     "recall": 0.3333333333333333,
+     "f1": 0.2962962962962963,
+     "n": 12
+    },
+    "iogurtes": {
+     "precisao": 0.8488372093023255,
+     "recall": 0.8295454545454546,
+     "f1": 0.8390804597701149,
+     "n": 88
+    },
+    "leite_condensado_creme": {
+     "precisao": 0.7142857142857143,
+     "recall": 0.75,
+     "f1": 0.7317073170731707,
+     "n": 20
+    },
+    "leites": {
+     "precisao": 0.7125,
+     "recall": 0.8260869565217391,
+     "f1": 0.7651006711409396,
+     "n": 69
+    },
+    "manteiga_margarina": {
+     "precisao": 1.0,
+     "recall": 0.9333333333333333,
+     "f1": 0.9655172413793104,
+     "n": 30
+    },
+    "massas": {
+     "precisao": 0.8235294117647058,
+     "recall": 0.6363636363636364,
+     "f1": 0.717948717948718,
+     "n": 44
+    },
+    "molhos": {
+     "precisao": 0.896551724137931,
+     "recall": 0.8666666666666667,
+     "f1": 0.8813559322033898,
+     "n": 60
+    },
+    "oleos_azeites": {
+     "precisao": 0.8571428571428571,
+     "recall": 0.8571428571428571,
+     "f1": 0.8571428571428571,
+     "n": 21
+    },
+    "ovos": {
+     "precisao": 0.9,
+     "recall": 1.0,
+     "f1": 0.9473684210526315,
+     "n": 9
+    },
+    "paes": {
+     "precisao": 0.8235294117647058,
+     "recall": 0.9333333333333333,
+     "f1": 0.875,
+     "n": 60
+    },
+    "peixes": {
+     "precisao": 0.9354838709677419,
+     "recall": 0.9666666666666667,
+     "f1": 0.9508196721311475,
+     "n": 30
+    },
+    "pratos_prontos": {
+     "precisao": 0.5714285714285714,
+     "recall": 0.5555555555555556,
+     "f1": 0.5633802816901409,
+     "n": 36
+    },
+    "queijos": {
+     "precisao": 0.9305555555555556,
+     "recall": 0.9305555555555556,
+     "f1": 0.9305555555555556,
+     "n": 72
+    },
+    "refrigerantes": {
+     "precisao": 0.76,
+     "recall": 0.6785714285714286,
+     "f1": 0.7169811320754716,
+     "n": 28
+    },
+    "salgadinhos": {
+     "precisao": 0.7666666666666667,
+     "recall": 0.8070175438596491,
+     "f1": 0.7863247863247863,
+     "n": 57
+    },
+    "sobremesas": {
+     "precisao": 0.8461538461538461,
+     "recall": 0.6111111111111112,
+     "f1": 0.7096774193548387,
+     "n": 18
+    },
+    "sorvetes": {
+     "precisao": 0.7419354838709677,
+     "recall": 0.6571428571428571,
+     "f1": 0.696969696969697,
+     "n": 35
+    },
+    "sucos": {
+     "precisao": 0.9629629629629629,
+     "recall": 0.7222222222222222,
+     "f1": 0.8253968253968254,
+     "n": 36
+    },
+    "suplementos": {
+     "precisao": 0.7101449275362319,
+     "recall": 0.8909090909090909,
+     "f1": 0.7903225806451613,
+     "n": 55
+    },
+    "temperos": {
+     "precisao": 0.7045454545454546,
+     "recall": 0.8157894736842105,
+     "f1": 0.7560975609756098,
+     "n": 38
+    }
+   },
+   "confusoes": [
+    {
+     "certo": "Chocolates e bombons",
+     "previsto": "Biscoitos e bolachas",
+     "vezes": 11
+    },
+    {
+     "certo": "Massas e macarrão instantâneo",
+     "previsto": "Pratos prontos e congelados",
+     "vezes": 8
+    },
+    {
+     "certo": "Biscoitos e bolachas",
+     "previsto": "Chocolates e bombons",
+     "vezes": 7
+    },
+    {
+     "certo": "Geleias, mel e cremes de passar",
+     "previsto": "Balas, gomas e doces",
+     "vezes": 6
+    },
+    {
+     "certo": "Cereais matinais e aveia",
+     "previsto": "Geleias, mel e cremes de passar",
+     "vezes": 6
+    },
+    {
+     "certo": "Pratos prontos e congelados",
+     "previsto": "Carnes, frios e embutidos",
+     "vezes": 6
+    },
+    {
+     "certo": "Vinhos e destilados",
+     "previsto": "Cervejas",
+     "vezes": 6
+    },
+    {
+     "certo": "Leite e bebida láctea",
+     "previsto": "Iogurtes e leites fermentados",
+     "vezes": 5
+    }
+   ]
+  },
+  "lora_v1_escrita": {
+   "nome": "IA v1 de novo, escrevendo, com confiança (LoRA fundido)",
+   "nome_en": "AI v1 again, writing, with confidence (merged LoRA)",
+   "versao": "v2",
+   "acuracia": 0.7895400126023945,
+   "f1_macro": 0.7677638818246444,
+   "acuracia_ic95": [
+    0.7693761814744802,
+    0.8103339634530561
+   ],
+   "f1_macro_ic95": [
+    0.7416181186674081,
+    0.7890342206873313
+   ],
+   "acuracia_revisada": 0.8405797101449275,
+   "acuracia_revisada_ic95": [
+    0.8223062381852552,
+    0.8588531821045998
+   ],
+   "ms_lote": 20.1,
+   "ms_um": 349.8,
+   "ms_um_cpu": null,
+   "hardware": "gpu",
+   "min_treino": null,
+   "epoca": null,
+   "epocas": null,
+   "parametros_treinaveis": null,
+   "parametros_total": null,
+   "erros": {
+    "total": 334,
+    "rotulo_errado": 63,
+    "ambiguo": 45,
+    "aceitos_na_revisao": 88
+   },
+   "por_categoria": {
+    "achocolatado": {
+     "precisao": 0.5454545454545454,
+     "recall": 0.375,
+     "f1": 0.4444444444444444,
+     "n": 16
+    },
+    "acucar_adocante": {
+     "precisao": 1.0,
+     "recall": 0.9259259259259259,
+     "f1": 0.9615384615384616,
+     "n": 27
+    },
+    "aguas": {
+     "precisao": 0.6923076923076923,
+     "recall": 0.9,
+     "f1": 0.782608695652174,
+     "n": 10
+    },
+    "alcoolicas": {
+     "precisao": 0.5,
+     "recall": 0.4117647058823529,
+     "f1": 0.45161290322580644,
+     "n": 17
+    },
+    "balas_doces": {
+     "precisao": 0.7209302325581395,
+     "recall": 0.6595744680851063,
+     "f1": 0.6888888888888889,
+     "n": 47
+    },
+    "barras": {
+     "precisao": 0.8461538461538461,
+     "recall": 0.6666666666666666,
+     "f1": 0.7457627118644068,
+     "n": 33
+    },
+    "bebidas_vegetais": {
+     "precisao": 1.0,
+     "recall": 0.5714285714285714,
+     "f1": 0.7272727272727273,
+     "n": 14
+    },
+    "biscoitos": {
+     "precisao": 0.6342857142857142,
+     "recall": 0.8161764705882353,
+     "f1": 0.7138263665594855,
+     "n": 136
+    },
+    "bolos_panetones": {
+     "precisao": 0.9318181818181818,
+     "recall": 0.9318181818181818,
+     "f1": 0.9318181818181818,
+     "n": 44
+    },
+    "cafe": {
+     "precisao": 0.8888888888888888,
+     "recall": 0.9230769230769231,
+     "f1": 0.9056603773584906,
+     "n": 26
+    },
+    "carnes_frios": {
+     "precisao": 0.9074074074074074,
+     "recall": 0.9245283018867925,
+     "f1": 0.9158878504672897,
+     "n": 53
+    },
+    "castanhas": {
+     "precisao": 0.6451612903225806,
+     "recall": 0.625,
+     "f1": 0.6349206349206349,
+     "n": 32
+    },
+    "cereais_matinais": {
+     "precisao": 0.8888888888888888,
+     "recall": 0.5106382978723404,
+     "f1": 0.6486486486486487,
+     "n": 47
+    },
+    "cervejas": {
+     "precisao": 0.6551724137931034,
+     "recall": 0.95,
+     "f1": 0.7755102040816326,
+     "n": 20
+    },
+    "chas": {
+     "precisao": 1.0,
+     "recall": 0.9230769230769231,
+     "f1": 0.96,
+     "n": 26
+    },
+    "chocolates": {
+     "precisao": 0.6296296296296297,
+     "recall": 0.68,
+     "f1": 0.6538461538461539,
+     "n": 75
+    },
+    "conservas": {
+     "precisao": 0.5555555555555556,
+     "recall": 0.4166666666666667,
+     "f1": 0.47619047619047616,
+     "n": 12
+    },
+    "energeticos": {
+     "precisao": 0.75,
+     "recall": 0.6,
+     "f1": 0.6666666666666666,
+     "n": 10
+    },
+    "farinhas": {
+     "precisao": 0.8857142857142857,
+     "recall": 0.8857142857142857,
+     "f1": 0.8857142857142857,
+     "n": 35
+    },
+    "geleias_mel": {
+     "precisao": 0.7317073170731707,
+     "recall": 0.6,
+     "f1": 0.6593406593406593,
+     "n": 50
+    },
+    "graos": {
+     "precisao": 0.85,
+     "recall": 0.8717948717948718,
+     "f1": 0.8607594936708861,
+     "n": 39
+    },
+    "hortifruti": {
+     "precisao": 0.375,
+     "recall": 0.25,
+     "f1": 0.3,
+     "n": 12
+    },
+    "iogurtes": {
+     "precisao": 0.8275862068965517,
+     "recall": 0.8181818181818182,
+     "f1": 0.8228571428571428,
+     "n": 88
+    },
+    "leite_condensado_creme": {
+     "precisao": 0.7391304347826086,
+     "recall": 0.85,
+     "f1": 0.7906976744186046,
+     "n": 20
+    },
+    "leites": {
+     "precisao": 0.7236842105263158,
+     "recall": 0.7971014492753623,
+     "f1": 0.7586206896551724,
+     "n": 69
+    },
+    "manteiga_margarina": {
+     "precisao": 0.9655172413793104,
+     "recall": 0.9333333333333333,
+     "f1": 0.9491525423728814,
+     "n": 30
+    },
+    "massas": {
+     "precisao": 0.8787878787878788,
+     "recall": 0.6590909090909091,
+     "f1": 0.7532467532467533,
+     "n": 44
+    },
+    "molhos": {
+     "precisao": 0.84375,
+     "recall": 0.9,
+     "f1": 0.8709677419354839,
+     "n": 60
+    },
+    "oleos_azeites": {
+     "precisao": 0.9473684210526315,
+     "recall": 0.8571428571428571,
+     "f1": 0.9,
+     "n": 21
+    },
+    "ovos": {
+     "precisao": 0.8181818181818182,
+     "recall": 1.0,
+     "f1": 0.9,
+     "n": 9
+    },
+    "paes": {
+     "precisao": 0.8769230769230769,
+     "recall": 0.95,
+     "f1": 0.912,
+     "n": 60
+    },
+    "peixes": {
+     "precisao": 0.9375,
+     "recall": 1.0,
+     "f1": 0.967741935483871,
+     "n": 30
+    },
+    "pratos_prontos": {
+     "precisao": 0.5641025641025641,
+     "recall": 0.6111111111111112,
+     "f1": 0.5866666666666667,
+     "n": 36
+    },
+    "queijos": {
+     "precisao": 0.9305555555555556,
+     "recall": 0.9305555555555556,
+     "f1": 0.9305555555555556,
+     "n": 72
+    },
+    "refrigerantes": {
+     "precisao": 1.0,
+     "recall": 0.6785714285714286,
+     "f1": 0.8085106382978723,
+     "n": 28
+    },
+    "salgadinhos": {
+     "precisao": 0.9090909090909091,
+     "recall": 0.8771929824561403,
+     "f1": 0.8928571428571429,
+     "n": 57
+    },
+    "sobremesas": {
+     "precisao": 0.7857142857142857,
+     "recall": 0.6111111111111112,
+     "f1": 0.6875,
+     "n": 18
+    },
+    "sorvetes": {
+     "precisao": 0.78125,
+     "recall": 0.7142857142857143,
+     "f1": 0.746268656716418,
+     "n": 35
+    },
+    "sucos": {
+     "precisao": 0.9310344827586207,
+     "recall": 0.75,
+     "f1": 0.8307692307692308,
+     "n": 36
+    },
+    "suplementos": {
+     "precisao": 0.7428571428571429,
+     "recall": 0.9454545454545454,
+     "f1": 0.832,
+     "n": 55
+    },
+    "temperos": {
+     "precisao": 0.6888888888888889,
+     "recall": 0.8157894736842105,
+     "f1": 0.7469879518072289,
+     "n": 38
+    }
+   },
+   "confusoes": [
+    {
+     "certo": "Chocolates e bombons",
+     "previsto": "Biscoitos e bolachas",
+     "vezes": 13
+    },
+    {
+     "certo": "Cereais matinais e aveia",
+     "previsto": "Biscoitos e bolachas",
+     "vezes": 11
+    },
+    {
+     "certo": "Massas e macarrão instantâneo",
+     "previsto": "Pratos prontos e congelados",
+     "vezes": 9
+    },
+    {
+     "certo": "Vinhos e destilados",
+     "previsto": "Cervejas",
+     "vezes": 8
+    },
+    {
+     "certo": "Cereais matinais e aveia",
+     "previsto": "Chocolates e bombons",
+     "vezes": 6
+    },
+    {
+     "certo": "Iogurtes e leites fermentados",
+     "previsto": "Biscoitos e bolachas",
+     "vezes": 5
+    },
+    {
+     "certo": "Iogurtes e leites fermentados",
+     "previsto": "Suplementos e proteína em pó",
+     "vezes": 5
+    },
+    {
+     "certo": "Leite e bebida láctea",
+     "previsto": "Iogurtes e leites fermentados",
+     "vezes": 5
+    }
+   ]
+  },
+  "lora_v1_pontos": {
+   "nome": "IA v1 de novo, pontuando as 41 categorias",
+   "nome_en": "AI v1 again, scoring all 41 categories",
+   "versao": "v2",
+   "acuracia": 0.7882797731568998,
+   "f1_macro": 0.7664849946943534,
+   "acuracia_ic95": [
+    0.7674858223062382,
+    0.8090737240075614
+   ],
+   "f1_macro_ic95": [
+    0.7400400065342683,
+    0.7878407677854575
+   ],
+   "acuracia_revisada": 0.8393194706994329,
+   "acuracia_revisada_ic95": [
+    0.8216761184625079,
+    0.8582230623818525
+   ],
+   "ms_lote": 525.33,
+   "ms_um": 523.0,
+   "ms_um_cpu": null,
+   "hardware": "gpu",
+   "min_treino": null,
+   "epoca": null,
+   "epocas": null,
+   "parametros_treinaveis": null,
+   "parametros_total": null,
+   "erros": {
+    "total": 336,
+    "rotulo_errado": 63,
+    "ambiguo": 45,
+    "aceitos_na_revisao": 88
+   },
+   "por_categoria": {
+    "achocolatado": {
+     "precisao": 0.75,
+     "recall": 0.375,
+     "f1": 0.5,
+     "n": 16
+    },
+    "acucar_adocante": {
+     "precisao": 1.0,
+     "recall": 0.9259259259259259,
+     "f1": 0.9615384615384616,
+     "n": 27
+    },
+    "aguas": {
+     "precisao": 0.6923076923076923,
+     "recall": 0.9,
+     "f1": 0.782608695652174,
+     "n": 10
+    },
+    "alcoolicas": {
+     "precisao": 0.4666666666666667,
+     "recall": 0.4117647058823529,
+     "f1": 0.4375,
+     "n": 17
+    },
+    "balas_doces": {
+     "precisao": 0.6739130434782609,
+     "recall": 0.6595744680851063,
+     "f1": 0.6666666666666666,
+     "n": 47
+    },
+    "barras": {
+     "precisao": 0.875,
+     "recall": 0.6363636363636364,
+     "f1": 0.7368421052631579,
+     "n": 33
+    },
+    "bebidas_vegetais": {
+     "precisao": 1.0,
+     "recall": 0.5,
+     "f1": 0.6666666666666666,
+     "n": 14
+    },
+    "biscoitos": {
+     "precisao": 0.6449704142011834,
+     "recall": 0.8014705882352942,
+     "f1": 0.7147540983606557,
+     "n": 136
+    },
+    "bolos_panetones": {
+     "precisao": 0.9318181818181818,
+     "recall": 0.9318181818181818,
+     "f1": 0.9318181818181818,
+     "n": 44
+    },
+    "cafe": {
+     "precisao": 0.9230769230769231,
+     "recall": 0.9230769230769231,
+     "f1": 0.9230769230769231,
+     "n": 26
+    },
+    "carnes_frios": {
+     "precisao": 0.9056603773584906,
+     "recall": 0.9056603773584906,
+     "f1": 0.9056603773584906,
+     "n": 53
+    },
+    "castanhas": {
+     "precisao": 0.6451612903225806,
+     "recall": 0.625,
+     "f1": 0.6349206349206349,
+     "n": 32
+    },
+    "cereais_matinais": {
+     "precisao": 0.8571428571428571,
+     "recall": 0.5106382978723404,
+     "f1": 0.64,
+     "n": 47
+    },
+    "cervejas": {
+     "precisao": 0.6785714285714286,
+     "recall": 0.95,
+     "f1": 0.7916666666666666,
+     "n": 20
+    },
+    "chas": {
+     "precisao": 1.0,
+     "recall": 0.9230769230769231,
+     "f1": 0.96,
+     "n": 26
+    },
+    "chocolates": {
+     "precisao": 0.6,
+     "recall": 0.68,
+     "f1": 0.6375,
+     "n": 75
+    },
+    "conservas": {
+     "precisao": 0.5555555555555556,
+     "recall": 0.4166666666666667,
+     "f1": 0.47619047619047616,
+     "n": 12
+    },
+    "energeticos": {
+     "precisao": 0.75,
+     "recall": 0.6,
+     "f1": 0.6666666666666666,
+     "n": 10
+    },
+    "farinhas": {
+     "precisao": 0.8888888888888888,
+     "recall": 0.9142857142857143,
+     "f1": 0.9014084507042254,
+     "n": 35
+    },
+    "geleias_mel": {
+     "precisao": 0.7317073170731707,
+     "recall": 0.6,
+     "f1": 0.6593406593406593,
+     "n": 50
+    },
+    "graos": {
+     "precisao": 0.85,
+     "recall": 0.8717948717948718,
+     "f1": 0.8607594936708861,
+     "n": 39
+    },
+    "hortifruti": {
+     "precisao": 0.375,
+     "recall": 0.25,
+     "f1": 0.3,
+     "n": 12
+    },
+    "iogurtes": {
+     "precisao": 0.8202247191011236,
+     "recall": 0.8295454545454546,
+     "f1": 0.8248587570621468,
+     "n": 88
+    },
+    "leite_condensado_creme": {
+     "precisao": 0.7727272727272727,
+     "recall": 0.85,
+     "f1": 0.8095238095238095,
+     "n": 20
+    },
+    "leites": {
+     "precisao": 0.7333333333333333,
+     "recall": 0.7971014492753623,
+     "f1": 0.7638888888888888,
+     "n": 69
+    },
+    "manteiga_margarina": {
+     "precisao": 0.9655172413793104,
+     "recall": 0.9333333333333333,
+     "f1": 0.9491525423728814,
+     "n": 30
+    },
+    "massas": {
+     "precisao": 0.8787878787878788,
+     "recall": 0.6590909090909091,
+     "f1": 0.7532467532467533,
+     "n": 44
+    },
+    "molhos": {
+     "precisao": 0.84375,
+     "recall": 0.9,
+     "f1": 0.8709677419354839,
+     "n": 60
+    },
+    "oleos_azeites": {
+     "precisao": 0.9473684210526315,
+     "recall": 0.8571428571428571,
+     "f1": 0.9,
+     "n": 21
+    },
+    "ovos": {
+     "precisao": 0.8181818181818182,
+     "recall": 1.0,
+     "f1": 0.9,
+     "n": 9
+    },
+    "paes": {
+     "precisao": 0.8636363636363636,
+     "recall": 0.95,
+     "f1": 0.9047619047619048,
+     "n": 60
+    },
+    "peixes": {
+     "precisao": 0.9375,
+     "recall": 1.0,
+     "f1": 0.967741935483871,
+     "n": 30
+    },
+    "pratos_prontos": {
+     "precisao": 0.55,
+     "recall": 0.6111111111111112,
+     "f1": 0.5789473684210527,
+     "n": 36
+    },
+    "queijos": {
+     "precisao": 0.9315068493150684,
+     "recall": 0.9444444444444444,
+     "f1": 0.9379310344827586,
+     "n": 72
+    },
+    "refrigerantes": {
+     "precisao": 1.0,
+     "recall": 0.6785714285714286,
+     "f1": 0.8085106382978723,
+     "n": 28
+    },
+    "salgadinhos": {
+     "precisao": 0.9090909090909091,
+     "recall": 0.8771929824561403,
+     "f1": 0.8928571428571429,
+     "n": 57
+    },
+    "sobremesas": {
+     "precisao": 0.7692307692307693,
+     "recall": 0.5555555555555556,
+     "f1": 0.6451612903225806,
+     "n": 18
+    },
+    "sorvetes": {
+     "precisao": 0.8064516129032258,
+     "recall": 0.7142857142857143,
+     "f1": 0.7575757575757576,
+     "n": 35
+    },
+    "sucos": {
+     "precisao": 0.9310344827586207,
+     "recall": 0.75,
+     "f1": 0.8307692307692308,
+     "n": 36
+    },
+    "suplementos": {
+     "precisao": 0.7123287671232876,
+     "recall": 0.9454545454545454,
+     "f1": 0.8125,
+     "n": 55
+    },
+    "temperos": {
+     "precisao": 0.6956521739130435,
+     "recall": 0.8421052631578947,
+     "f1": 0.7619047619047619,
+     "n": 38
+    }
+   },
+   "confusoes": [
+    {
+     "certo": "Chocolates e bombons",
+     "previsto": "Biscoitos e bolachas",
+     "vezes": 14
+    },
+    {
+     "certo": "Cereais matinais e aveia",
+     "previsto": "Biscoitos e bolachas",
+     "vezes": 10
+    },
+    {
+     "certo": "Massas e macarrão instantâneo",
+     "previsto": "Pratos prontos e congelados",
+     "vezes": 9
+    },
+    {
+     "certo": "Vinhos e destilados",
+     "previsto": "Cervejas",
+     "vezes": 8
+    },
+    {
+     "certo": "Biscoitos e bolachas",
+     "previsto": "Chocolates e bombons",
+     "vezes": 7
+    },
+    {
+     "certo": "Cereais matinais e aveia",
+     "previsto": "Chocolates e bombons",
+     "vezes": 6
+    },
+    {
+     "certo": "Iogurtes e leites fermentados",
+     "previsto": "Suplementos e proteína em pó",
+     "vezes": 6
+    },
+    {
+     "certo": "Barras de cereal e de proteína",
+     "previsto": "Suplementos e proteína em pó",
+     "vezes": 6
+    }
+   ]
+  },
+  "juntos_ia_v2": {
+   "nome": "1ª combinação: clássico v2 + IA v2 + BERTimbau",
+   "nome_en": "1st combination: classic v2 + AI v2 + BERTimbau",
+   "versao": "v2",
+   "acuracia": 0.8109640831758034,
+   "f1_macro": 0.8015931995594894,
+   "acuracia_ic95": [
+    0.7914303717706365,
+    0.8304977945809704
+   ],
+   "f1_macro_ic95": [
+    0.7787784731900431,
+    0.8200273743461908
+   ],
+   "acuracia_revisada": 0.8645242596093258,
+   "acuracia_revisada_ic95": [
+    0.847511027095148,
+    0.8821676118462508
+   ],
+   "ms_lote": 4.965614649454753,
+   "ms_um": 58.8133359400183,
+   "hardware": "gpu",
+   "erros": {
+    "total": 300,
+    "rotulo_errado": 62,
+    "ambiguo": 51,
+    "aceitos_na_revisao": 93
+   },
+   "por_categoria": {
+    "achocolatado": {
+     "precisao": 0.875,
+     "recall": 0.875,
+     "f1": 0.875,
+     "n": 16
+    },
+    "acucar_adocante": {
+     "precisao": 1.0,
+     "recall": 0.7407407407407407,
+     "f1": 0.851063829787234,
+     "n": 27
+    },
+    "aguas": {
+     "precisao": 0.8333333333333334,
+     "recall": 1.0,
+     "f1": 0.9090909090909091,
+     "n": 10
+    },
+    "alcoolicas": {
+     "precisao": 0.75,
+     "recall": 0.5294117647058824,
+     "f1": 0.6206896551724138,
+     "n": 17
+    },
+    "balas_doces": {
+     "precisao": 0.6842105263157895,
+     "recall": 0.5531914893617021,
+     "f1": 0.611764705882353,
+     "n": 47
+    },
+    "barras": {
+     "precisao": 0.8709677419354839,
+     "recall": 0.8181818181818182,
+     "f1": 0.84375,
+     "n": 33
+    },
+    "bebidas_vegetais": {
+     "precisao": 0.8181818181818182,
+     "recall": 0.6428571428571429,
+     "f1": 0.72,
+     "n": 14
+    },
+    "biscoitos": {
+     "precisao": 0.7342657342657343,
+     "recall": 0.7720588235294118,
+     "f1": 0.7526881720430108,
+     "n": 136
+    },
+    "bolos_panetones": {
+     "precisao": 0.8936170212765957,
+     "recall": 0.9545454545454546,
+     "f1": 0.9230769230769231,
+     "n": 44
+    },
+    "cafe": {
+     "precisao": 0.9230769230769231,
+     "recall": 0.9230769230769231,
+     "f1": 0.9230769230769231,
+     "n": 26
+    },
+    "carnes_frios": {
+     "precisao": 0.8421052631578947,
+     "recall": 0.9056603773584906,
+     "f1": 0.8727272727272727,
+     "n": 53
+    },
+    "castanhas": {
+     "precisao": 0.7096774193548387,
+     "recall": 0.6875,
+     "f1": 0.6984126984126984,
+     "n": 32
+    },
+    "cereais_matinais": {
+     "precisao": 0.7142857142857143,
+     "recall": 0.7446808510638298,
+     "f1": 0.7291666666666666,
+     "n": 47
+    },
+    "cervejas": {
+     "precisao": 0.6785714285714286,
+     "recall": 0.95,
+     "f1": 0.7916666666666666,
+     "n": 20
+    },
+    "chas": {
+     "precisao": 0.9629629629629629,
+     "recall": 1.0,
+     "f1": 0.9811320754716981,
+     "n": 26
+    },
+    "chocolates": {
+     "precisao": 0.6625,
+     "recall": 0.7066666666666667,
+     "f1": 0.6838709677419355,
+     "n": 75
+    },
+    "conservas": {
+     "precisao": 0.6666666666666666,
+     "recall": 0.6666666666666666,
+     "f1": 0.6666666666666666,
+     "n": 12
+    },
+    "energeticos": {
+     "precisao": 0.75,
+     "recall": 0.6,
+     "f1": 0.6666666666666666,
+     "n": 10
+    },
+    "farinhas": {
+     "precisao": 0.8484848484848485,
+     "recall": 0.8,
+     "f1": 0.8235294117647058,
+     "n": 35
+    },
+    "geleias_mel": {
+     "precisao": 0.6808510638297872,
+     "recall": 0.64,
+     "f1": 0.6597938144329897,
+     "n": 50
+    },
+    "graos": {
+     "precisao": 0.8048780487804879,
+     "recall": 0.8461538461538461,
+     "f1": 0.825,
+     "n": 39
+    },
+    "hortifruti": {
+     "precisao": 0.36363636363636365,
+     "recall": 0.3333333333333333,
+     "f1": 0.34782608695652173,
+     "n": 12
+    },
+    "iogurtes": {
+     "precisao": 0.8588235294117647,
+     "recall": 0.8295454545454546,
+     "f1": 0.8439306358381503,
+     "n": 88
+    },
+    "leite_condensado_creme": {
+     "precisao": 0.64,
+     "recall": 0.8,
+     "f1": 0.7111111111111111,
+     "n": 20
+    },
+    "leites": {
+     "precisao": 0.8507462686567164,
+     "recall": 0.8260869565217391,
+     "f1": 0.8382352941176471,
+     "n": 69
+    },
+    "manteiga_margarina": {
+     "precisao": 1.0,
+     "recall": 0.9333333333333333,
+     "f1": 0.9655172413793104,
+     "n": 30
+    },
+    "massas": {
+     "precisao": 0.8857142857142857,
+     "recall": 0.7045454545454546,
+     "f1": 0.7848101265822784,
+     "n": 44
+    },
+    "molhos": {
+     "precisao": 0.9482758620689655,
+     "recall": 0.9166666666666666,
+     "f1": 0.9322033898305084,
+     "n": 60
+    },
+    "oleos_azeites": {
+     "precisao": 0.9473684210526315,
+     "recall": 0.8571428571428571,
+     "f1": 0.9,
+     "n": 21
+    },
+    "ovos": {
+     "precisao": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "n": 9
+    },
+    "paes": {
+     "precisao": 0.8285714285714286,
+     "recall": 0.9666666666666667,
+     "f1": 0.8923076923076924,
+     "n": 60
+    },
+    "peixes": {
+     "precisao": 0.9354838709677419,
+     "recall": 0.9666666666666667,
+     "f1": 0.9508196721311475,
+     "n": 30
+    },
+    "pratos_prontos": {
+     "precisao": 0.5238095238095238,
+     "recall": 0.6111111111111112,
+     "f1": 0.5641025641025641,
+     "n": 36
+    },
+    "queijos": {
+     "precisao": 0.9154929577464789,
+     "recall": 0.9027777777777778,
+     "f1": 0.9090909090909091,
+     "n": 72
+    },
+    "refrigerantes": {
+     "precisao": 0.9545454545454546,
+     "recall": 0.75,
+     "f1": 0.84,
+     "n": 28
+    },
+    "salgadinhos": {
+     "precisao": 0.8947368421052632,
+     "recall": 0.8947368421052632,
+     "f1": 0.8947368421052632,
+     "n": 57
+    },
+    "sobremesas": {
+     "precisao": 0.8461538461538461,
+     "recall": 0.6111111111111112,
+     "f1": 0.7096774193548387,
+     "n": 18
+    },
+    "sorvetes": {
+     "precisao": 0.8108108108108109,
+     "recall": 0.8571428571428571,
+     "f1": 0.8333333333333334,
+     "n": 35
+    },
+    "sucos": {
+     "precisao": 0.8787878787878788,
+     "recall": 0.8055555555555556,
+     "f1": 0.8405797101449275,
+     "n": 36
+    },
+    "suplementos": {
+     "precisao": 0.8153846153846154,
+     "recall": 0.9636363636363636,
+     "f1": 0.8833333333333333,
+     "n": 55
+    },
+    "temperos": {
+     "precisao": 0.775,
+     "recall": 0.8157894736842105,
+     "f1": 0.7948717948717948,
+     "n": 38
+    }
+   },
+   "confusoes": [
+    {
+     "certo": "Massas e macarrão instantâneo",
+     "previsto": "Pratos prontos e congelados",
+     "vezes": 12
+    },
+    {
+     "certo": "Chocolates e bombons",
+     "previsto": "Biscoitos e bolachas",
+     "vezes": 11
+    },
+    {
+     "certo": "Balas, gomas e doces",
+     "previsto": "Chocolates e bombons",
+     "vezes": 9
+    },
+    {
+     "certo": "Biscoitos e bolachas",
+     "previsto": "Pães e torradas",
+     "vezes": 7
+    },
+    {
+     "certo": "Biscoitos e bolachas",
+     "previsto": "Chocolates e bombons",
+     "vezes": 7
+    },
+    {
+     "certo": "Pratos prontos e congelados",
+     "previsto": "Carnes, frios e embutidos",
+     "vezes": 6
+    },
+    {
+     "certo": "Cereais matinais e aveia",
+     "previsto": "Biscoitos e bolachas",
+     "vezes": 5
+    },
+    {
+     "certo": "Geleias, mel e cremes de passar",
+     "previsto": "Castanhas e amendoim",
+     "vezes": 5
+    }
+   ]
+  },
+  "juntos": {
+   "nome": "Juntos: clássico v2 + IA",
+   "nome_en": "Together: classic v2 + AI",
+   "versao": "v2",
+   "acuracia": 0.8153749212350346,
+   "f1_macro": 0.8017983393508062,
+   "acuracia_ic95": [
+    0.7958254568367991,
+    0.8349086326402017
+   ],
+   "f1_macro_ic95": [
+    0.7770861271194556,
+    0.8215335328308182
+   ],
+   "acuracia_revisada": 0.8701953371140516,
+   "acuracia_revisada_ic95": [
+    0.8525519848771267,
+    0.8872085696282294
+   ],
+   "ms_lote": 24.641614649454755,
+   "ms_um": 396.97333594001833,
+   "hardware": "gpu",
+   "erros": {
+    "total": 293,
+    "rotulo_errado": 63,
+    "ambiguo": 46,
+    "aceitos_na_revisao": 94
+   },
+   "por_categoria": {
+    "achocolatado": {
+     "precisao": 0.8666666666666667,
+     "recall": 0.8125,
+     "f1": 0.8387096774193549,
+     "n": 16
+    },
+    "acucar_adocante": {
+     "precisao": 0.9615384615384616,
+     "recall": 0.9259259259259259,
+     "f1": 0.9433962264150944,
+     "n": 27
+    },
+    "aguas": {
+     "precisao": 0.9090909090909091,
+     "recall": 1.0,
+     "f1": 0.9523809523809523,
+     "n": 10
+    },
+    "alcoolicas": {
+     "precisao": 0.5833333333333334,
+     "recall": 0.4117647058823529,
+     "f1": 0.4827586206896552,
+     "n": 17
+    },
+    "balas_doces": {
+     "precisao": 0.7380952380952381,
+     "recall": 0.6595744680851063,
+     "f1": 0.6966292134831461,
+     "n": 47
+    },
+    "barras": {
+     "precisao": 0.8275862068965517,
+     "recall": 0.7272727272727273,
+     "f1": 0.7741935483870968,
+     "n": 33
+    },
+    "bebidas_vegetais": {
+     "precisao": 0.9090909090909091,
+     "recall": 0.7142857142857143,
+     "f1": 0.8,
+     "n": 14
+    },
+    "biscoitos": {
+     "precisao": 0.6748466257668712,
+     "recall": 0.8088235294117647,
+     "f1": 0.7357859531772575,
+     "n": 136
+    },
+    "bolos_panetones": {
+     "precisao": 0.8936170212765957,
+     "recall": 0.9545454545454546,
+     "f1": 0.9230769230769231,
+     "n": 44
+    },
+    "cafe": {
+     "precisao": 0.9230769230769231,
+     "recall": 0.9230769230769231,
+     "f1": 0.9230769230769231,
+     "n": 26
+    },
+    "carnes_frios": {
+     "precisao": 0.8928571428571429,
+     "recall": 0.9433962264150944,
+     "f1": 0.9174311926605505,
+     "n": 53
+    },
+    "castanhas": {
+     "precisao": 0.7241379310344828,
+     "recall": 0.65625,
+     "f1": 0.6885245901639344,
+     "n": 32
+    },
+    "cereais_matinais": {
+     "precisao": 0.8108108108108109,
+     "recall": 0.6382978723404256,
+     "f1": 0.7142857142857143,
+     "n": 47
+    },
+    "cervejas": {
+     "precisao": 0.6333333333333333,
+     "recall": 0.95,
+     "f1": 0.76,
+     "n": 20
+    },
+    "chas": {
+     "precisao": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "n": 26
+    },
+    "chocolates": {
+     "precisao": 0.6419753086419753,
+     "recall": 0.6933333333333334,
+     "f1": 0.6666666666666666,
+     "n": 75
+    },
+    "conservas": {
+     "precisao": 0.625,
+     "recall": 0.4166666666666667,
+     "f1": 0.5,
+     "n": 12
+    },
+    "energeticos": {
+     "precisao": 0.75,
+     "recall": 0.6,
+     "f1": 0.6666666666666666,
+     "n": 10
+    },
+    "farinhas": {
+     "precisao": 0.8823529411764706,
+     "recall": 0.8571428571428571,
+     "f1": 0.8695652173913043,
+     "n": 35
+    },
+    "geleias_mel": {
+     "precisao": 0.7619047619047619,
+     "recall": 0.64,
+     "f1": 0.6956521739130435,
+     "n": 50
+    },
+    "graos": {
+     "precisao": 0.8292682926829268,
+     "recall": 0.8717948717948718,
+     "f1": 0.85,
+     "n": 39
+    },
+    "hortifruti": {
+     "precisao": 0.3333333333333333,
+     "recall": 0.25,
+     "f1": 0.2857142857142857,
+     "n": 12
+    },
+    "iogurtes": {
+     "precisao": 0.8409090909090909,
+     "recall": 0.8409090909090909,
+     "f1": 0.8409090909090909,
+     "n": 88
+    },
+    "leite_condensado_creme": {
+     "precisao": 0.7272727272727273,
+     "recall": 0.8,
+     "f1": 0.7619047619047619,
+     "n": 20
+    },
+    "leites": {
+     "precisao": 0.8382352941176471,
+     "recall": 0.8260869565217391,
+     "f1": 0.8321167883211679,
+     "n": 69
+    },
+    "manteiga_margarina": {
+     "precisao": 1.0,
+     "recall": 0.9333333333333333,
+     "f1": 0.9655172413793104,
+     "n": 30
+    },
+    "massas": {
+     "precisao": 0.9393939393939394,
+     "recall": 0.7045454545454546,
+     "f1": 0.8051948051948052,
+     "n": 44
+    },
+    "molhos": {
+     "precisao": 0.9152542372881356,
+     "recall": 0.9,
+     "f1": 0.907563025210084,
+     "n": 60
+    },
+    "oleos_azeites": {
+     "precisao": 0.9473684210526315,
+     "recall": 0.8571428571428571,
+     "f1": 0.9,
+     "n": 21
+    },
+    "ovos": {
+     "precisao": 0.9,
+     "recall": 1.0,
+     "f1": 0.9473684210526315,
+     "n": 9
+    },
+    "paes": {
+     "precisao": 0.8769230769230769,
+     "recall": 0.95,
+     "f1": 0.912,
+     "n": 60
+    },
+    "peixes": {
+     "precisao": 0.967741935483871,
+     "recall": 1.0,
+     "f1": 0.9836065573770492,
+     "n": 30
+    },
+    "pratos_prontos": {
+     "precisao": 0.6153846153846154,
+     "recall": 0.6666666666666666,
+     "f1": 0.64,
+     "n": 36
+    },
+    "queijos": {
+     "precisao": 0.9066666666666666,
+     "recall": 0.9444444444444444,
+     "f1": 0.9251700680272109,
+     "n": 72
+    },
+    "refrigerantes": {
+     "precisao": 1.0,
+     "recall": 0.75,
+     "f1": 0.8571428571428571,
+     "n": 28
+    },
+    "salgadinhos": {
+     "precisao": 0.8909090909090909,
+     "recall": 0.8596491228070176,
+     "f1": 0.875,
+     "n": 57
+    },
+    "sobremesas": {
+     "precisao": 0.9090909090909091,
+     "recall": 0.5555555555555556,
+     "f1": 0.6896551724137931,
+     "n": 18
+    },
+    "sorvetes": {
+     "precisao": 0.8333333333333334,
+     "recall": 0.8571428571428571,
+     "f1": 0.8450704225352113,
+     "n": 35
+    },
+    "sucos": {
+     "precisao": 0.9354838709677419,
+     "recall": 0.8055555555555556,
+     "f1": 0.8656716417910447,
+     "n": 36
+    },
+    "suplementos": {
+     "precisao": 0.7681159420289855,
+     "recall": 0.9636363636363636,
+     "f1": 0.8548387096774194,
+     "n": 55
+    },
+    "temperos": {
+     "precisao": 0.7272727272727273,
+     "recall": 0.8421052631578947,
+     "f1": 0.7804878048780488,
+     "n": 38
+    }
+   },
+   "confusoes": [
+    {
+     "certo": "Chocolates e bombons",
+     "previsto": "Biscoitos e bolachas",
+     "vezes": 14
+    },
+    {
+     "certo": "Massas e macarrão instantâneo",
+     "previsto": "Pratos prontos e congelados",
+     "vezes": 9
+    },
+    {
+     "certo": "Cereais matinais e aveia",
+     "previsto": "Biscoitos e bolachas",
+     "vezes": 8
+    },
+    {
+     "certo": "Vinhos e destilados",
+     "previsto": "Cervejas",
+     "vezes": 8
+    },
+    {
+     "certo": "Biscoitos e bolachas",
+     "previsto": "Chocolates e bombons",
+     "vezes": 7
+    },
+    {
+     "certo": "Balas, gomas e doces",
+     "previsto": "Chocolates e bombons",
+     "vezes": 6
+    },
+    {
+     "certo": "Iogurtes e leites fermentados",
+     "previsto": "Biscoitos e bolachas",
+     "vezes": 5
+    },
+    {
+     "certo": "Geleias, mel e cremes de passar",
+     "previsto": "Castanhas e amendoim",
+     "vezes": 5
+    }
+   ]
+  },
+  "cascata": {
+   "nome": "Cascata: clássico primeiro, IA só na dúvida",
+   "nome_en": "Cascade: classic first, AI only when unsure",
+   "versao": "v2",
+   "acuracia": 0.8153749212350346,
+   "f1_macro": 0.802623676472499,
+   "acuracia_ic95": [
+    0.7958254568367991,
+    0.8349086326402017
+   ],
+   "f1_macro_ic95": [
+    0.7787905290015708,
+    0.8218532105393003
+   ],
+   "acuracia_revisada": 0.870825456836799,
+   "acuracia_revisada_ic95": [
+    0.8525519848771267,
+    0.8878386893509767
+   ],
+   "ms_lote": 9.601302740191993,
+   "ms_um": 155.28146448444176,
+   "hardware": "gpu",
+   "fracao_gpu": 0.3856332703213611,
+   "erros": {
+    "total": 293,
+    "rotulo_errado": 64,
+    "ambiguo": 45,
+    "aceitos_na_revisao": 94
+   },
+   "por_categoria": {
+    "achocolatado": {
+     "precisao": 0.8666666666666667,
+     "recall": 0.8125,
+     "f1": 0.8387096774193549,
+     "n": 16
+    },
+    "acucar_adocante": {
+     "precisao": 0.9615384615384616,
+     "recall": 0.9259259259259259,
+     "f1": 0.9433962264150944,
+     "n": 27
+    },
+    "aguas": {
+     "precisao": 0.9090909090909091,
+     "recall": 1.0,
+     "f1": 0.9523809523809523,
+     "n": 10
+    },
+    "alcoolicas": {
+     "precisao": 0.5833333333333334,
+     "recall": 0.4117647058823529,
+     "f1": 0.4827586206896552,
+     "n": 17
+    },
+    "balas_doces": {
+     "precisao": 0.7142857142857143,
+     "recall": 0.6382978723404256,
+     "f1": 0.6741573033707865,
+     "n": 47
+    },
+    "barras": {
+     "precisao": 0.8333333333333334,
+     "recall": 0.7575757575757576,
+     "f1": 0.7936507936507936,
+     "n": 33
+    },
+    "bebidas_vegetais": {
+     "precisao": 0.9090909090909091,
+     "recall": 0.7142857142857143,
+     "f1": 0.8,
+     "n": 14
+    },
+    "biscoitos": {
+     "precisao": 0.6748466257668712,
+     "recall": 0.8088235294117647,
+     "f1": 0.7357859531772575,
+     "n": 136
+    },
+    "bolos_panetones": {
+     "precisao": 0.8936170212765957,
+     "recall": 0.9545454545454546,
+     "f1": 0.9230769230769231,
+     "n": 44
+    },
+    "cafe": {
+     "precisao": 0.9230769230769231,
+     "recall": 0.9230769230769231,
+     "f1": 0.9230769230769231,
+     "n": 26
+    },
+    "carnes_frios": {
+     "precisao": 0.8928571428571429,
+     "recall": 0.9433962264150944,
+     "f1": 0.9174311926605505,
+     "n": 53
+    },
+    "castanhas": {
+     "precisao": 0.7241379310344828,
+     "recall": 0.65625,
+     "f1": 0.6885245901639344,
+     "n": 32
+    },
+    "cereais_matinais": {
+     "precisao": 0.8108108108108109,
+     "recall": 0.6382978723404256,
+     "f1": 0.7142857142857143,
+     "n": 47
+    },
+    "cervejas": {
+     "precisao": 0.6333333333333333,
+     "recall": 0.95,
+     "f1": 0.76,
+     "n": 20
+    },
+    "chas": {
+     "precisao": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "n": 26
+    },
+    "chocolates": {
+     "precisao": 0.6341463414634146,
+     "recall": 0.6933333333333334,
+     "f1": 0.6624203821656051,
+     "n": 75
+    },
+    "conservas": {
+     "precisao": 0.625,
+     "recall": 0.4166666666666667,
+     "f1": 0.5,
+     "n": 12
+    },
+    "energeticos": {
+     "precisao": 0.75,
+     "recall": 0.6,
+     "f1": 0.6666666666666666,
+     "n": 10
+    },
+    "farinhas": {
+     "precisao": 0.8823529411764706,
+     "recall": 0.8571428571428571,
+     "f1": 0.8695652173913043,
+     "n": 35
+    },
+    "geleias_mel": {
+     "precisao": 0.7560975609756098,
+     "recall": 0.62,
+     "f1": 0.6813186813186813,
+     "n": 50
+    },
+    "graos": {
+     "precisao": 0.8292682926829268,
+     "recall": 0.8717948717948718,
+     "f1": 0.85,
+     "n": 39
+    },
+    "hortifruti": {
+     "precisao": 0.3333333333333333,
+     "recall": 0.25,
+     "f1": 0.2857142857142857,
+     "n": 12
+    },
+    "iogurtes": {
+     "precisao": 0.8505747126436781,
+     "recall": 0.8409090909090909,
+     "f1": 0.8457142857142858,
+     "n": 88
+    },
+    "leite_condensado_creme": {
+     "precisao": 0.7272727272727273,
+     "recall": 0.8,
+     "f1": 0.7619047619047619,
+     "n": 20
+    },
+    "leites": {
+     "precisao": 0.8382352941176471,
+     "recall": 0.8260869565217391,
+     "f1": 0.8321167883211679,
+     "n": 69
+    },
+    "manteiga_margarina": {
+     "precisao": 1.0,
+     "recall": 0.9333333333333333,
+     "f1": 0.9655172413793104,
+     "n": 30
+    },
+    "massas": {
+     "precisao": 0.9393939393939394,
+     "recall": 0.7045454545454546,
+     "f1": 0.8051948051948052,
+     "n": 44
+    },
+    "molhos": {
+     "precisao": 0.9152542372881356,
+     "recall": 0.9,
+     "f1": 0.907563025210084,
+     "n": 60
+    },
+    "oleos_azeites": {
+     "precisao": 0.9473684210526315,
+     "recall": 0.8571428571428571,
+     "f1": 0.9,
+     "n": 21
+    },
+    "ovos": {
+     "precisao": 0.9,
+     "recall": 1.0,
+     "f1": 0.9473684210526315,
+     "n": 9
+    },
+    "paes": {
+     "precisao": 0.8769230769230769,
+     "recall": 0.95,
+     "f1": 0.912,
+     "n": 60
+    },
+    "peixes": {
+     "precisao": 0.967741935483871,
+     "recall": 1.0,
+     "f1": 0.9836065573770492,
+     "n": 30
+    },
+    "pratos_prontos": {
+     "precisao": 0.6153846153846154,
+     "recall": 0.6666666666666666,
+     "f1": 0.64,
+     "n": 36
+    },
+    "queijos": {
+     "precisao": 0.9066666666666666,
+     "recall": 0.9444444444444444,
+     "f1": 0.9251700680272109,
+     "n": 72
+    },
+    "refrigerantes": {
+     "precisao": 1.0,
+     "recall": 0.75,
+     "f1": 0.8571428571428571,
+     "n": 28
+    },
+    "salgadinhos": {
+     "precisao": 0.8909090909090909,
+     "recall": 0.8596491228070176,
+     "f1": 0.875,
+     "n": 57
+    },
+    "sobremesas": {
+     "precisao": 0.9166666666666666,
+     "recall": 0.6111111111111112,
+     "f1": 0.7333333333333333,
+     "n": 18
+    },
+    "sorvetes": {
+     "precisao": 0.8333333333333334,
+     "recall": 0.8571428571428571,
+     "f1": 0.8450704225352113,
+     "n": 35
+    },
+    "sucos": {
+     "precisao": 0.9354838709677419,
+     "recall": 0.8055555555555556,
+     "f1": 0.8656716417910447,
+     "n": 36
+    },
+    "suplementos": {
+     "precisao": 0.7794117647058824,
+     "recall": 0.9636363636363636,
+     "f1": 0.8617886178861789,
+     "n": 55
+    },
+    "temperos": {
+     "precisao": 0.7272727272727273,
+     "recall": 0.8421052631578947,
+     "f1": 0.7804878048780488,
+     "n": 38
+    }
+   },
+   "confusoes": [
+    {
+     "certo": "Chocolates e bombons",
+     "previsto": "Biscoitos e bolachas",
+     "vezes": 14
+    },
+    {
+     "certo": "Massas e macarrão instantâneo",
+     "previsto": "Pratos prontos e congelados",
+     "vezes": 9
+    },
+    {
+     "certo": "Cereais matinais e aveia",
+     "previsto": "Biscoitos e bolachas",
+     "vezes": 8
+    },
+    {
+     "certo": "Vinhos e destilados",
+     "previsto": "Cervejas",
+     "vezes": 8
+    },
+    {
+     "certo": "Balas, gomas e doces",
+     "previsto": "Chocolates e bombons",
+     "vezes": 7
+    },
+    {
+     "certo": "Biscoitos e bolachas",
+     "previsto": "Chocolates e bombons",
+     "vezes": 7
+    },
+    {
+     "certo": "Iogurtes e leites fermentados",
+     "previsto": "Biscoitos e bolachas",
+     "vezes": 5
+    },
+    {
+     "certo": "Geleias, mel e cremes de passar",
+     "previsto": "Castanhas e amendoim",
+     "vezes": 5
+    }
+   ]
+  },
+  "cascata_ia_v2": {
+   "nome": "Cascata barata: clássico primeiro, IA classificadora só na dúvida",
+   "nome_en": "Cheap cascade: classic first, classifier AI only when unsure",
+   "versao": "v2",
+   "acuracia": 0.81411468178954,
+   "f1_macro": 0.8046994282474189,
+   "acuracia_ic95": [
+    0.794580970384373,
+    0.8342785129174544
+   ],
+   "f1_macro_ic95": [
+    0.7821938972804389,
+    0.8233248160166069
+   ],
+   "acuracia_revisada": 0.8683049779458097,
+   "acuracia_revisada_ic95": [
+    0.851291745431632,
+    0.8853182104599874
+   ],
+   "ms_lote": 1.4776751409481363,
+   "ms_um": 18.7147348058028,
+   "hardware": "gpu",
+   "fracao_gpu": 0.2741020793950851,
+   "limite": 0.68,
+   "acuracia_quando_classico_seguro": 0.9114583333333334,
+   "erros": {
+    "total": 295,
+    "rotulo_errado": 62,
+    "ambiguo": 49,
+    "aceitos_na_revisao": 94
+   },
+   "por_categoria": {
+    "achocolatado": {
+     "precisao": 0.875,
+     "recall": 0.875,
+     "f1": 0.875,
+     "n": 16
+    },
+    "acucar_adocante": {
+     "precisao": 0.9545454545454546,
+     "recall": 0.7777777777777778,
+     "f1": 0.8571428571428571,
+     "n": 27
+    },
+    "aguas": {
+     "precisao": 0.8333333333333334,
+     "recall": 1.0,
+     "f1": 0.9090909090909091,
+     "n": 10
+    },
+    "alcoolicas": {
+     "precisao": 0.75,
+     "recall": 0.5294117647058824,
+     "f1": 0.6206896551724138,
+     "n": 17
+    },
+    "balas_doces": {
+     "precisao": 0.6842105263157895,
+     "recall": 0.5531914893617021,
+     "f1": 0.611764705882353,
+     "n": 47
+    },
+    "barras": {
+     "precisao": 0.8709677419354839,
+     "recall": 0.8181818181818182,
+     "f1": 0.84375,
+     "n": 33
+    },
+    "bebidas_vegetais": {
+     "precisao": 0.8333333333333334,
+     "recall": 0.7142857142857143,
+     "f1": 0.7692307692307693,
+     "n": 14
+    },
+    "biscoitos": {
+     "precisao": 0.7310344827586207,
+     "recall": 0.7794117647058824,
+     "f1": 0.7544483985765125,
+     "n": 136
+    },
+    "bolos_panetones": {
+     "precisao": 0.875,
+     "recall": 0.9545454545454546,
+     "f1": 0.9130434782608695,
+     "n": 44
+    },
+    "cafe": {
+     "precisao": 0.9230769230769231,
+     "recall": 0.9230769230769231,
+     "f1": 0.9230769230769231,
+     "n": 26
+    },
+    "carnes_frios": {
+     "precisao": 0.8421052631578947,
+     "recall": 0.9056603773584906,
+     "f1": 0.8727272727272727,
+     "n": 53
+    },
+    "castanhas": {
+     "precisao": 0.71875,
+     "recall": 0.71875,
+     "f1": 0.71875,
+     "n": 32
+    },
+    "cereais_matinais": {
+     "precisao": 0.7142857142857143,
+     "recall": 0.7446808510638298,
+     "f1": 0.7291666666666666,
+     "n": 47
+    },
+    "cervejas": {
+     "precisao": 0.6785714285714286,
+     "recall": 0.95,
+     "f1": 0.7916666666666666,
+     "n": 20
+    },
+    "chas": {
+     "precisao": 0.9629629629629629,
+     "recall": 1.0,
+     "f1": 0.9811320754716981,
+     "n": 26
+    },
+    "chocolates": {
+     "precisao": 0.6794871794871795,
+     "recall": 0.7066666666666667,
+     "f1": 0.6928104575163399,
+     "n": 75
+    },
+    "conservas": {
+     "precisao": 0.6153846153846154,
+     "recall": 0.6666666666666666,
+     "f1": 0.64,
+     "n": 12
+    },
+    "energeticos": {
+     "precisao": 0.75,
+     "recall": 0.6,
+     "f1": 0.6666666666666666,
+     "n": 10
+    },
+    "farinhas": {
+     "precisao": 0.8484848484848485,
+     "recall": 0.8,
+     "f1": 0.8235294117647058,
+     "n": 35
+    },
+    "geleias_mel": {
+     "precisao": 0.6808510638297872,
+     "recall": 0.64,
+     "f1": 0.6597938144329897,
+     "n": 50
+    },
+    "graos": {
+     "precisao": 0.8205128205128205,
+     "recall": 0.8205128205128205,
+     "f1": 0.8205128205128205,
+     "n": 39
+    },
+    "hortifruti": {
+     "precisao": 0.4,
+     "recall": 0.3333333333333333,
+     "f1": 0.36363636363636365,
+     "n": 12
+    },
+    "iogurtes": {
+     "precisao": 0.872093023255814,
+     "recall": 0.8522727272727273,
+     "f1": 0.8620689655172413,
+     "n": 88
+    },
+    "leite_condensado_creme": {
+     "precisao": 0.64,
+     "recall": 0.8,
+     "f1": 0.7111111111111111,
+     "n": 20
+    },
+    "leites": {
+     "precisao": 0.8636363636363636,
+     "recall": 0.8260869565217391,
+     "f1": 0.8444444444444444,
+     "n": 69
+    },
+    "manteiga_margarina": {
+     "precisao": 1.0,
+     "recall": 0.9333333333333333,
+     "f1": 0.9655172413793104,
+     "n": 30
+    },
+    "massas": {
+     "precisao": 0.9090909090909091,
+     "recall": 0.6818181818181818,
+     "f1": 0.7792207792207793,
+     "n": 44
+    },
+    "molhos": {
+     "precisao": 0.9482758620689655,
+     "recall": 0.9166666666666666,
+     "f1": 0.9322033898305084,
+     "n": 60
+    },
+    "oleos_azeites": {
+     "precisao": 0.9473684210526315,
+     "recall": 0.8571428571428571,
+     "f1": 0.9,
+     "n": 21
+    },
+    "ovos": {
+     "precisao": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "n": 9
+    },
+    "paes": {
+     "precisao": 0.8405797101449275,
+     "recall": 0.9666666666666667,
+     "f1": 0.8992248062015504,
+     "n": 60
+    },
+    "peixes": {
+     "precisao": 0.9354838709677419,
+     "recall": 0.9666666666666667,
+     "f1": 0.9508196721311475,
+     "n": 30
+    },
+    "pratos_prontos": {
+     "precisao": 0.5365853658536586,
+     "recall": 0.6111111111111112,
+     "f1": 0.5714285714285714,
+     "n": 36
+    },
+    "queijos": {
+     "precisao": 0.9285714285714286,
+     "recall": 0.9027777777777778,
+     "f1": 0.9154929577464789,
+     "n": 72
+    },
+    "refrigerantes": {
+     "precisao": 0.9545454545454546,
+     "recall": 0.75,
+     "f1": 0.84,
+     "n": 28
+    },
+    "salgadinhos": {
+     "precisao": 0.896551724137931,
+     "recall": 0.9122807017543859,
+     "f1": 0.9043478260869565,
+     "n": 57
+    },
+    "sobremesas": {
+     "precisao": 0.8571428571428571,
+     "recall": 0.6666666666666666,
+     "f1": 0.75,
+     "n": 18
+    },
+    "sorvetes": {
+     "precisao": 0.8108108108108109,
+     "recall": 0.8571428571428571,
+     "f1": 0.8333333333333334,
+     "n": 35
+    },
+    "sucos": {
+     "precisao": 0.8787878787878788,
+     "recall": 0.8055555555555556,
+     "f1": 0.8405797101449275,
+     "n": 36
+    },
+    "suplementos": {
+     "precisao": 0.803030303030303,
+     "recall": 0.9636363636363636,
+     "f1": 0.8760330578512396,
+     "n": 55
+    },
+    "temperos": {
+     "precisao": 0.7692307692307693,
+     "recall": 0.7894736842105263,
+     "f1": 0.7792207792207793,
+     "n": 38
+    }
+   },
+   "confusoes": [
+    {
+     "certo": "Massas e macarrão instantâneo",
+     "previsto": "Pratos prontos e congelados",
+     "vezes": 12
+    },
+    {
+     "certo": "Chocolates e bombons",
+     "previsto": "Biscoitos e bolachas",
+     "vezes": 11
+    },
+    {
+     "certo": "Balas, gomas e doces",
+     "previsto": "Chocolates e bombons",
+     "vezes": 9
+    },
+    {
+     "certo": "Biscoitos e bolachas",
+     "previsto": "Pães e torradas",
+     "vezes": 7
+    },
+    {
+     "certo": "Pratos prontos e congelados",
+     "previsto": "Carnes, frios e embutidos",
+     "vezes": 6
+    },
+    {
+     "certo": "Biscoitos e bolachas",
+     "previsto": "Chocolates e bombons",
+     "vezes": 6
+    },
+    {
+     "certo": "Cereais matinais e aveia",
+     "previsto": "Biscoitos e bolachas",
+     "vezes": 5
+    },
+    {
+     "certo": "Geleias, mel e cremes de passar",
+     "previsto": "Castanhas e amendoim",
+     "vezes": 5
+    }
+   ]
   }
  },
- "lora_menos_tfidf_ic95": [
-  0.011342155009451793,
-  0.04914933837429114
- ],
- "quando_concordam": {
-  "cobertura": 0.7844990548204159,
-  "acuracia": 0.8931726907630522,
-  "acuracia_quando_discordam_lora": 0.4093567251461988,
-  "acuracia_quando_discordam_tfidf": 0.26608187134502925
+ "lora_menos_tfidf": {
+  "original": [
+   0.011342155009451793,
+   0.04914933837429114
+  ],
+  "revisado": [
+   0.01449275362318836,
+   0.052299936988027707
+  ],
+  "pontos": 0.030875866414618702,
+  "pontos_revisado": 0.03339634530560809
  },
- "lora_menos_zero_shot_ic95": [
-  0.48834278512917456,
-  0.5406427221172022
- ],
+ "lora_menos_zero_shot": {
+  "original": [
+   0.48834278512917456,
+   0.5406427221172022
+  ],
+  "revisado": [
+   0.5122873345935728,
+   0.5633270321361058
+  ],
+  "pontos": 0.5141776937618148,
+  "pontos_revisado": 0.5374921235034656
+ },
+ "classico_v2_menos_v1": {
+  "original": [
+   0.01953371140516691,
+   0.04599873976055446
+  ],
+  "revisado": [
+   0.021424070573408893,
+   0.04851921865154374
+  ],
+  "pontos": 0.032766225582860686,
+  "pontos_revisado": 0.03528670447385007
+ },
+ "ia_principal": "qwen15_lora_q",
+ "ia_da_combinacao": "lora_v1_escrita",
+ "lora_v2_menos_v1": {
+  "original": [
+   -0.037807183364839236,
+   -0.005040957781978661
+  ],
+  "revisado": [
+   -0.045384373030875856,
+   -0.012602394454946486
+  ],
+  "pontos": -0.021424070573408893,
+  "pontos_revisado": -0.02961562696912412
+ },
+ "lora_v2_menos_classico_v2": {
+  "original": [
+   -0.042218021424070606,
+   -0.00504095778197855
+  ],
+  "revisado": [
+   -0.051669817265280416,
+   -0.011972274732199084
+  ],
+  "pontos": -0.023314429741650877,
+  "pontos_revisado": -0.031505986137366104
+ },
+ "juntos_menos_1a_combinacao": {
+  "original": [
+   -0.006931316950220534,
+   0.015752993068683052
+  ],
+  "revisado": [
+   -0.005671077504725952,
+   0.017013232514177745
+  ],
+  "pontos": 0.004410838059231259,
+  "pontos_revisado": 0.005671077504725841
+ },
+ "cascata_barata_menos_classico_v2": {
+  "original": [
+   0.010066162570888422,
+   0.037177063642091945
+  ],
+  "revisado": [
+   0.012602394454946375,
+   0.04095778197857591
+  ],
+  "pontos": 0.023314429741650988,
+  "pontos_revisado": 0.026465028355387554
+ },
+ "cascata_menos_cascata_barata": {
+  "original": [
+   -0.01009766855702589,
+   0.012602394454946379
+  ],
+  "revisado": [
+   -0.008821676118462518,
+   0.013862633900441068
+  ],
+  "pontos": 0.001260239445494582,
+  "pontos_revisado": 0.002520478890989275
+ },
+ "lora_v1_menos_classico_v2": {
+  "original": [
+   -0.01953371140516702,
+   0.017643352236924925
+  ],
+  "revisado": [
+   -0.01891934467548841,
+   0.018273471959672327
+  ],
+  "pontos": -0.001260239445494582,
+  "pontos_revisado": -0.001260239445494693
+ },
+ "juntos_menos_classico_v2": {
+  "original": [
+   0.0100819155639571,
+   0.03969754253308122
+  ],
+  "revisado": [
+   0.013862633900441068,
+   0.04347826086956519
+  ],
+  "pontos": 0.02457466918714557,
+  "pontos_revisado": 0.028355387523629427
+ },
+ "juntos_menos_lora_v1": {
+  "original": [
+   0.01449275362318847,
+   0.03780718336483935
+  ],
+  "revisado": [
+   0.01953371140516691,
+   0.041587901701323204
+  ],
+  "pontos": 0.026465028355387554,
+  "pontos_revisado": 0.03024574669187141
+ },
+ "cascata_menos_classico_v2": {
+  "original": [
+   0.010081915563957208,
+   0.03969754253308122
+  ],
+  "revisado": [
+   0.01449275362318836,
+   0.0434782608695653
+  ],
+  "pontos": 0.02457466918714557,
+  "pontos_revisado": 0.02898550724637683
+ },
+ "quando_concordam_v1": {
+  "cobertura": 0.7844990548204159,
+  "acuracia": 0.8931726907630522
+ },
+ "combinacao": {
+  "escolhida": {
+   "modelos": [
+    "classico_v2",
+    "lora_v1_escrita",
+    "qwen15_lora_q"
+   ],
+   "pesos": [
+    0.5,
+    0.4,
+    0.1
+   ],
+   "acuracia_validacao": 0.8463476070528967,
+   "log_loss_validacao": 0.7127796729798136,
+   "ms_por_item_lote_gpu": 24.481
+  },
+  "candidatas": [
+   {
+    "modelos": [
+     "classico_v2",
+     "qwen15_lora_q"
+    ],
+    "pesos": [
+     0.6,
+     0.4
+    ],
+    "acuracia_validacao": 0.8324937027707808,
+    "log_loss_validacao": 0.748027923820999,
+    "ms_por_item_lote_gpu": 4.381
+   },
+   {
+    "modelos": [
+     "classico_v2",
+     "bertimbau_q"
+    ],
+    "pesos": [
+     0.8,
+     0.2
+    ],
+    "acuracia_validacao": 0.8173803526448362,
+    "log_loss_validacao": 0.8019001333585519,
+    "ms_por_item_lote_gpu": 0.424
+   },
+   {
+    "modelos": [
+     "classico_v2",
+     "qwen15_lora_q",
+     "bertimbau_q"
+    ],
+    "pesos": [
+     0.5,
+     0.4,
+     0.1
+    ],
+    "acuracia_validacao": 0.8337531486146096,
+    "log_loss_validacao": 0.7313606668797479,
+    "ms_por_item_lote_gpu": 4.805000000000001
+   },
+   {
+    "modelos": [
+     "classico_v2",
+     "lora_v1_escrita"
+    ],
+    "pesos": [
+     0.5,
+     0.5
+    ],
+    "acuracia_validacao": 0.8413098236775819,
+    "log_loss_validacao": 0.7722007263178196,
+    "ms_por_item_lote_gpu": 20.1
+   },
+   {
+    "modelos": [
+     "classico_v2",
+     "lora_v1_escrita",
+     "qwen15_lora_q"
+    ],
+    "pesos": [
+     0.5,
+     0.4,
+     0.1
+    ],
+    "acuracia_validacao": 0.8463476070528967,
+    "log_loss_validacao": 0.7127796729798136,
+    "ms_por_item_lote_gpu": 24.481
+   },
+   {
+    "modelos": [
+     "classico_v2",
+     "lora_v1_pontos"
+    ],
+    "pesos": [
+     0.3,
+     0.7
+    ],
+    "acuracia_validacao": 0.8463476070528967,
+    "log_loss_validacao": 0.6331428198690703,
+    "ms_por_item_lote_gpu": 525.33
+   },
+   {
+    "modelos": [
+     "classico_v2",
+     "lora_v1_pontos",
+     "qwen15_lora_q"
+    ],
+    "pesos": [
+     0.3,
+     0.6,
+     0.1
+    ],
+    "acuracia_validacao": 0.845088161209068,
+    "log_loss_validacao": 0.6257022993803328,
+    "ms_por_item_lote_gpu": 529.711
+   }
+  ],
+  "cascata": {
+   "limite": 0.88,
+   "folga": 0.005,
+   "curva_validacao": [
+    {
+     "limite": 0.3,
+     "vai_para_ia": 0.09697732997481108,
+     "acuracia_validacao": 0.8299748110831234
+    },
+    {
+     "limite": 0.32,
+     "vai_para_ia": 0.10327455919395466,
+     "acuracia_validacao": 0.827455919395466
+    },
+    {
+     "limite": 0.34,
+     "vai_para_ia": 0.11335012594458438,
+     "acuracia_validacao": 0.8249370277078085
+    },
+    {
+     "limite": 0.36,
+     "vai_para_ia": 0.12342569269521411,
+     "acuracia_validacao": 0.8249370277078085
+    },
+    {
+     "limite": 0.38,
+     "vai_para_ia": 0.12846347607052896,
+     "acuracia_validacao": 0.8249370277078085
+    },
+    {
+     "limite": 0.4,
+     "vai_para_ia": 0.1309823677581864,
+     "acuracia_validacao": 0.8249370277078085
+    },
+    {
+     "limite": 0.42,
+     "vai_para_ia": 0.13602015113350127,
+     "acuracia_validacao": 0.8261964735516373
+    },
+    {
+     "limite": 0.44,
+     "vai_para_ia": 0.14483627204030228,
+     "acuracia_validacao": 0.8287153652392947
+    },
+    {
+     "limite": 0.46,
+     "vai_para_ia": 0.15869017632241814,
+     "acuracia_validacao": 0.8312342569269522
+    },
+    {
+     "limite": 0.48,
+     "vai_para_ia": 0.1624685138539043,
+     "acuracia_validacao": 0.8312342569269522
+    },
+    {
+     "limite": 0.5,
+     "vai_para_ia": 0.17884130982367757,
+     "acuracia_validacao": 0.8312342569269522
+    },
+    {
+     "limite": 0.52,
+     "vai_para_ia": 0.18387909319899245,
+     "acuracia_validacao": 0.8337531486146096
+    },
+    {
+     "limite": 0.54,
+     "vai_para_ia": 0.19395465994962216,
+     "acuracia_validacao": 0.8337531486146096
+    },
+    {
+     "limite": 0.56,
+     "vai_para_ia": 0.2040302267002519,
+     "acuracia_validacao": 0.8350125944584383
+    },
+    {
+     "limite": 0.58,
+     "vai_para_ia": 0.2141057934508816,
+     "acuracia_validacao": 0.8337531486146096
+    },
+    {
+     "limite": 0.6,
+     "vai_para_ia": 0.2216624685138539,
+     "acuracia_validacao": 0.8337531486146096
+    },
+    {
+     "limite": 0.62,
+     "vai_para_ia": 0.22795969773299748,
+     "acuracia_validacao": 0.8350125944584383
+    },
+    {
+     "limite": 0.64,
+     "vai_para_ia": 0.2380352644836272,
+     "acuracia_validacao": 0.8350125944584383
+    },
+    {
+     "limite": 0.66,
+     "vai_para_ia": 0.23929471032745592,
+     "acuracia_validacao": 0.8350125944584383
+    },
+    {
+     "limite": 0.68,
+     "vai_para_ia": 0.24811083123425692,
+     "acuracia_validacao": 0.8375314861460957
+    },
+    {
+     "limite": 0.7,
+     "vai_para_ia": 0.25692695214105793,
+     "acuracia_validacao": 0.8375314861460957
+    },
+    {
+     "limite": 0.72,
+     "vai_para_ia": 0.26322418136020154,
+     "acuracia_validacao": 0.8375314861460957
+    },
+    {
+     "limite": 0.74,
+     "vai_para_ia": 0.2783375314861461,
+     "acuracia_validacao": 0.8400503778337531
+    },
+    {
+     "limite": 0.76,
+     "vai_para_ia": 0.28463476070528965,
+     "acuracia_validacao": 0.8400503778337531
+    },
+    {
+     "limite": 0.78,
+     "vai_para_ia": 0.2959697732997481,
+     "acuracia_validacao": 0.8413098236775819
+    },
+    {
+     "limite": 0.8,
+     "vai_para_ia": 0.3123425692695214,
+     "acuracia_validacao": 0.8400503778337531
+    },
+    {
+     "limite": 0.82,
+     "vai_para_ia": 0.32871536523929473,
+     "acuracia_validacao": 0.8400503778337531
+    },
+    {
+     "limite": 0.84,
+     "vai_para_ia": 0.3425692695214106,
+     "acuracia_validacao": 0.8400503778337531
+    },
+    {
+     "limite": 0.86,
+     "vai_para_ia": 0.35768261964735515,
+     "acuracia_validacao": 0.8400503778337531
+    },
+    {
+     "limite": 0.88,
+     "vai_para_ia": 0.3778337531486146,
+     "acuracia_validacao": 0.845088161209068
+    },
+    {
+     "limite": 0.9,
+     "vai_para_ia": 0.4080604534005038,
+     "acuracia_validacao": 0.845088161209068
+    },
+    {
+     "limite": 0.92,
+     "vai_para_ia": 0.4256926952141058,
+     "acuracia_validacao": 0.845088161209068
+    },
+    {
+     "limite": 0.94,
+     "vai_para_ia": 0.45465994962216627,
+     "acuracia_validacao": 0.8463476070528967
+    },
+    {
+     "limite": 0.96,
+     "vai_para_ia": 0.5012594458438288,
+     "acuracia_validacao": 0.8463476070528967
+    },
+    {
+     "limite": 0.98,
+     "vai_para_ia": 0.5680100755667506,
+     "acuracia_validacao": 0.8463476070528967
+    },
+    {
+     "limite": 1.0,
+     "vai_para_ia": 0.9974811083123426,
+     "acuracia_validacao": 0.8463476070528967
+    }
+   ],
+   "vai_para_ia_validacao": 0.3778337531486146,
+   "vai_para_ia_teste": 0.3856332703213611,
+   "acuracia_teste": 0.8153749212350346,
+   "acuracia_teste_so_classico_quando_confiante": 0.9353846153846154
+  },
+  "acuracia_teste_juntos": 0.8153749212350346,
+  "ia_principal": "qwen15_lora_q",
+  "acuracia_validacao_por_modelo": {
+   "classico_v2": 0.801007556675063,
+   "qwen15_lora_q5m": 0.7909319899244333,
+   "qwen15_lora_q": 0.8047858942065491,
+   "bertimbau_q": 0.7581863979848866,
+   "lora_v1_escrita": 0.8148614609571788,
+   "lora_v1_pontos": 0.818639798488665,
+   "bertimbau_sem_q": 0.7455919395465995
+  },
+  "ia_da_combinacao": "lora_v1_escrita",
+  "concordam": {
+   "ia": "lora_v1_escrita",
+   "cobertura": 0.7958412098298677,
+   "acuracia": 0.901821060965954,
+   "acuracia_quando_discordam_ia": 0.35185185185185186,
+   "acuracia_quando_discordam_classico": 0.35802469135802467
+  }
+ },
+ "quantidade": {
+  "classico": {
+   "teste_com": 0.7908002520478891,
+   "teste_sem": 0.7901701323251418,
+   "mudaram": 51,
+   "cv_com": 0.7853754273623598,
+   "cv_sem": 0.7790719954331949
+  },
+  "bertimbau": {
+   "teste_com": 0.724007561436673,
+   "teste_sem": 0.7227473219911783,
+   "com_menos_sem_ic95": [
+    -0.011342155009451793,
+    0.015122873345935761
+   ],
+   "validacao_com": 0.7582,
+   "validacao_sem": 0.7456
+  }
+ },
+ "revisao": {
+  "revistos": 673,
+  "nao_revistos": 914,
+  "rotulo_certo": 518,
+  "ambiguo": 85,
+  "rotulo_errado": 70,
+  "por_categoria": {
+   "acucar_adocante": {
+    "ambiguo": 20,
+    "rotulo_errado": 0
+   },
+   "alcoolicas": {
+    "ambiguo": 0,
+    "rotulo_errado": 5
+   },
+   "balas_doces": {
+    "ambiguo": 4,
+    "rotulo_errado": 4
+   },
+   "bebidas_vegetais": {
+    "ambiguo": 0,
+    "rotulo_errado": 2
+   },
+   "biscoitos": {
+    "ambiguo": 6,
+    "rotulo_errado": 1
+   },
+   "bolos_panetones": {
+    "ambiguo": 1,
+    "rotulo_errado": 1
+   },
+   "carnes_frios": {
+    "ambiguo": 9,
+    "rotulo_errado": 4
+   },
+   "castanhas": {
+    "ambiguo": 4,
+    "rotulo_errado": 0
+   },
+   "cereais_matinais": {
+    "ambiguo": 0,
+    "rotulo_errado": 1
+   },
+   "chocolates": {
+    "ambiguo": 4,
+    "rotulo_errado": 0
+   },
+   "conservas": {
+    "ambiguo": 3,
+    "rotulo_errado": 1
+   },
+   "farinhas": {
+    "ambiguo": 1,
+    "rotulo_errado": 0
+   },
+   "geleias_mel": {
+    "ambiguo": 5,
+    "rotulo_errado": 13
+   },
+   "graos": {
+    "ambiguo": 4,
+    "rotulo_errado": 2
+   },
+   "hortifruti": {
+    "ambiguo": 1,
+    "rotulo_errado": 4
+   },
+   "iogurtes": {
+    "ambiguo": 1,
+    "rotulo_errado": 0
+   },
+   "leite_condensado_creme": {
+    "ambiguo": 0,
+    "rotulo_errado": 2
+   },
+   "leites": {
+    "ambiguo": 0,
+    "rotulo_errado": 7
+   },
+   "massas": {
+    "ambiguo": 4,
+    "rotulo_errado": 3
+   },
+   "molhos": {
+    "ambiguo": 3,
+    "rotulo_errado": 1
+   },
+   "pratos_prontos": {
+    "ambiguo": 2,
+    "rotulo_errado": 5
+   },
+   "queijos": {
+    "ambiguo": 0,
+    "rotulo_errado": 1
+   },
+   "refrigerantes": {
+    "ambiguo": 0,
+    "rotulo_errado": 4
+   },
+   "salgadinhos": {
+    "ambiguo": 4,
+    "rotulo_errado": 0
+   },
+   "sobremesas": {
+    "ambiguo": 3,
+    "rotulo_errado": 1
+   },
+   "sucos": {
+    "ambiguo": 0,
+    "rotulo_errado": 4
+   },
+   "suplementos": {
+    "ambiguo": 1,
+    "rotulo_errado": 0
+   },
+   "temperos": {
+    "ambiguo": 5,
+    "rotulo_errado": 4
+   }
+  }
+ },
  "split_aleatorio_tfidf": {
   "acuracia": 0.8292375551354757,
   "f1_macro": 0.8214560537830667,

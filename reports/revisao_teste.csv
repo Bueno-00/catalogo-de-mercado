@@ -1,0 +1,674 @@
+id,texto,rotulo_original,situacao,aceitas
+1a2e7a789588,2.0 Nestlé 400 g,achocolatado,rotulo_certo,achocolatado
+b4b42ee95d1f,Chocolate em Pó Solúvel Nestlé 200 g,achocolatado,rotulo_certo,achocolatado
+fe2d318e993b,"Chocolate em pó solúvel (Chocolate do Padre) Nestlé 1,01 kg",achocolatado,rotulo_certo,achocolatado
+e8e95fecbd1b,Nescau 2.0 Nestlé 200 g,achocolatado,rotulo_certo,achocolatado
+da7a4415cf06,Nescau Chocomelo Nestlé,achocolatado,rotulo_certo,achocolatado
+0d8e2d98ec98,Nescau Nestle 380 g,achocolatado,rotulo_certo,achocolatado
+78cad04a56e2,Nescau Nestlé,achocolatado,rotulo_certo,achocolatado
+ad538e4aed9f,Nescau Nestlé 370 g,achocolatado,rotulo_certo,achocolatado
+1cda78a3af95,Nescau leve mais Nestle,achocolatado,rotulo_certo,achocolatado
+927b6afad662,Nesquik Chocolate Nestlé 400 g,achocolatado,rotulo_certo,achocolatado
+dfbde15273da,BALDONI Mel Baldoni Chef 300g,acucar_adocante,ambiguo,acucar_adocante|geleias_mel
+a31d483c0395,Cobertura caramelo Selecta 300g,acucar_adocante,ambiguo,acucar_adocante|sobremesas
+48c98745bc95,Cobertura sabor artificial chocolate Selecta 300g,acucar_adocante,ambiguo,acucar_adocante|sobremesas
+b8325e574538,Mel Amigos Da Terra Flores Silvestres Bisnaga 500g,acucar_adocante,ambiguo,acucar_adocante|geleias_mel
+8f1e7300c432,Mel Amigos da Terra Laranjeiras 500g,acucar_adocante,ambiguo,acucar_adocante|geleias_mel
+3ed6f8978fa2,Mel Apiário Só Mel Pote 350g,acucar_adocante,ambiguo,acucar_adocante|geleias_mel
+a78cd42b5133,Mel Assa Peixe Da Matina 500g,acucar_adocante,ambiguo,acucar_adocante|geleias_mel
+cef98dfc35a1,Mel Caatinga Silvestre Up Beeva 280g,acucar_adocante,ambiguo,acucar_adocante|geleias_mel
+8c9b15ed296b,Mel Flora Néctar Squeeze 280g,acucar_adocante,ambiguo,acucar_adocante|geleias_mel
+35c6a3d1c86a,Mel Florada De Cipó Uva Chico Bento Baldoni Squeeze 300g,acucar_adocante,ambiguo,acucar_adocante|geleias_mel
+fea36cf8e5d2,Mel Florada De Laranjeira Flora Néctar Squeeze 300g,acucar_adocante,ambiguo,acucar_adocante|geleias_mel
+220ef7eac91e,Mel Florada Laranjeira Baldoni Squeeze 300g,acucar_adocante,ambiguo,acucar_adocante|geleias_mel
+568cbe492c21,Mel Flores Silvestres Santa Bárbara,acucar_adocante,ambiguo,acucar_adocante|geleias_mel
+caf88cf9fbba,Mel Floresta Verde 700 g,acucar_adocante,ambiguo,acucar_adocante|geleias_mel
+c3f2bc6a7aa4,Mel Laranjeiras Da Matina 500g,acucar_adocante,ambiguo,acucar_adocante|geleias_mel
+73f97601b75f,Mel Org Silvestre Bisnaga 300g Baldoni,acucar_adocante,ambiguo,acucar_adocante|geleias_mel
+1d25d789c440,Mel Orgânico Baldoni Vidro 300g,acucar_adocante,ambiguo,acucar_adocante|geleias_mel
+a07bed885f1f,Mel Silvestre Da Matina 500g,acucar_adocante,ambiguo,acucar_adocante|geleias_mel
+47a18c008dd9,Mel de Flores Silvestres Baldoni Bisnaga 300g,acucar_adocante,ambiguo,acucar_adocante|geleias_mel
+fe2a17834323,Mel flores de eucaliptos Florismel 300g,acucar_adocante,ambiguo,acucar_adocante|geleias_mel
+2faa17ba925f,Nestlé Pureza Vital Sem Gás 510ML 100,aguas,rotulo_certo,aguas
+36a0d01fe03e,Água Mineral com Gás Água da Pedra,aguas,rotulo_certo,aguas
+f498399a5dfb,Água com gás Cristal da Terra 1,aguas,rotulo_certo,aguas
+6249d02836e9,BEB.MISTA BEATS GT LT 269ML Skol 12,alcoolicas,rotulo_certo,alcoolicas
+8a78d39276e1,Beats Frutas vermelhas Skol,alcoolicas,rotulo_certo,alcoolicas
+3e1d0e00e9d1,Beats Green Mix Skol,alcoolicas,rotulo_certo,alcoolicas
+7a7d5d1bd79d,Beats Senses Skol,alcoolicas,rotulo_certo,alcoolicas
+57d49cf6fcc3,Belgian White Belgian-Style Wheat Ale Blue Moon 16 FL OZ,alcoolicas,rotulo_errado,cervejas
+480defc4e039,Cachaça Seleta,alcoolicas,rotulo_certo,alcoolicas
+e4464493f540,Cerveza Patagonia Austral 330 cc,alcoolicas,rotulo_errado,cervejas
+8f907356951b,FRISANTE SAUV SPARKL.ROSE 269ML 13,alcoolicas,rotulo_certo,alcoolicas
+40dbc8fbf857,Kross Golden Cerveza Pale Ale 330 ml,alcoolicas,rotulo_errado,cervejas
+b58d6bb6e246,Licor Creme Cassis Stock Garrafa 720ml,alcoolicas,rotulo_certo,alcoolicas
+8397520e90e2,Maquis Lien,alcoolicas,rotulo_certo,alcoolicas
+6b6d4be550a5,Mistral ICE Dry Black & White,alcoolicas,rotulo_certo,alcoolicas
+abcdf90bb140,Quilmes Cerveza Argentina Clásica 710 ml,alcoolicas,rotulo_errado,cervejas
+095cf853ba9e,Quilmes Clásica 354 ml,alcoolicas,rotulo_errado,cervejas
+ea9c8eb7ee2c,STELLA PINK STELLA ROSA 750 MLS 25.4 FL.OZ,alcoolicas,rotulo_certo,alcoolicas
+f48c43a1937f,Alka 2 Frío Cereza 28 g,balas_doces,rotulo_certo,balas_doces
+a0f4b9533729,Bala Cereja Halls Pacote 28g,balas_doces,rotulo_certo,balas_doces
+3a12044119a1,BigTime ULTRA,balas_doces,rotulo_certo,balas_doces
+973009d553c1,Bombones Varsovienne,balas_doces,ambiguo,balas_doces|chocolates
+f3d1e4446922,Bombons De Chocolate Ao Leite Vergani,balas_doces,rotulo_errado,chocolates
+109a249798a7,CEPÊRA Aroma Artificial de Baunilha 30ml,balas_doces,rotulo_errado,temperos|sobremesas
+abdb53088877,Caluga de Leche Varsovienne 49g,balas_doces,rotulo_certo,balas_doces
+fd2a24d94ecb,Confeito Granulado Chocolate Dori Pacote 120g,balas_doces,rotulo_certo,balas_doces
+610e167cf486,Delight-Full Rice Roll Hosan,balas_doces,rotulo_certo,balas_doces
+53c6114bd902,Disqueti,balas_doces,ambiguo,balas_doces|chocolates
+9883144936d9,Docigoma Gurt Docile 14 g,balas_doces,rotulo_certo,balas_doces
+4ddb6a0368e6,Flopi Bala de Cereja Florestal 40g,balas_doces,rotulo_certo,balas_doces
+750a0cd5fe7e,Gomets 500g Dori,balas_doces,rotulo_certo,balas_doces
+15a0c3b594b4,Kii-trufa - Ki-KAKAU,balas_doces,ambiguo,balas_doces|chocolates
+9543eea5503d,MaxMallows Docile 250 g,balas_doces,rotulo_certo,balas_doces
+9b374afaef73,Mazapán Bañado en Chocolate Varsovienne,balas_doces,ambiguo,balas_doces|chocolates
+32cba2e9569e,Mentos UP2U 56 g (28 u),balas_doces,rotulo_certo,balas_doces
+588fb9e30120,Mentos Vitamins Citrus 48 g (24 unidades),balas_doces,rotulo_certo,balas_doces
+4267fbcc3cc2,Merenguitos Tres Leches 30 grs.,balas_doces,rotulo_certo,balas_doces
+e95bb1918d78,Pack Biscoito Original Com Fermentação Natural Marilan Pit Stop Pacote 162g 6 Unidades,balas_doces,rotulo_errado,biscoitos
+610f47cdb19e,Pasta de amendoim integral Natura Life 450 Gramas,balas_doces,rotulo_errado,geleias_mel|castanhas
+42576b901667,Pastilha Laranja Tic Tac Caixa 16g,balas_doces,rotulo_certo,balas_doces
+1a9fd3dded4d,Pastilha Morango Incrível Dupla Tic Tac Caixa 16g,balas_doces,rotulo_certo,balas_doces
+11dbe672c1a9,Peelerz AMOS 80 g,balas_doces,rotulo_certo,balas_doces
+279511224188,Pin Pop,balas_doces,rotulo_certo,balas_doces
+ec8388636360,Tic Tac 49g,balas_doces,rotulo_certo,balas_doces
+528714cc5ae0,Tic Tac menta 16g,balas_doces,rotulo_certo,balas_doces
+b64cefabde73,"Torrone de Framboesa com Amêndoas Vergani 100 g, 3.5 OZ",balas_doces,rotulo_certo,balas_doces
+6f56f8ff5f74,Tres Leches Merenguitos,balas_doces,rotulo_certo,balas_doces
+71528feeab78,Turrón de maní 280g,balas_doces,rotulo_certo,balas_doces
+867687fc9012,YUMY POP Sabor Original,balas_doces,rotulo_certo,balas_doces
+6edf530a90e0,Arándano Maqui Vallaraúco,barras,rotulo_certo,barras
+1d47d7e0fdcc,Barra Proteína Nutrata Yo Pro,barras,rotulo_certo,barras
+a7d351022b85,Barrita de Arroz Tucapel 20g,barras,rotulo_certo,barras
+bf0d9b964827,"Cuadrito Mantequilla de Maní, Avena Sin Gluten y Miel Fitkery 40 g",barras,rotulo_certo,barras
+df00d90d1989,DELUXE SPACE PROTEIN 50 g,barras,rotulo_certo,barras
+a512399802af,DarkBar Darkness 90 g,barras,rotulo_certo,barras
+50b007025840,Darkqui Protein Domani 10 gr,barras,rotulo_certo,barras
+797c74c189a6,Doce de amendoim caseiro Doces São José 80g,barras,rotulo_certo,barras
+0f880a0ee991,POWR FOODS 5g Creatina 45g,barras,rotulo_certo,barras
+f9d60340f65b,Protein Bar Vegan Shake Sabor Chocolate Winkler Nutrition 60g,barras,rotulo_certo,barras
+01eccbd4bcb7,Protein mini 30 g,barras,rotulo_certo,barras
+0ab9d1fc568e,Protein+ Banoffee Banana Brasil 50g,barras,rotulo_certo,barras
+928ac767fb43,Protein+ Torta de Limão Banana Brasil 50g,barras,rotulo_certo,barras
+20ee8e579909,Proteína em Barra Havanna Dulce de Leche Nutrata 40 g,barras,rotulo_certo,barras
+c6cb6a3059da,Proto Bar / Barra Proteina Nutrata,barras,rotulo_certo,barras
+c8313751304a,SPACE PROTEIN white 45 g,barras,rotulo_certo,barras
+3754c6a0a296,Supino protein Banana Brasil,barras,rotulo_certo,barras
+f3874e5984d2,Twenty's You Good 60g,barras,rotulo_certo,barras
+4fa309805fc3,WHEY PRO-WIN PROTEIN BAR Winkler Nutrition 80 g,barras,rotulo_certo,barras
+092b2fff7f42,Whey Pro-Win Sabor Chocolate Winkler Nutrition 25g de proteína,barras,rotulo_certo,barras
+655128878e82,Almond Breeze Chocolate 1 l,bebidas_vegetais,rotulo_certo,bebidas_vegetais
+7dd9b00ac844,BLUE DIAMOND ALMONDS Leite de Amêndoas Original Zero Açúcar 1 L Blue Diamond Growers,bebidas_vegetais,rotulo_certo,bebidas_vegetais
+58889e20c3dc,Bebida de Aveia Baunilha Nude,bebidas_vegetais,rotulo_certo,bebidas_vegetais
+2fbe50a1b005,Leche de coco NUTS 1lt,bebidas_vegetais,rotulo_certo,bebidas_vegetais
+2c2b74e470f8,Leite Barista A tal da castanha Batista,bebidas_vegetais,rotulo_certo,bebidas_vegetais
+8d9868dea5a1,Leite De Aveia Com Cacau Nude,bebidas_vegetais,rotulo_certo,bebidas_vegetais
+8b5067a94e84,Leite Zero lactose Nestlé 1 l,bebidas_vegetais,rotulo_errado,leites
+8fb5b057c9b0,NESTLÉ NINHO Fases Zero Lactose 800g,bebidas_vegetais,rotulo_errado,leites
+b38eda3b1fef,bebida de aveia orgânica Nude 1 litre,bebidas_vegetais,rotulo_certo,bebidas_vegetais
+9d1e08711437,Alfajor Bitter Varsovienne 45grs.,biscoitos,ambiguo,biscoitos|bolos_panetones
+f8b93311f8e0,Alfajor Whey Dream Milk Gourmet - 50g Black Skull,biscoitos,ambiguo,biscoitos|bolos_panetones
+1cb05c4c6569,Amori - Amori - Richester 125 g,biscoitos,rotulo_certo,biscoitos
+8fdac86085a5,Arroz caramelizado Fransili 150g,biscoitos,rotulo_certo,biscoitos
+847e35690d4c,BISC RECH NESCAU 14OG NESTLE 140g,biscoitos,rotulo_certo,biscoitos
+9fa4316af7d3,Biscoito Leite Cobertura Chocolate Ao Leite Passatempo Pacote 120g NESTLE,biscoitos,rotulo_certo,biscoitos
+ed48764d149c,Bono Nestlé 140 g,biscoitos,rotulo_certo,biscoitos
+0404c6ddca3b,Brigadeiro Atrevidos 110 g,biscoitos,rotulo_certo,biscoitos
+f9cd7eeb03a8,"COOKIE CREAM AO LEITE 78G NESTLE 78 g, 3 u (2 u)",biscoitos,rotulo_certo,biscoitos
+2f7636ddd534,Choco Biscuit Nestlé,biscoitos,rotulo_certo,biscoitos
+8661b33dbeb1,Dobleta Chocolate Kryzpo 40g,biscoitos,rotulo_certo,biscoitos
+6e7247c67977,FROOTA ecovida 150g,biscoitos,rotulo_certo,biscoitos
+285cfcff57ed,Galletón Chips Ecovida 40g,biscoitos,rotulo_certo,biscoitos
+65cc3f4f5d41,"Kuki Isabela 400 g, 3 u",biscoitos,rotulo_certo,biscoitos
+c51a3cc333cc,Laranja & Cenoura Nestlé 200 g,biscoitos,rotulo_certo,biscoitos
+9dce383b0cdd,Leite com Chocolate Isabela 350 g (3 pacotes),biscoitos,rotulo_certo,biscoitos
+fcc974b40a30,MINHA TORTINHA DE CHOCOLATE UNIfoods 15 g,biscoitos,rotulo_certo,biscoitos
+0af8d6358508,Maria Panco,biscoitos,rotulo_certo,biscoitos
+d9e5463007aa,NESFIT banana Nestlé 160g,biscoitos,rotulo_certo,biscoitos
+61e82a477950,Nesfit Gergelim Nestlé 170 g,biscoitos,rotulo_certo,biscoitos
+04365c0a881a,Nesfit cacao & cereais Nestlé,biscoitos,rotulo_certo,biscoitos
+33919fd874d5,Néstor Nestlé 21g,biscoitos,rotulo_certo,biscoitos
+1ab3c8b5d69a,Peta Forno Mágico 200g,biscoitos,rotulo_certo,biscoitos
+cf82817df2bd,Redondito San Roque 40 g,biscoitos,rotulo_certo,biscoitos
+d1f105440203,SUPER 8 Edición Limitada Nestlé,biscoitos,ambiguo,biscoitos|chocolates
+d09083eff3fd,Sabor Doce de Leite Bono,biscoitos,rotulo_certo,biscoitos
+2854dc852dbc,Salgadinho De Milho Queijo Nacho Doritos Pacote 84g,biscoitos,rotulo_errado,salgadinhos
+811fb2beeca5,Salmas Camote y Zanahoria Sanissimo 108 g,biscoitos,rotulo_certo,biscoitos
+ae7472530ff6,Salmas Camote y Zanahoria Sanissimo 18g,biscoitos,rotulo_certo,biscoitos
+0293c2a7563f,Salmas Chía y Linaza Sanissimo 108 g,biscoitos,rotulo_certo,biscoitos
+fbe7d019a06d,Salmas Chía y Linaza Saníssimo 189g,biscoitos,rotulo_certo,biscoitos
+da4dfd48805a,Salmas Clásicas Sanissimo 180g,biscoitos,rotulo_certo,biscoitos
+3596fd4acbd6,Salmas Clásicas Sanissimo 18g,biscoitos,rotulo_certo,biscoitos
+25c34e7e887c,Salmas Horneadas con Maíz Morado Sanissimo 180g,biscoitos,rotulo_certo,biscoitos
+01e1ff8861ab,Salmas Zenissimo 90g,biscoitos,rotulo_certo,biscoitos
+2f8309334f76,Salmas con Maíz Morado Sanissimo 108 g,biscoitos,rotulo_certo,biscoitos
+f606d610492e,Salmás Clásicas Sanissimo 108 g,biscoitos,rotulo_certo,biscoitos
+4cb169e1c875,Salpet Aymoré,biscoitos,rotulo_certo,biscoitos
+35da96a6b5d1,Sanissimo Salmas Clásicas 108 g,biscoitos,rotulo_certo,biscoitos
+921da3acade0,Sembei Phaza 200 g,biscoitos,rotulo_certo,biscoitos
+ffc33a23052a,Super 8 2.0 Maní Nestlé 42g,biscoitos,ambiguo,biscoitos|chocolates
+2dcd7e4ca52a,Super 8 Chocolatoso Nestlé 42g,biscoitos,ambiguo,biscoitos|chocolates
+562496801306,Super 8 Nestlé 116g,biscoitos,ambiguo,biscoitos|chocolates
+795bb2a03f49,Toons Morango Isabela 130 g,biscoitos,rotulo_certo,biscoitos
+491714af0582,Veganitos,biscoitos,rotulo_certo,biscoitos
+50935dd1ae38,animadosZoo richester 40g,biscoitos,rotulo_certo,biscoitos
+03cc9f541676,deliciosos salgados Panco 500 g,biscoitos,rotulo_certo,biscoitos
+fff479883756,tostine maisena Nestlé 200g,biscoitos,rotulo_certo,biscoitos
+11fd2f02164f,Água e sal (Mabel),biscoitos,rotulo_certo,biscoitos
+1146a4f033ad,Alfajor Bitter Naranja Varsovienne 45g,bolos_panetones,rotulo_certo,bolos_panetones
+8bbde700a03b,Alfajor Bitter Sin Azúcar Varsovienne 45g,bolos_panetones,rotulo_certo,bolos_panetones
+0faca26811ad,Alfajor Blanco Sin Azúcar Varsovienne 45grs.,bolos_panetones,rotulo_certo,bolos_panetones
+e6dcab1620b4,Alfajor Choco-Manjar Nutrisa,bolos_panetones,rotulo_certo,bolos_panetones
+8aabc19d8512,Alfajor Negro Rasta,bolos_panetones,rotulo_certo,bolos_panetones
+0e4b2dcf83f0,Alfajor Tradicional Sin Azúcar Varsovienne 45 grs.,bolos_panetones,rotulo_certo,bolos_panetones
+82461610314d,Alfajor proteico 65g,bolos_panetones,rotulo_certo,bolos_panetones
+dbace55e34a6,Alfajor recheio de doce de leite Mr. Brunn 40 g,bolos_panetones,rotulo_certo,bolos_panetones
+69a465bce4a6,Bolo amanteigado sabor laranja Fin arte 300g,bolos_panetones,rotulo_certo,bolos_panetones
+7441ad1a2d74,Festtone de Páscoa Chocolate 400g,bolos_panetones,rotulo_certo,bolos_panetones
+ecf7ff9ba8a6,Mistura para Bolos Sabor Chocolate Maratá 400 g,bolos_panetones,ambiguo,bolos_panetones|sobremesas
+563295a56c1f,Torrada integral isabela 142 g,bolos_panetones,rotulo_errado,paes
+6c26c22beb8c,Cappuccino Tradicional Nestlé 200 g,cafe,rotulo_certo,cafe
+c506e7b80c89,Espresso Nestlé 60 g,cafe,rotulo_certo,cafe
+4b02e8f79ebe,Mochaccino Em Cápsula Canela Nescafé Dolce Gusto Caixa 172g 10 Unidades,cafe,rotulo_certo,cafe
+80151ef81915,Ristretto Nestlé 104 g,cafe,rotulo_certo,cafe
+0fb4d3120cda,nestle 170 g,cafe,rotulo_certo,cafe
+70f48e822c0d,#NUGGETS DE POLLO CROCANTE Sadia 1 kg,carnes_frios,ambiguo,carnes_frios|pratos_prontos
+071f37a0eb28,"Burger blend costela Wessel 360 g, 2 u (180 g)",carnes_frios,rotulo_certo,carnes_frios
+c7ea36945307,Chuleta Vetada Papaverde 200 g,carnes_frios,rotulo_certo,carnes_frios
+4beb8af4c6da,Coração de Frango Congelado Sadia 1kg,carnes_frios,rotulo_certo,carnes_frios
+1cd4938a55e1,Coxinha de Frango Tia Eliana 800g,carnes_frios,rotulo_errado,pratos_prontos
+85ac20bb54ca,Coxinhas das Asas Empanadas Sadia 400g,carnes_frios,ambiguo,carnes_frios|pratos_prontos
+9982bb22ccc1,Empanado De Frango Coxinha Da Asa Apimentada Sadia Pacote 400g,carnes_frios,ambiguo,carnes_frios|pratos_prontos
+984aa9baa7ec,Empanado De Frango Em Iscas Sadia Pacote 300g,carnes_frios,ambiguo,carnes_frios|pratos_prontos
+185094a15922,Empanado De Frango Peito Em Tiras Temperado Sadia Empanadíssimo Pacote 400g,carnes_frios,ambiguo,carnes_frios|pratos_prontos
+eb4696c5776e,Empanado De Frango Tradicional Sadia Nuggets Pacote 300g,carnes_frios,ambiguo,carnes_frios|pratos_prontos
+b23cdaee10fc,Empanado De Frango Tradicional Sadia Nuggets Pacote 700g Embalagem Econômica,carnes_frios,ambiguo,carnes_frios|pratos_prontos
+4c7f6152b4fe,Escondidinho Carne Moída Sadia Pacote 600g,carnes_frios,rotulo_errado,pratos_prontos
+3c2818429060,Hamburguesa Grill Taste La Preferida 1.4 kg,carnes_frios,rotulo_certo,carnes_frios
+08cd2d856aa0,Iscas de Frango Picante Sadia 300 g,carnes_frios,ambiguo,carnes_frios|pratos_prontos
+1481fdb2695d,Lobito El Nuevo Charqui 30g,carnes_frios,rotulo_certo,carnes_frios
+a5f22e53b9c6,LÍNG TIPO CALAB SADIA COZ DEF KG,carnes_frios,rotulo_certo,carnes_frios
+b5efbb23f24d,"Nugget de frango Sadia 1,5 kg",carnes_frios,ambiguo,carnes_frios|pratos_prontos
+717e745fbe63,Salamitos Sadia 36g,carnes_frios,rotulo_certo,carnes_frios
+ca613b2d1a55,Sanduíche Congelado X Frango Sadia Hot Pocket Pacote 145g,carnes_frios,rotulo_errado,pratos_prontos
+85d15b815c9e,Sardela gourmet Costa Nutrition 100g,carnes_frios,rotulo_errado,peixes
+0c95295484ad,ALMENDRAS CONFITADAS Lider 400g,castanhas,rotulo_certo,castanhas
+55f20c1ad153,Almendra Bitter Sin Azúcar Varsovienne 120 g,castanhas,ambiguo,castanhas|chocolates
+a3cc0616c11d,Almendras Naturales Lider 700 g,castanhas,rotulo_certo,castanhas
+a2b7fe6f67aa,Almendras Tostadas con Sal Tostaduría Nogal 30 G,castanhas,rotulo_certo,castanhas
+590badad3e7b,Amendocrem Fugini 200g,castanhas,ambiguo,castanhas|geleias_mel
+85be36eaf16e,Amendocrem Power Fit Fugini 400 g,castanhas,ambiguo,castanhas|geleias_mel
+457266ed1c72,Crokissimo Da Casquinha 24g,castanhas,rotulo_certo,castanhas
+816bb8252711,Doce de Amendoim Apaixonados Alimentos 65g,castanhas,rotulo_certo,castanhas
+c2f2c66bfd1b,Gra nuts Mix Nuts 120g,castanhas,rotulo_certo,castanhas
+11131b22bc4b,Mix Social Sin Sal Lider 700g,castanhas,rotulo_certo,castanhas
+60f8091ebf48,Mix Vitalidad Lider 90 g,castanhas,rotulo_certo,castanhas
+40baec85822a,Nut Mix SembraSol 70g,castanhas,rotulo_certo,castanhas
+9e83cc49b8a7,Pettiz Amendoim Crocante Dori 50 g,castanhas,rotulo_certo,castanhas
+25d64c6c6356,Pistache Com Casca 50g Aminna,castanhas,rotulo_certo,castanhas
+c430b004c51e,Pé de Moça Piranguinho 50g,castanhas,ambiguo,castanhas|balas_doces
+03eba896421e,Tribu power mix 30g,castanhas,rotulo_certo,castanhas
+db37e3f8e856,já castanha-de-caju torrada e salgada frutt'Oro 50g,castanhas,rotulo_certo,castanhas
+32d811ce60c0,mix puro nuts Tribu 90g,castanhas,rotulo_certo,castanhas
+807044e158fb,Anillos Frutales Máxima 500g,cereais_matinais,rotulo_certo,cereais_matinais
+d6d381849601,Arroz & Aveia Nestlé 400 g,cereais_matinais,rotulo_certo,cereais_matinais
+141c3e7e2ca0,Cereal Infantil Arroz Mucilon Lata 400g Nestlé,cereais_matinais,rotulo_certo,cereais_matinais
+12961fb7acaa,Cereal Nescau Bola Nestlé 270 g,cereais_matinais,rotulo_certo,cereais_matinais
+e21688e3c093,Chocapic Nestlé 210 g,cereais_matinais,rotulo_certo,cereais_matinais
+914512d1785a,Chocapic Receta Original Nestlé 100g,cereais_matinais,rotulo_certo,cereais_matinais
+b4842896e63b,Chocapic Receta Original Nestlé 260g,cereais_matinais,rotulo_certo,cereais_matinais
+605e81fd200a,Chocapic Sin Azúcar Añadida Nestlé 720g,cereais_matinais,rotulo_certo,cereais_matinais
+fd5008ffa230,Fitness Original Nestlé 30 g,cereais_matinais,rotulo_certo,cereais_matinais
+26c2ce59c127,Frutas Nestlé 300 g,cereais_matinais,rotulo_certo,cereais_matinais
+ad4ef05f1ce6,"GRANOLA AVENA, MIEL & ALMENDRAS Lider 320 g",cereais_matinais,rotulo_certo,cereais_matinais
+060b63ce791a,KitKat Cereal Nestlé 25 g,cereais_matinais,rotulo_certo,cereais_matinais
+385402e20163,Maple Butter Xarope Pra Panqueca Hungry Jack Importado 816ml,cereais_matinais,rotulo_errado,geleias_mel|acucar_adocante
+619bd1c9f37d,Mel & Amêndoas Nestlé 300 g,cereais_matinais,rotulo_certo,cereais_matinais
+4d724f718d05,Milo Max Nestlé 300 g,cereais_matinais,rotulo_certo,cereais_matinais
+527842f9afb3,Nesfit Cacau Nestlé 220 g,cereais_matinais,rotulo_certo,cereais_matinais
+a3035ca62b27,Nesfit Nestle 120 g,cereais_matinais,rotulo_certo,cereais_matinais
+540b5a739063,Nesfit Nestlé 570g,cereais_matinais,rotulo_certo,cereais_matinais
+bacff15a8f38,Nesfit Original Nestlé 220 g,cereais_matinais,rotulo_certo,cereais_matinais
+28f375f85c4c,Nesfit Tradicional Nestlé 570 g,cereais_matinais,rotulo_certo,cereais_matinais
+893c6cc052ac,"Nesfit sabor Miel, con Almendras Nestlé 220 g",cereais_matinais,rotulo_certo,cereais_matinais
+b97a78eb0eae,Nestlé Milo Minis 330g,cereais_matinais,rotulo_certo,cereais_matinais
+d19cf2446b85,NutriFibra Frutal Princesa 400 g,cereais_matinais,rotulo_certo,cereais_matinais
+9199254bc71b,Show flakes Nestlé,cereais_matinais,rotulo_certo,cereais_matinais
+931e7d0c75c6,Tradicional Nestlé 300 g,cereais_matinais,rotulo_certo,cereais_matinais
+084bfea1f068,churros Moça 210 g,cereais_matinais,rotulo_certo,cereais_matinais
+745eec4be5b1,Kross Strong Ale 5,cervejas,rotulo_certo,cervejas
+9c114f780181,LOA Otra Ronda,cervejas,rotulo_certo,cervejas
+4a88098411ca,Michelob ULTRA Superior Light Beer 330 cc,cervejas,rotulo_certo,cervejas
+e9efa48321eb,DESINCHÁ Desinchá Moro: Laranja Moro e Hibisco 60g,chas,rotulo_certo,chas
+af417e920bf3,Dr Kombu Kombucha Tesoro Milenario Mix de Berries,chas,rotulo_certo,chas
+278bcc165e3a,Fit Tea Chá com Limão Ajinomoto,chas,rotulo_certo,chas
+e39d7555a155,"Kombucha com Uva Rosé, Uva Tinto e Maçã Festval 300 ml",chas,rotulo_certo,chas
+1b630f9f51ee,KÖMBÜCHA Arándano 355 ml,chas,rotulo_certo,chas
+62a65349e4bd,AMMA CHOCOLATE Chocolate Orgânico 100% Cacau 85g,chocolates,rotulo_certo,chocolates
+e1dda9534e8f,Abinao Bitter Varsovienne,chocolates,rotulo_certo,chocolates
+5ccff799e141,"Alfajor de Doce de Leite com Cobertura de Chocolate Branco Nobre Alfajor 1 u, 50 g",chocolates,ambiguo,chocolates|bolos_panetones
+859f3ac6f8cf,Alpino Gianduia Nestlé,chocolates,rotulo_certo,chocolates
+31a3b9768994,Alpino Nestlé 195 g (15 u x 13 g),chocolates,rotulo_certo,chocolates
+52334383e690,Bombom Chocolate Recheio Leite Maltado Lollo Pacote 28g LOLO,chocolates,rotulo_certo,chocolates
+4e1f8da8edc5,"Bombom Ferrero Rocher Pacote 37,5g",chocolates,rotulo_certo,chocolates
+c1d0c64036d9,Bombom Nestlé Especialidades 251g,chocolates,rotulo_certo,chocolates
+6429d3ab8c75,Bombom Wafer Lacta Ouro Branco Pacote 20g Nestlé,chocolates,rotulo_certo,chocolates
+89fce259d471,Brownie Kopenhagen,chocolates,ambiguo,chocolates|bolos_panetones
+f3a8881b0de9,Capri Sabor Guinda Nestlé 100g,chocolates,rotulo_certo,chocolates
+6da9558ed4c5,Charge Nestlé 1.2 kg (30 x 40 g),chocolates,rotulo_certo,chocolates
+7bcdf516b91a,Charge Nestlé 40 g,chocolates,rotulo_certo,chocolates
+de6ed275ca8e,Choco Trio Nestlé 90 g,chocolates,rotulo_certo,chocolates
+0f02796ca0fb,Chocolate ao leite de Coco Goldko,chocolates,rotulo_certo,chocolates
+1baa11329818,Chocoteja San Roque 30 g,chocolates,rotulo_certo,chocolates
+1b4c3279fa97,Chocotrio Amendoim Nestlé 90g,chocolates,rotulo_certo,chocolates
+81e6a604c855,Classic Meio Amargo Nestlé 90 g,chocolates,rotulo_certo,chocolates
+ce934beda660,Crunch Nestlé 90 g,chocolates,rotulo_certo,chocolates
+ba3bfccd7b07,Especialidades Nestlé 153 g,chocolates,rotulo_certo,chocolates
+0cb71a5fc6f8,Garoto Nestlé 250 g / 8.80 z,chocolates,rotulo_certo,chocolates
+8f48b787340e,Garoto crunch Nestlé,chocolates,rotulo_certo,chocolates
+ef767a5e661d,KIT KAT MINI CARAMELO MOMENT 34.6g,chocolates,rotulo_certo,chocolates
+9d9e090bd914,Kit Kat Nestlé 41.5 g,chocolates,rotulo_certo,chocolates
+2cff55c2a335,KitKat Nestlé,chocolates,rotulo_certo,chocolates
+0de9156be1ac,KitKat Nestlé 41.5 g,chocolates,rotulo_certo,chocolates
+5dc357718ea9,KitKat Nestlé 45g,chocolates,rotulo_certo,chocolates
+0e0f60d9e01e,Kop Club Keep Kop Kopenhagen,chocolates,rotulo_certo,chocolates
+640263baa8a2,Leite Nestlé 34 g,chocolates,rotulo_certo,chocolates
+f23508388644,Nestle Classic 1,chocolates,rotulo_certo,chocolates
+d88440abea53,Nestlé Alpino ao leite 80g,chocolates,rotulo_certo,chocolates
+9456d9701ada,Ovo De Páscoa Ao Leite Nestlé 332 g,chocolates,rotulo_certo,chocolates
+6e56ae66ebbb,Ovo de páscoa sabor chocolate ao leite dumdum 50g,chocolates,rotulo_certo,chocolates
+8c9058be3273,Prestigio Nestlé 33 g,chocolates,rotulo_certo,chocolates
+4a741d31f91e,Prestígio Branco Nestlé,chocolates,rotulo_certo,chocolates
+de24324d85a1,SAHNE-NUSS Nestlé 30g,chocolates,rotulo_certo,chocolates
+15a32364dd4e,SAHNE-NUSS Nestlé 90g,chocolates,rotulo_certo,chocolates
+e858c2b4430e,SENSAH! 480 g (16 x 30 g),chocolates,rotulo_certo,chocolates
+7fd0a5741fe0,Sabor Menta Capri Nestlé 90g,chocolates,rotulo_certo,chocolates
+db1a64b38fa7,Sahne-Nuss Nestlé 160g,chocolates,rotulo_certo,chocolates
+e10bbc1b8ac4,Suflair Nestlé 110 g,chocolates,rotulo_certo,chocolates
+1b38da8b13da,TABLETE 1891 INTENSE 90G NEUGEBAUER 1871 Neugebauer,chocolates,rotulo_certo,chocolates
+c0643dc6fe42,TABLETE PRESTIGIO MAX 90G NESTLE,chocolates,rotulo_certo,chocolates
+0e149b0e5639,Trencito Chocolate de Leche Nestlé 14g,chocolates,rotulo_certo,chocolates
+927e357a6581,Trencito Nestlé 255g,chocolates,rotulo_certo,chocolates
+8b5f6f5d540b,Trencito Nestlé 75g,chocolates,rotulo_certo,chocolates
+532b2889f40a,Trento Branco-Dark Peccin 32g,chocolates,rotulo_certo,chocolates
+4ceff6509a41,Trento Dark Peccin 512g,chocolates,rotulo_certo,chocolates
+19b021212eda,Trufas Selección Varsovienne 12 Unid.,chocolates,ambiguo,chocolates|balas_doces
+eda370c200b3,Trufas Surtidas HAVANNA S.A. 200 g / 7.05 oz,chocolates,ambiguo,chocolates|balas_doces
+e61d65c39294,prestígio de doce de leite Nestlé,chocolates,rotulo_certo,chocolates
+ba20c0f4ad97,Azeitonas Verdes sem Caroço Orégano & Tomilho Andorinha 340 g,conservas,rotulo_certo,conservas
+7101102ebe88,Champignon Cepêra 120 g,conservas,rotulo_certo,conservas
+078e219b14ae,Creme de Leite Leve Nestlé 200 g,conservas,rotulo_errado,leite_condensado_creme
+e5f528915e70,Extracto de Tomate Cajamar 140 g,conservas,ambiguo,conservas|molhos
+23ece02fa551,Granos de Choclo Norte 300 g,conservas,ambiguo,conservas|graos
+624c55687085,Milho Bonare 170g,conservas,ambiguo,conservas|graos
+cd83e31db8d3,Palmito de pupunha intero Bonduelle 520g,conservas,rotulo_certo,conservas
+508b844c700f,Szechuen Preserved Mustard Stem Fishwell Brand 340 g,conservas,rotulo_certo,conservas
+7578f7745838,9002490280901,energeticos,rotulo_certo,energeticos
+210cc2d5f6b2,Gatorade uva zero 500,energeticos,rotulo_certo,energeticos
+20b1ab13e1be,Isotônico Frutas Cítricas Gatorade Garrafa 500ml,energeticos,rotulo_certo,energeticos
+3b88a3d1df81,Isotônico Sabor Morango E Maracujá Gatorade 500ml,energeticos,rotulo_certo,energeticos
+28c9c0741996,Casanova Flour Julia 1 kg,farinhas,rotulo_certo,farinhas
+2c06ca9de933,Farinha Láctea Nestlé 360g,farinhas,rotulo_certo,farinhas
+a69abf0366f6,Farinha Láctea Nestlé 400 g,farinhas,rotulo_certo,farinhas
+411e80caded6,Flocão Maratá 500g,farinhas,rotulo_certo,farinhas
+fb77457bdc9e,Fécula De Batata Vitao 300g,farinhas,rotulo_certo,farinhas
+311306ca6491,Fécula de Batata AMINNA 300g,farinhas,rotulo_certo,farinhas
+4e97a58721f8,Fécula de Mandioca Pinduca 1 kg / 35.27 oz,farinhas,rotulo_certo,farinhas
+5c5498b10600,Maizena Nova 200g,farinhas,rotulo_certo,farinhas
+0ef8e24f7632,Multicereais Nestlé 400 g,farinhas,ambiguo,farinhas|cereais_matinais
+adc8a87db6b9,Sagu Pinduca 17.64 oz (500 g),farinhas,rotulo_certo,farinhas
+8a2bc6762ac2,Achocolatado Nestlé 200g,geleias_mel,rotulo_errado,achocolatado
+d0787abc522d,All Natural Almond Butter goodly. 16 oz (1 LB) 450 g,geleias_mel,rotulo_certo,geleias_mel
+650499324347,"Bala  Mastigavel Macia de Morango Florestal 1 u, 12.3 g, 0.43 OZ",geleias_mel,rotulo_errado,balas_doces
+119c6761c7b6,Bala Framboesa 7 Belo Pacote 150g,geleias_mel,rotulo_errado,balas_doces
+36f0e0c1bed8,Bala Iogurte De Morango Original Yogurte 100 Pacote 150g DORI,geleias_mel,rotulo_errado,balas_doces
+4af55ddd8156,"Bala Sabor Pomelo Bontan Ame 4 u, 18 g",geleias_mel,rotulo_errado,balas_doces
+7ee510d3d2ed,Bananada Natural com Cupuaçu 230g,geleias_mel,rotulo_certo,geleias_mel
+f86dfc9b7964,Bananinha Paraibuna 200g,geleias_mel,rotulo_certo,geleias_mel
+601a4cd6de99,Creme Crocante OVO ovomaltine 260 g,geleias_mel,rotulo_certo,geleias_mel
+7d900b81110a,Creme de avelã Ritter 250 g,geleias_mel,rotulo_certo,geleias_mel
+11211c691ccb,DOCE DE LEITE TRADICIONAL 350g PAULISTA,geleias_mel,rotulo_certo,geleias_mel
+b7f723bfb9f3,"Doce Pastoso com Leite Xamego bom 1,05kg",geleias_mel,rotulo_certo,geleias_mel
+df503c0e750a,Doce cremoso tipo schmier abacaxi Ritter 400g,geleias_mel,rotulo_certo,geleias_mel
+459737c9998b,Doce de Leite Minas Gerais Rocca 470 g,geleias_mel,rotulo_certo,geleias_mel
+334188aa0bf0,Doce de Leite Rocca 50 g,geleias_mel,rotulo_certo,geleias_mel
+833098d689e9,Doce de abóbora e maçã com coco cremoso Aurea 350g,geleias_mel,rotulo_certo,geleias_mel
+94cd080e6908,Doce de banana cremoso Xodon 400g,geleias_mel,rotulo_certo,geleias_mel
+26560fabb6da,Doce de leite Aurea 350g,geleias_mel,rotulo_certo,geleias_mel
+b1c216f1448d,Doce de leite Rocca 450 g,geleias_mel,rotulo_certo,geleias_mel
+3e8a24855466,Doce de morango e maçã cremoso Aurea 350g,geleias_mel,rotulo_certo,geleias_mel
+d18c17933151,Ervilha em conserva Bonare 170g/280g,geleias_mel,rotulo_errado,conservas
+0b1468c896ac,Fruttie Frambuesas Bañadas Selección 150 g,geleias_mel,rotulo_errado,balas_doces|chocolates
+68ae63fe4cbd,Goiabada Pinduca 17.64 oz (500 g),geleias_mel,rotulo_certo,geleias_mel
+b49b42ba77b0,Goiabada Tradicional Cepêra 500 g,geleias_mel,rotulo_certo,geleias_mel
+25246f243f7a,IOGURTE INTEGRAL NESTLÉ NINHO 3SABORES 540G,geleias_mel,rotulo_errado,iogurtes
+05f3a7f07d33,Manjar Frutas Doces Marques 250 g,geleias_mel,rotulo_certo,geleias_mel
+e5fbf4c021d8,NESTLÉ Leite Condensado Semidesnatado Moça Caixinha 395g,geleias_mel,rotulo_errado,leite_condensado_creme
+c0d3c50787a3,Nestlé el Manjar 270g,geleias_mel,rotulo_certo,geleias_mel
+38ffeec28d32,PROTEIN PASTA DE MANÍ TRADICIONAL NUTS FLOW 450g,geleias_mel,ambiguo,geleias_mel|castanhas
+befd755d1bcb,Pasta De Amendoim Cremosa Integral Fit Food Pote 450g 500g,geleias_mel,ambiguo,geleias_mel|castanhas
+333eea31dc80,Pasta De Amendoim Crocante Integral Fit Food Pote 450g 500g,geleias_mel,ambiguo,geleias_mel|castanhas
+8c95a0b66426,Pasta amendoim,geleias_mel,ambiguo,geleias_mel|castanhas
+50e555fb3b42,Pasta de amendoim integral growth - natural,geleias_mel,ambiguo,geleias_mel|castanhas
+10780973b113,"Pastilha Laranja, Morango, Manga E Melão Tic Tac Caixa 16g",geleias_mel,rotulo_errado,balas_doces
+5d8930a3d7dd,Paçoca Riquita,geleias_mel,rotulo_errado,balas_doces|castanhas
+28e45c540061,Premezcla Proteína Brownie Selecta 300 g,geleias_mel,rotulo_errado,sobremesas|bolos_panetones
+ad04ba58e6ba,Pêssego e maracujá La Campagnola 454 g,geleias_mel,rotulo_certo,geleias_mel
+ce2d83068aa7,picolé Luigi 1,geleias_mel,rotulo_errado,sorvetes
+2624ae605ca8,Aveia Nutry,graos,rotulo_errado,cereais_matinais
+e379d5d60ae7,Chía Orgánica manare 200 g,graos,rotulo_certo,graos
+b8568f1e6553,Ervilha Cajamar 280 g,graos,ambiguo,graos|conservas
+889c290bebcf,GARBANZOS TIERRA NUESTRA 390g,graos,rotulo_certo,graos
+5c2406acd11a,GRAN SELECCIÓN TUCAPEL 1 KG,graos,rotulo_certo,graos
+617c2598e957,Grãos-de-bico em Conserva Bonduelle 265 g,graos,ambiguo,graos|conservas
+2cf567c9ed86,Long Grain WHite Rice Mc.Trader 16 oz (1LB),graos,rotulo_certo,graos
+29d6622916f5,Milho verde Fugini 260 g,graos,ambiguo,graos|conservas
+e788624dd141,Natto Nippo Kyoka Natto 100 g,graos,rotulo_certo,graos
+69501c9d8da2,Seleta de legumes Fugini 200 g,graos,rotulo_errado,conservas|hortifruti
+8204d6a6a9e0,Sweet Corn Saro Taormina 14 oz 400g,graos,ambiguo,graos|conservas
+acd8fbe53aad,Trato Mix Completo 200g,graos,rotulo_certo,graos
+6d89a3409013,Achocolatado Flocos Crocantes Ovomaltine Pacote 190g,hortifruti,rotulo_errado,achocolatado|cereais_matinais
+a0300871a1c7,Banana Passa Banana Brasil Caixa 774g 9 Unidades,hortifruti,rotulo_certo,hortifruti
+c799562a16da,Banana Salgada Peruíbe Chip's 50 g,hortifruti,ambiguo,hortifruti|salgadinhos
+162b801da446,Brócolis Brocolis Bernardi 180g,hortifruti,rotulo_certo,hortifruti
+4785ea15564b,Couve-flor Brocolis Bernardi 300g,hortifruti,rotulo_certo,hortifruti
+a957d67a2279,Farinha de Coco 400g - Copra Coco,hortifruti,rotulo_errado,farinhas
+b09d3a02fa68,Geleia Ritter Morango Zero 230g,hortifruti,rotulo_errado,geleias_mel
+7af768f4d691,Granola Tradicional Kodillar,hortifruti,rotulo_errado,cereais_matinais
+2cd8a5c0a581,Salada Riviera La Vita 250 g,hortifruti,rotulo_certo,hortifruti
+84cddc13d282,Ameixa Zero ACTIVIA 800 g,iogurtes,rotulo_certo,iogurtes
+b7e3c71e3906,Chamyto Big Nestlé 120 g,iogurtes,rotulo_certo,iogurtes
+86b1e307121f,GOODNES PROTEIN Nestlé 140g,iogurtes,rotulo_certo,iogurtes
+943d14068186,GoodNes Magnesio Nestlé 140 g,iogurtes,rotulo_certo,iogurtes
+daea29c6e189,GoodNes Pro Bióticos Nestlé 140g,iogurtes,rotulo_certo,iogurtes
+c808392b2253,Goodnes Probióticos Nestlé 130g,iogurtes,rotulo_certo,iogurtes
+3389ee669e08,Goodnes Protein Nestlé 10g,iogurtes,rotulo_certo,iogurtes
+337477069631,Grego sabor Tradicional* Nestlé 450 g,iogurtes,rotulo_certo,iogurtes
+1b3c24097a4a,Griego Nestlé 120g,iogurtes,rotulo_certo,iogurtes
+24ecdb10d7d5,IOG ACTIVIA CAFE DA MANH 170g,iogurtes,rotulo_certo,iogurtes
+0f8e2ffac9a3,IOG NESTLÉ 900G MOR,iogurtes,rotulo_certo,iogurtes
+c0f54eecab64,"Iorgute Ameixa, Aveia e Amaranto Nesfit 170 g",iogurtes,rotulo_certo,iogurtes
+05370665150d,Kefir Integral Atilatte Garrafa 500g,iogurtes,rotulo_certo,iogurtes
+8819768515a7,Leite fermentado desnatado com preparado de fruta sabor baunilha Unibaby 850g,iogurtes,rotulo_certo,iogurtes
+3b0d5bf5a04f,Molico Morango Triplo Zero 0% Lactose Nestlé 170g,iogurtes,rotulo_certo,iogurtes
+9783971b7d33,Molico Zero Baunilha Nestlé 850g,iogurtes,rotulo_certo,iogurtes
+293cc82af4b5,Molico zero sabor ameixa Nestlé 170g,iogurtes,rotulo_certo,iogurtes
+8ee61246eda7,Morango Frutap 360 g,iogurtes,rotulo_certo,iogurtes
+9c09e75c2c15,Queijo Petit Suisse Morango Chambinho Bandeja 320g 8 Unidades Nestlé,iogurtes,ambiguo,iogurtes|queijos
+11a4b021e2ed,Vital+ Proteína Frutilla Conaprole 1 kg,iogurtes,rotulo_certo,iogurtes
+c9eabab24eeb,Vitamina de Frutas Activia 800 g,iogurtes,rotulo_certo,iogurtes
+4954a1d9a655,YOGU YOGU 200 ml,iogurtes,rotulo_certo,iogurtes
+b27ce9bb4b91,Yoghurt Natural Granola y Berries Mainboo 281g,iogurtes,rotulo_certo,iogurtes
+d87c825f7c69,Zero Sabor Ameixa Activia 800 g,iogurtes,rotulo_certo,iogurtes
+c0cfa2a97437,bio body TREBOL 180 g,iogurtes,rotulo_certo,iogurtes
+c65dc0b44f8f,Condensado de Soja Mundo Verde 330g,leite_condensado_creme,rotulo_certo,leite_condensado_creme
+9e00a058f7aa,Crema de Leche Camponesa 200 g,leite_condensado_creme,rotulo_certo,leite_condensado_creme
+69e0b3a4b7e6,Creme Chantilly Président 250 g (241 ml),leite_condensado_creme,rotulo_certo,leite_condensado_creme
+1ce0afa0ce3f,Moça Zero Lactose Nestlé 395g,leite_condensado_creme,rotulo_certo,leite_condensado_creme
+fe680cce085e,Requeijão Cremoso Com Queijo Tradicional Qualy Copo 200g,leite_condensado_creme,rotulo_errado,queijos
+39e4302a1c51,requeijão light Nestlé 200g,leite_condensado_creme,rotulo_errado,queijos
+8203da44993b,Bebida Láctea Uht Chocolate Nescau Caixa 1l NESTLE,leites,rotulo_certo,leites
+57f49c365bd5,Bebida Láctea Uht Coco Com Batata Doce Zero Lactose Yopro 15g High Protein Caixa 250ml,leites,rotulo_certo,leites
+4fb91c1f492e,Bebida Neston fast Vit 280ml Nestlé,leites,rotulo_certo,leites
+8e8cd602d248,Cappuccino Proteico Italocrottin,leites,rotulo_certo,leites
+f633c6fcedf6,ChocoLeite Sabor Original 208 ml,leites,rotulo_certo,leites
+8badbb20018e,Chocomilk,leites,rotulo_certo,leites
+9d74718cc5d4,Composto Lácteo Ninho Fases 1 Lata 800g NESTLE,leites,rotulo_certo,leites
+502d6e7e827c,Creme leite Firmeza,leites,rotulo_errado,leite_condensado_creme
+7218e1045b46,Doce de soro de leite Aurea 350g,leites,rotulo_errado,geleias_mel
+514ab805ecd6,Fórmula Infantil Ninho Fases 1+ NESTLE 400 g,leites,rotulo_certo,leites
+19b073710505,LEITE PO NINHO INTEGRAL Nestlé Ninho 380 g,leites,rotulo_certo,leites
+41c443647cf4,Leche Chocolate Semidescremada Lider,leites,rotulo_certo,leites
+ae2fe12f146d,Leite Fermentado Morango Zero Lactose Activia Shot Diário Frasco 100g,leites,rotulo_errado,iogurtes
+595b7e97546c,Leite Fermentado Parcialmente Desnatado Pêssego Activia Garrafa 800g,leites,rotulo_errado,iogurtes
+298ad4e23a46,Leite Fermentado Tradicional Zero Lactose Activia Shot Diário Frasco 510g,leites,rotulo_errado,iogurtes
+cc369fc30124,Leite Fermentado c/Fibras Danone Activia,leites,rotulo_errado,iogurtes
+fe443374c1b8,Leite em Pó Integral Instantâneo CCGL 1kg,leites,rotulo_certo,leites
+00c07307202c,Leite em Pó Sem Lactose Nestlé 380 g,leites,rotulo_certo,leites
+d343904b9c01,Leite em pó integral instantâneo Nestlé 575g,leites,rotulo_certo,leites
+99c2a6adeb8e,Leite em pó integral instantâneo Ninho Nestlé Ninho 380g,leites,rotulo_certo,leites
+5c2118d1943d,Leite ferm kiwi Activia 800 g,leites,rotulo_errado,iogurtes
+5e4d52b822b8,Leite pó instantâneo Nestlé 800 g,leites,rotulo_certo,leites
+c303edb71b15,Levinho Nestlé 1 l,leites,rotulo_certo,leites
+b8caf9034b36,"Ninho Fases 1+ Nestlé 1,2 kg",leites,rotulo_certo,leites
+d64b2bc328d0,Ninho Forti+ Nestlé 380 g,leites,rotulo_certo,leites
+d456247625d2,Ninho Nestlé 400g,leites,rotulo_certo,leites
+17ab52802ce3,SIN LACTOSA SEMI DESCREMADA Lider 1L,leites,rotulo_certo,leites
+66ea3c2279a0,Svelty Sin Lactosa Nestlé 300g,leites,rotulo_certo,leites
+7cb4a1605c1f,Svelty con Leche Natural con Colágeno Nestlé 500g,leites,rotulo_certo,leites
+5741b13a18c3,Svelty con leche natural Nestlé 800g,leites,rotulo_certo,leites
+4ab6a7958d5f,YoPRO sabor Baunilha 250 mL,leites,rotulo_certo,leites
+8bcc2a79a06e,leite molico Nestlé 500 ml,leites,rotulo_certo,leites
+f3d914e4faf7,milico Nestlé 260g,leites,rotulo_certo,leites
+21208940362c,Qualy Sadia 250 g,manteiga_margarina,rotulo_certo,manteiga_margarina
+f1dee0e42c51,deline Sadia 250g,manteiga_margarina,rotulo_certo,manteiga_margarina
+b40573b0eaa2,Aji-no-men Sabor Pollo Ajinomoto 50 g,massas,rotulo_certo,massas
+bbc3f31d4c32,Artificial Crawfish Flavored Stir Fried Noodles,massas,rotulo_certo,massas
+ed1e6e1132c0,Caracoles Carozzi,massas,rotulo_certo,massas
+f4625421aee6,CusCús Lider 500 g,massas,rotulo_certo,massas
+dd277f01134b,Fusilli Integral Carozzi 400 g,massas,rotulo_certo,massas
+82605d2194e2,Hot Bowls Mac'n Cheese Cheddar Sadia 300 g,massas,ambiguo,massas|pratos_prontos
+af925337482a,Lasanha de Massa Verde à Bolonhesa Sadia 600 g,massas,rotulo_errado,pratos_prontos
+ba10bd5c28db,Mac'n Cheese Cheddar & Bacon Sadia 350g,massas,ambiguo,massas|pratos_prontos
+23989507a5a0,Mac'n Cheese Cheddar Sadia 350 g,massas,ambiguo,massas|pratos_prontos
+4769abddc7c1,Macn Cheese Cheddar Calabresa Sadia Hot Bowls Pote 350g,massas,ambiguo,massas|pratos_prontos
+01b61f983b36,Massas Rana Ravioli 4 Queijos Giovanni Rana 250g,massas,rotulo_certo,massas
+53905dd24800,Massas Rana Ravioli Ricota Espinafre Giovanni Rana 250g,massas,rotulo_certo,massas
+917dc44b5fb0,Mostacholi Sin gluten Nutresa 250g,massas,rotulo_certo,massas
+63855392da5c,PASTA COCTEL AVE PIMIENTO Líder 150 g,massas,rotulo_errado,molhos|carnes_frios
+faf5bcff2141,PASTA CÓCTEL AVE MAYO Lider 250 g,massas,rotulo_errado,molhos|carnes_frios
+3c69b209d1fd,PENNE RIGATE SELECCIÓN 400 g,massas,rotulo_certo,massas
+85b1e960e654,Pasta Multicereal con Kale Fusilli Wakas 250 g,massas,rotulo_certo,massas
+df91d522057f,Pasta Multicereal con Quinoa Fusilli Wakas 300 g,massas,rotulo_certo,massas
+09781f03cfdc,Pasta Seca de Legumbres Garbanzo Alubia & Chia Wakas 250 g,massas,rotulo_certo,massas
+0fe50dbc5211,Penne Rigate Morixe 500 g,massas,rotulo_certo,massas
+1e2b324392fd,"Ravioli Albahaca, Queso, Piñones Giovanni Rana 250 g",massas,rotulo_certo,massas
+48d3bcb23391,Ravioli Champiñones Giovanni Rana 250 g,massas,rotulo_certo,massas
+f9c4e9a028eb,Spaguetti Integral Carozzi 400 g,massas,rotulo_certo,massas
+3fc9544bc286,Tempura Udon Flavour Noodle Soup Nongshim,massas,rotulo_certo,massas
+0235ce47bddb,para Uno Caracoquesos Carozzi 70 g,massas,rotulo_certo,massas
+0c51f2b9d83c,"BONARE Extrato Tom Bonare Gourmet Sachê (1,7 kg)",molhos,rotulo_certo,molhos
+8192b7747652,Cheez Dip Cheddar Jalapeño Kraft 200g,molhos,rotulo_certo,molhos
+69b87d05e8dd,Extrato De Tomate Concentrado Sem Pele E Semente Fugini,molhos,ambiguo,molhos|conservas
+f3ff50ca7df6,Extratomato Cargill 370g,molhos,ambiguo,molhos|conservas
+d98001cbe220,Fumaça Líquida Gastronomia Eco-Pirol 250ml,molhos,rotulo_certo,molhos
+c06e7e60144f,Molho Inglês (Worcestershire) Cepera,molhos,rotulo_certo,molhos
+8dee3804331a,Pesto cremoso Perfect Choice 190g,molhos,rotulo_certo,molhos
+5997b6a8538b,Pomarola Casera Carozzi 200g,molhos,rotulo_certo,molhos
+168621a8e884,Requeijão plant-based NoMoo 180 g,molhos,rotulo_errado,queijos
+c6b3460454b8,Salsa Unagi Mother Specia 480 g,molhos,rotulo_certo,molhos
+d1d4358da8a6,Salsa de Soja Sakura Nayaka Alimentos Ltda. 150ml,molhos,rotulo_certo,molhos
+a0dc4a1e4ad0,Shoyu Light Sakura 500 ml,molhos,rotulo_certo,molhos
+b2add96641a2,Shoyu Tradicional Sakura 500 ml,molhos,rotulo_certo,molhos
+d66c6d3d3c7e,Tomate Pelado Cubos Pomarola Chef Lata 400g,molhos,ambiguo,molhos|conservas
+175693a7686e,Tomato & Ricotta Pesto Filippo Berio,molhos,rotulo_certo,molhos
+e039c7082200,Andorinha Portugal 250 ml,oleos_azeites,rotulo_certo,oleos_azeites
+ea709c005d6f,Pasta de Coco Castanharia 210g,oleos_azeites,rotulo_certo,oleos_azeites
+9510b82b4865,vitaliv 900 ml,oleos_azeites,rotulo_certo,oleos_azeites
+15ff1333adc9,Bisnaguinha Pullman,paes,rotulo_certo,paes
+e0923d6cbe45,Bisnaguinhas Enfeitiçadas Panco 250g,paes,rotulo_certo,paes
+3d737dad6873,Bisnaguinhas Originais Panco 300 g,paes,rotulo_certo,paes
+0c9f35d9ea0d,LO VALDES,paes,rotulo_certo,paes
+7e444d06b96a,Marraqueta Prehorneado San Camilo 840g,paes,rotulo_certo,paes
+0d163e3d62d0,Mini Baguette Sin Gluten Nutrisa 400 g,paes,rotulo_certo,paes
+d9527ae4506d,Multigrano Pan de molde integral San Camilo 400g,paes,rotulo_certo,paes
+885d32b75120,PAN de Molde BLANCO Receta Tradicional Líder 400 g,paes,rotulo_certo,paes
+7caf8ce37999,PITA ORIGINAL Tue-Tue,paes,rotulo_certo,paes
+77dd7e98353e,Pan Amasado Pilmayquen 440 g,paes,rotulo_certo,paes
+2333e6e6d00f,Pan Clásico de completo Cuzco & Co.,paes,rotulo_certo,paes
+a31c2ec33656,Pan de Hot dog Lider,paes,rotulo_certo,paes
+05fec712d85e,Pan de Molde Blanco XL Lider 750 g,paes,rotulo_certo,paes
+2299a1f7e38c,Pan de molde Familiar Integral Al Toque 480G,paes,rotulo_certo,paes
+96e95595090c,Pita Proteína Tue-Tue 6 unidades,paes,rotulo_certo,paes
+049d1f0b01fd,Pão Tortilha Rap10 Tapioca 500g,paes,rotulo_certo,paes
+633ac920d152,Pão de Queijo Congelado Avivar 300g,paes,rotulo_certo,paes
+9b0a23e57c50,Pão de Queijo Palitinho 2 Queijos Parmesão + Queijo Artesanal Mineiro Mineirinho 400 g,paes,rotulo_certo,paes
+7f059a685ba0,Torrada multigrãos Isabela 142 g,paes,rotulo_certo,paes
+c2e2b139a5e8,Tortilha Integral Rap10 - Bimbo - 330g 297g,paes,rotulo_certo,paes
+333d5f20186d,Tortilha Rap10 Fit - Bimbo - 330g,paes,rotulo_certo,paes
+78454b1bcaf2,Tortillas de Arroz Avena y Coco Tucapel 260 g,paes,rotulo_certo,paes
+0953dc04f0a4,Atún Lomitos Ahumado en Aceite Lider 140 g,peixes,rotulo_certo,peixes
+af924ccfb046,Camarão Grande Descascado Congelado Sadia 400g,peixes,rotulo_certo,peixes
+528697c094e0,Filés de Tilápia no Azeite Costa Nutrition 75 g,peixes,rotulo_certo,peixes
+1b76e5aa2a67,Hamburguesa de Merluza Tradicional Lider 100 g,peixes,rotulo_certo,peixes
+570e9b16e0da,Hamburguesa de Salmón Tradicional Lider 80 g,peixes,rotulo_certo,peixes
+f1fbd6005e59,LOMITOS DE ATÚN Líder,peixes,rotulo_certo,peixes
+b3be26b74bc9,SALMÓN AHUMADO EN TROZOS CON MERKÉN Lider,peixes,rotulo_certo,peixes
+d6389a28e618,Salmón Ahumado Tradicional Selección,peixes,rotulo_certo,peixes
+6430ebe6a660,10 Burritos & Wraps Tortilla Lider 500 g,pratos_prontos,rotulo_errado,paes
+c8f6ca3595fc,"Coxa De Frango Desossada, Arroz, Feijão E Farofa LivUp 370 g",pratos_prontos,rotulo_certo,pratos_prontos
+8c6299604322,Creme de cebola kitano 65g,pratos_prontos,rotulo_certo,pratos_prontos
+bdef483524d6,Frango à Parmegiana Com Arroz E Batata Palha Sadia Pacote 350g,pratos_prontos,rotulo_certo,pratos_prontos
+6f771c4dad18,"Hambúrguer de Carne Bovina Friboi 2 u, 400 g (200 g * 2)",pratos_prontos,rotulo_errado,carnes_frios
+2e5b29b56230,Isosource soya Nestlé 1l,pratos_prontos,rotulo_errado,suplementos
+3e52230fe7c1,King Kong Hamburguesa Tradicional 185 g,pratos_prontos,rotulo_certo,pratos_prontos
+e44f8e3d047d,Lasagna Pechuga de Pavo Sadia 600 g,pratos_prontos,rotulo_certo,pratos_prontos
+bc56d866a505,Linguiça de carne de frango C.vale,pratos_prontos,rotulo_errado,carnes_frios
+a49a40ced152,Mini Coxinha de Frango com Requeijão Frita Viva Sabor 1000 g,pratos_prontos,rotulo_certo,pratos_prontos
+13e07ae04210,Molho Bob's Burguer Salad,pratos_prontos,rotulo_errado,molhos
+608569389119,Nhoque de Batata La Nonna 400 g,pratos_prontos,ambiguo,pratos_prontos|massas
+f41765a22c1f,Salada Completa Mill Green 500g,pratos_prontos,rotulo_certo,pratos_prontos
+9f305859f297,Sopa Individual Cremosa Mandioquinha Com Cebola E Salsa Vono Pacote 17g AJINOMOTO,pratos_prontos,rotulo_certo,pratos_prontos
+221c001b7ebf,Sopão Carne Com Legumes Maggi Sachê 200g Nestlé,pratos_prontos,rotulo_certo,pratos_prontos
+8a52101c9b43,Sopão de legumes Kitano 196 g,pratos_prontos,rotulo_certo,pratos_prontos
+409c48c622eb,Sándwich POLLO TOCINO MOSTAZA del Día 260g,pratos_prontos,rotulo_certo,pratos_prontos
+c6ef5649a55a,Vono Champignon Ajinomoto 19g,pratos_prontos,rotulo_certo,pratos_prontos
+e40375c907bc,Vono Espinafre com Queijo Ajinomoto 19g,pratos_prontos,rotulo_certo,pratos_prontos
+6890712dbf1a,Yakisoba macarrão Karui 500g,pratos_prontos,ambiguo,pratos_prontos|massas
+631f4c790feb,"수라간 야채손만두 Suragan 1,200 g",pratos_prontos,rotulo_certo,pratos_prontos
+3ae39e71aa1d,CREME DE RICOTA ATILATTE 170G,queijos,rotulo_certo,queijos
+b8c2891fda14,Cream Cheese Light Président Pote 150g,queijos,rotulo_certo,queijos
+2776343b6a1e,Cream Cheese Light Président Pote 270g,queijos,rotulo_certo,queijos
+c21e9211fd2a,Duo Mix Kraft 200 g,queijos,rotulo_certo,queijos
+29ede94db7d9,Hot Pocket X-Picanha Sadia 145g,queijos,rotulo_errado,pratos_prontos
+1e394c749f57,ISIS Requeijão Cremoso Zero Lactose 200g,queijos,rotulo_certo,queijos
+2852bd417057,Mussarela Fatiada Président 300g,queijos,rotulo_certo,queijos
+b8c4243649fa,Mussarela fatiada Lider 400g,queijos,rotulo_certo,queijos
+1de19eb15d36,QJO PRATO SADIA 150G FAT,queijos,rotulo_certo,queijos
+901bb3eb8bbd,Queijos Prato Fatiado Président 1 kg,queijos,rotulo_certo,queijos
+f79674d2e713,Requeijão Godam Zero lactose 200g,queijos,rotulo_certo,queijos
+130b225df8ee,requeijão Nestlé trad,queijos,rotulo_certo,queijos
+30c15de45366,Beats senses 473ml,refrigerantes,rotulo_errado,alcoolicas
+5b7d0f0efddd,Cereser sem Álcool Pêssego 660 mL,refrigerantes,rotulo_certo,refrigerantes
+a81e72709561,Coca Cola Zero Açúcar CocaCola 2L,refrigerantes,rotulo_certo,refrigerantes
+89b9c80ad323,Coca ks zero,refrigerantes,rotulo_certo,refrigerantes
+a81881dfbb8a,Fanta Orange 330 ml,refrigerantes,rotulo_certo,refrigerantes
+a93eacb7d455,Fanta guarana 350 mL,refrigerantes,rotulo_certo,refrigerantes
+719d552743eb,Guarana Antarctica 237 ml,refrigerantes,rotulo_certo,refrigerantes
+56fe15712d9d,Guaraná Guaraná Antarctica 33 cl,refrigerantes,rotulo_certo,refrigerantes
+1ff42d1ded88,Mistério Beetlejuice Fanta 350 ml,refrigerantes,rotulo_certo,refrigerantes
+3cbe1bea72c9,Monster Energy Mango Loco 473 ml,refrigerantes,rotulo_errado,energeticos
+e8ebaa202e0d,Monster Energy Ultra 473 ml,refrigerantes,rotulo_errado,energeticos
+a34ca644a7f9,Pap 600 ml,refrigerantes,rotulo_certo,refrigerantes
+c80a7544e883,Pap Zero 350 ml,refrigerantes,rotulo_certo,refrigerantes
+53c12700ff83,Sabor Limón Gasificada Benedictino 500 ml,refrigerantes,rotulo_certo,refrigerantes
+e27d3be5bf5d,Sidra Brasileira Zero álcool Maçã Cereser Garrafa 660ml,refrigerantes,rotulo_certo,refrigerantes
+1cdfe7c1941c,Soda Lemonade 9,refrigerantes,rotulo_certo,refrigerantes
+a5125de62c9e,Vinho frisante tinto suave Saint Germain 750ml,refrigerantes,rotulo_errado,alcoolicas
+4d87e2251626,fanta uva,refrigerantes,rotulo_certo,refrigerantes
+3e17fb0a84e0,Amendoim Crocante sabor Pimenta Vermelha Petitz Dori 500 g,salgadinhos,ambiguo,salgadinhos|castanhas
+d8c34505daa9,Amendoim Salgado Tipo Japonês Dori 700 g,salgadinhos,ambiguo,salgadinhos|castanhas
+0bb8781df7c0,"Batata Pré Frita Palito Congelada Sadia Pacote 1,05kg",salgadinhos,rotulo_certo,salgadinhos
+0878e7d85fff,Batata Pré Frita Palito Congelada Sadia Pacote 400g,salgadinhos,rotulo_certo,salgadinhos
+fbf123bcb09b,Batata Pré Frita Smiles Congelada MCCAIN 400g,salgadinhos,rotulo_certo,salgadinhos
+99e3f948f3de,Batata Pré Frita Tradicional Congelada Mccain Pacote 720g,salgadinhos,rotulo_certo,salgadinhos
+bbe341bb724c,Dinamita Spicy Cheese Doritos 84 g,salgadinhos,rotulo_certo,salgadinhos
+cf06be8abb2d,Doritos Dinamita Sabor Maionese Chipotle 84 g,salgadinhos,rotulo_certo,salgadinhos
+4d668376dea9,Doritos Dinamita Spicy Cheese 48 g,salgadinhos,rotulo_certo,salgadinhos
+398c2cb81e6e,Doritos Original 84 g,salgadinhos,rotulo_certo,salgadinhos
+cbbbcf0a4d79,Doritos Sabor Queso 125 g,salgadinhos,rotulo_certo,salgadinhos
+3e8f36bedbbf,Doritos Sabor Queso 90g,salgadinhos,rotulo_certo,salgadinhos
+30347b671a22,Doritos Sweet Chili 84g,salgadinhos,rotulo_certo,salgadinhos
+b73e8b5e1510,Doritos cool ranch 96 g,salgadinhos,rotulo_certo,salgadinhos
+e0db9b4c4560,Doritos tamaño M Sabor Queso 200g,salgadinhos,rotulo_certo,salgadinhos
+e76d92bdba9e,Inhame Peruíbe Chip's 50 g,salgadinhos,rotulo_certo,salgadinhos
+ab40adafe872,Kryzpo Sabor Original 83g,salgadinhos,rotulo_certo,salgadinhos
+c1713d6848e0,Milho para Pipoca Tipo 1 Da Terrinha 400g,salgadinhos,rotulo_certo,salgadinhos
+1b6f08acb455,Mini coxinha de frango Jesse salgados 400g,salgadinhos,ambiguo,salgadinhos|pratos_prontos
+fb927c6dc39d,Papas Corte Americano Tim 150g,salgadinhos,rotulo_certo,salgadinhos
+9458e3e33359,Papas Corte Americano Tim 18g,salgadinhos,rotulo_certo,salgadinhos
+6ec859aa7277,Queijo Nacho Doritos 53 g,salgadinhos,rotulo_certo,salgadinhos
+2bfe49ca7007,SAMOSA SELECCIÓN 300 g,salgadinhos,ambiguo,salgadinhos|pratos_prontos
+a2cfc40ec511,flip papas con sal de mar 140 g,salgadinhos,rotulo_certo,salgadinhos
+ae133cc88b4a,Chandelle Sabor Chocolate Nestlé 120g,sobremesas,rotulo_certo,sobremesas
+2d9d72c21cf0,Compota Durazno Nestlé 120g,sobremesas,ambiguo,sobremesas|geleias_mel
+18ef078d36a3,GOODNES Jalea 0% Azúcar Sabor Mango Durazno Nestlé 110g,sobremesas,rotulo_certo,sobremesas
+46e2b051c040,Gelatina Sabor Frutilla Lider 22 g,sobremesas,rotulo_certo,sobremesas
+6867952055ca,Goodnes Jalea 0% Azúcar Sabor Frambuesa Nestlé 110g,sobremesas,rotulo_certo,sobremesas
+5e2edec451bf,Goodnes Jalea Protein 10g Nestlé 4 unidades de 110g,sobremesas,rotulo_certo,sobremesas
+a1b88b3668ed,Iorgute Morango Molico Triplo Zero 0% Lactose Nestlé 850g,sobremesas,rotulo_errado,iogurtes
+880e59c1076a,Jalea Sabor Guinda Nestlé 110g,sobremesas,rotulo_certo,sobremesas
+2f686b467d8f,Jalea sabor Frambuesa Nestlé 110 g,sobremesas,rotulo_certo,sobremesas
+3bd367ccd802,"Mousse de Chocolate Branco Galak com Cobertura de Chocolate, Negresco e Café especial Mais1 Mais1.Café 1 u, 48 g",sobremesas,rotulo_certo,sobremesas
+50d9918abf21,Nestlé Chandelle Manjar 120g,sobremesas,rotulo_certo,sobremesas
+c50e1fd19b9b,Yogurte Nestlé Flan Caramelo 200g,sobremesas,ambiguo,sobremesas|iogurtes
+06f6577a260f,barra de fruta Lúcuma Manjar Guallarauco,sobremesas,ambiguo,sobremesas|barras
+219a687cbf97,Alfajor helado Grido 498 g / 660 ml,sorvetes,rotulo_certo,sorvetes
+bcf6a04b0c4e,CHIRIMOYA ALEGRE Candy,sorvetes,rotulo_certo,sorvetes
+3940d3c387f9,Chocolate Chip Cookie Dough Ben & Jerry's,sorvetes,rotulo_certo,sorvetes
+95d08e0e9d16,Chocolate Fudge Brownie Ben & Jerry's 103g/120mL,sorvetes,rotulo_certo,sorvetes
+8537cf5037f8,Chocolito Savory 80 ml,sorvetes,rotulo_certo,sorvetes
+93bb6b24e214,"Creme Gelado de Morango Fruitming 240 ml, 200 g",sorvetes,rotulo_certo,sorvetes
+fa434091771b,Geladinho FruitMais 55 ml,sorvetes,rotulo_certo,sorvetes
+dd061560a6e3,MAGnifico MILANO Savory 125 ml,sorvetes,rotulo_certo,sorvetes
+e4638dc9100f,Maracuyá Kreems 130g,sorvetes,rotulo_certo,sorvetes
+bcfd8faa2b89,Mega Sabor Chocolate Naranja Savory 90 ml,sorvetes,rotulo_certo,sorvetes
+5475c56da641,Mega Sabor Frambuesa Savory 90 ml,sorvetes,rotulo_certo,sorvetes
+4ca62a117332,Mora Crema Savory 70 ml,sorvetes,rotulo_certo,sorvetes
+cfd307ae1cac,Mustang Blanco Cookies & Cream Manjar Savory 110 ml,sorvetes,rotulo_certo,sorvetes
+fe9650a774b2,Oreo Picolé Froneri 260 g (4 unidades),sorvetes,rotulo_certo,sorvetes
+f2f4fe7604e6,Oreo Tendy 170 ml,sorvetes,rotulo_certo,sorvetes
+e4e53522c751,Paleta MINI Helado de leche sabor toffee con galleta oblea y cobertura de chocolate Nestlé 275 ml,sorvetes,rotulo_certo,sorvetes
+5467ba0dfad7,Palito Frutal Frutilla Grido 550g / 550ml,sorvetes,rotulo_certo,sorvetes
+12038721d13a,SAHNE-NUSS Nestlé 125 ml,sorvetes,rotulo_certo,sorvetes
+89a26224b76a,Sorvete Baunilha Com Biscoito De Chocolate Oreo Pacote 81g NESTLE,sorvetes,rotulo_certo,sorvetes
+d6ddb26ce797,Tentación Crema helada de DULCE DE LECHE GRANIZADO grido 690g / 1L,sorvetes,rotulo_certo,sorvetes
+1a5d74cccc34,"Torta helada Cookies and Cream Grido 1,045 kg (1,6 L)",sorvetes,rotulo_certo,sorvetes
+c2ab68524114,superfrut morango e baunilha 300g,sorvetes,rotulo_certo,sorvetes
+87c28f1c0d61,Bless 300 ml,sucos,rotulo_certo,sucos
+13cbe574f608,Bless 45,sucos,rotulo_certo,sucos
+c98dc6f4ee55,Bless Damasco Manzana 1000 ml,sucos,rotulo_certo,sucos
+33a1f591357b,Bless Naranja Piña 200 ml,sucos,rotulo_certo,sucos
+ab123daa3029,Frambuesa Manzana AMA 200 ml,sucos,rotulo_certo,sucos
+56e2c4bc3635,Frussion Mandarina 3 l,sucos,rotulo_certo,sucos
+c5bab7966ce4,Gatorade Maracujá 500ml,sucos,rotulo_errado,energeticos
+1c3914ee2134,Iogurte Parcialmente Desnatado Vitamina De Frutas Nestlé Frasco 170g,sucos,rotulo_errado,iogurtes
+648cff87a598,Leite Fermentado Desnatado Frutap Garrafa 900g Family,sucos,rotulo_errado,iogurtes
+7547640b3c81,Leite Fermentado Parcialmente Desnatado Vitamina de Frutas Activia Garrafa 800g,sucos,rotulo_errado,iogurtes
+1d2a958d5ac2,Limonada Festval 900 ml,sucos,rotulo_certo,sucos
+d3fcd25f455d,Manzana Agua de Fruta Guallarauco 200 ml,sucos,rotulo_certo,sucos
+f78901179164,Naranja Guallarauco 1 L,sucos,rotulo_certo,sucos
+0d08b7f758bd,Purê De Frutas Pera E Maçã Os Incríveis Pic Me Squeeze 90g,sucos,rotulo_certo,sucos
+aeb168973f7f,Uva preta,sucos,rotulo_certo,sucos
+2ad071fc0662,Vinhos Suco de Uva tinto 1 L Quinta do Nino,sucos,rotulo_certo,sucos
+8786bfe79639,100% Beef Pro-Win Winkler Nutrition 2.000 g,suplementos,rotulo_certo,suplementos
+f05e2c5dfcbf,Beta Fuel SiS 40g,suplementos,rotulo_certo,suplementos
+2841cc3605cb,Bone Broth Power Protein chocolate Savvy 560 g,suplementos,rotulo_certo,suplementos
+f141c5260a48,Electrolitos Innerce 348 g,suplementos,rotulo_certo,suplementos
+9bc95beaac2d,Fórmula da beleza GAAB,suplementos,rotulo_certo,suplementos
+135fb13bbe96,ISOGOLD PVL 2.27 kg,suplementos,rotulo_certo,suplementos
+fff1d4edbaa2,Sustagen Sabor Chocolate 400 g,suplementos,rotulo_certo,suplementos
+0dbef05a7c75,Tapioca com Whey Pernambuquinha 500g,suplementos,ambiguo,suplementos|farinhas
+919feac64d84,Xtreme Boost Hydration 20 tabletas,suplementos,rotulo_certo,suplementos
+ce00ffb33166,YOUR PROTEIN 1.4 LB (660 G),suplementos,rotulo_certo,suplementos
+a915bd41cb8f,nutren Protein Nestlé 260 ml,suplementos,rotulo_certo,suplementos
+4a89a5680182,Alecrim Supra 15g,temperos,rotulo_certo,temperos
+828ce0ed8e52,Alho Frito Alimentos AJA 80 g,temperos,rotulo_certo,temperos
+9d666aba346d,CREME DE LEITE UHT NESTLE 200 g,temperos,rotulo_errado,leite_condensado_creme
+95f88f3658a9,Coco Maratá 400 g,temperos,rotulo_certo,temperos
+74b4cb8fb8c2,Colorífico Pó Kitano 80g,temperos,rotulo_certo,temperos
+9f32600d5862,Farinha De Mandioca Pinduca,temperos,rotulo_errado,farinhas
+93f553c0bf9a,Farofa de Mandioca sabor Bacon Pinduca 8.82 oz (250 g),temperos,ambiguo,temperos|farinhas
+a4c890637125,Gelatina Pó Limão Royal Pacote 25g,temperos,ambiguo,temperos|sobremesas
+13fb2bd3030d,Gelatina Pó Sem Sabor ROYAL 24g,temperos,ambiguo,temperos|sobremesas
+7e7e0202ae0d,Gelatina Royal Abacaxi 25g,temperos,ambiguo,temperos|sobremesas
+647009d48dcf,Gelatina de morango Royal 25g,temperos,ambiguo,temperos|sobremesas
+579eed62ad94,Granulado para cobertura receita original Dori 150 g,temperos,rotulo_certo,temperos
+ffe4c6edfe05,Granulado tradicional Visconti 130 g,temperos,rotulo_certo,temperos
+b848aed5c077,MIX Aroma Artificial de Baunilha 30ml,temperos,rotulo_certo,temperos
+c29bcc1cdd8f,Mistura para Pão de Queijo Pinduca 500 g / 17.63 oz,temperos,rotulo_errado,paes|farinhas
+ed23691ff3e9,Sabor ami Ajinomoto 450g,temperos,rotulo_certo,temperos
+756ba90f5fa8,Sal Light 500g - Neve,temperos,rotulo_certo,temperos
+60b695c61926,Tomilho em Flocos Kitano 10g,temperos,rotulo_certo,temperos
+588f4371dcb0,Óleo de soja Leve 900 ml,temperos,rotulo_errado,oleos_azeites

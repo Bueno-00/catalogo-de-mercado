@@ -1,0 +1,2 @@
+# geradas por kaggle/gerar_notebook*.py (o código delas é conferido no gerador)
+extend-exclude = ["kaggle/notebook", "kaggle/notebook-v2", "kaggle/notebook-v2b", "kaggle/notebook-v2c"]

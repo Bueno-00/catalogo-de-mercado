@@ -1,0 +1,28 @@
+{
+ "versao": 2,
+ "config": {
+  "modelo": "svc",
+  "C": 0.3,
+  "peso_q": 0.6,
+  "sem_marca": true
+ },
+ "temperatura": 4.719689612421879,
+ "log_loss_validacao": 0.8559816468591236,
+ "validacao": {
+  "acuracia": 0.801007556675063,
+  "f1_macro": 0.7918542042946195
+ },
+ "teste": {
+  "acuracia": 0.7908002520478891,
+  "f1_macro": 0.7753713106727593
+ },
+ "treino_seg": 5.5,
+ "ms_por_item_lote": 0.1606146494547526,
+ "ms_por_item_um_a_um_mediana": 3.5733359400182962,
+ "n_atributos": 32058,
+ "tamanho_json_bytes": 2294638,
+ "teste_sem_quantidade": {
+  "acuracia": 0.7901701323251418,
+  "f1_macro": 0.77727461453848
+ }
+}

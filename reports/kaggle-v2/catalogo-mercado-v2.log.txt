@@ -1,0 +1,218 @@
+[{"stream_name":"stderr","time":8.738450782,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.738513095,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.738520437,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.738524677000001,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":9.322427008,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":9.322454458,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":9.32245932,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":9.322462889,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":44.086475733,"data":"dados=/kaggle/input/datasets/rafabueno/catalogo-mercado-br | gpu=True Tesla T4 | torch 2.11.0+cu130 | transformers 5.20.2 | peft 0.21.2 | cpus=4\n"}
+,{"stream_name":"stdout","time":45.166663755,"data":"treino 5,552 | validação 794 | teste 1,587 | 41 categorias\n"}
+,{"stream_name":"stdout","time":45.166691399,"data":"                                                 texto                                                                  texto_q\n"}
+,{"stream_name":"stdout","time":45.166698333,"data":"0             Iogurte integral sabor baunilha Atilatte                                 Iogurte integral sabor baunilha Atilatte\n"}
+,{"stream_name":"stdout","time":45.166703701,"data":"1                   Pettiz amendoim crocante 150g Dori                   Pettiz amendoim crocante 150g Dori | quantidade: 150 g\n"}
+,{"stream_name":"stdout","time":45.166708375,"data":"2  Goodnes Jalea Protein 10g Nestlé 4 unidades de 110g  Goodnes Jalea Protein 10g Nestlé 4 unidades de 110g | quantidade: 110 g\n"}
+,{"stream_name":"stdout","time":45.166712956,"data":"3  Salgadinho De Milho Queijo Nacho Doritos Pacote 84g   Salgadinho De Milho Queijo Nacho Doritos Pacote 84g | quantidade: 84 g\n"}
+,{"stream_name":"stdout","time":45.166717405,"data":"4                    prestígio de doce de leite Nestlé                                        prestígio de doce de leite Nestlé\n"}
+,{"stream_name":"stderr","time":45.502359093,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":45.502389295,"data":"\n"}
+,{"stream_name":"stderr","time":45.502393278,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":51.213293964,"data":"[transformers] \u001b[1mBertForSequenceClassification LOAD REPORT\u001b[0m from: neuralmind/bert-base-portuguese-cased\n"}
+,{"stream_name":"stderr","time":51.213329041,"data":"Key                                        | Status     | \n"}
+,{"stream_name":"stderr","time":51.213335176,"data":"-------------------------------------------+------------+-\n"}
+,{"stream_name":"stderr","time":51.213339915,"data":"cls.seq_relationship.weight                | UNEXPECTED | \n"}
+,{"stream_name":"stderr","time":51.213344763,"data":"cls.predictions.bias                       | UNEXPECTED | \n"}
+,{"stream_name":"stderr","time":51.213349165,"data":"cls.predictions.decoder.weight             | UNEXPECTED | \n"}
+,{"stream_name":"stderr","time":51.213353862,"data":"cls.seq_relationship.bias                  | UNEXPECTED | \n"}
+,{"stream_name":"stderr","time":51.213370986,"data":"cls.predictions.transform.dense.weight     | UNEXPECTED | \n"}
+,{"stream_name":"stderr","time":51.213375421,"data":"cls.predictions.transform.LayerNorm.weight | UNEXPECTED | \n"}
+,{"stream_name":"stderr","time":51.213379301,"data":"cls.predictions.transform.dense.bias       | UNEXPECTED | \n"}
+,{"stream_name":"stderr","time":51.213382946,"data":"cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | \n"}
+,{"stream_name":"stderr","time":51.213386513,"data":"classifier.weight                          | MISSING    | \n"}
+,{"stream_name":"stderr","time":51.21339001,"data":"classifier.bias                            | MISSING    | \n"}
+,{"stream_name":"stderr","time":51.213393606,"data":"\n"}
+,{"stream_name":"stderr","time":51.213397196,"data":"Notes:\n"}
+,{"stream_name":"stderr","time":51.213400846,"data":"- UNEXPECTED:\tcan be ignored when loading from different task/architecture; not ok if you expect identical arch.\n"}
+,{"stream_name":"stderr","time":51.213404888,"data":"- MISSING:\tthose params were newly initialized because missing from the checkpoint. Consider training on your downstream task.\n"}
+,{"stream_name":"stderr","time":51.213408445,"data":"\n"}
+,{"stream_name":"stderr","time":51.213411441,"data":"[transformers] \u001b[1mBertForSequenceClassification LOAD REPORT\u001b[0m from: neuralmind/bert-base-portuguese-cased\n"}
+,{"stream_name":"stderr","time":51.213414888,"data":"Key                                        | Status     | \n"}
+,{"stream_name":"stderr","time":51.213422201,"data":"-------------------------------------------+------------+-\n"}
+,{"stream_name":"stderr","time":51.213424585,"data":"cls.seq_relationship.weight                | UNEXPECTED | \n"}
+,{"stream_name":"stderr","time":51.213426796,"data":"cls.predictions.bias                       | UNEXPECTED | \n"}
+,{"stream_name":"stderr","time":51.213429056,"data":"cls.predictions.decoder.weight             | UNEXPECTED | \n"}
+,{"stream_name":"stderr","time":51.213431266,"data":"cls.seq_relationship.bias                  | UNEXPECTED | \n"}
+,{"stream_name":"stderr","time":51.213433534,"data":"cls.predictions.transform.dense.weight     | UNEXPECTED | \n"}
+,{"stream_name":"stderr","time":51.213435746,"data":"cls.predictions.transform.LayerNorm.weight | UNEXPECTED | \n"}
+,{"stream_name":"stderr","time":51.213438059,"data":"cls.predictions.transform.dense.bias       | UNEXPECTED | \n"}
+,{"stream_name":"stderr","time":51.213440509,"data":"cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | \n"}
+,{"stream_name":"stderr","time":51.213442775,"data":"classifier.weight                          | MISSING    | \n"}
+,{"stream_name":"stderr","time":51.213445061,"data":"classifier.bias                            | MISSING    | \n"}
+,{"stream_name":"stderr","time":51.213450648,"data":"\n"}
+,{"stream_name":"stderr","time":51.21345285,"data":"Notes:\n"}
+,{"stream_name":"stderr","time":51.213455146,"data":"- UNEXPECTED:\tcan be ignored when loading from different task/architecture; not ok if you expect identical arch.\n"}
+,{"stream_name":"stderr","time":51.213458687,"data":"- MISSING:\tthose params were newly initialized because missing from the checkpoint. Consider training on your downstream task.\n"}
+,{"stream_name":"stdout","time":51.769282815,"data":"bertimbau_q: 108,954,665 de 108,954,665 parâmetros treinam (100.00%)\n"}
+,{"stream_name":"stdout","time":72.401600778,"data":"bertimbau_q {'epoca': 1, 'perda_treino': 2.8817, 'acerto_validacao': 0.5756, 'min_treino': 0.34}\n"}
+,{"stream_name":"stdout","time":89.811018536,"data":"bertimbau_q {'epoca': 2, 'perda_treino': 1.3932, 'acerto_validacao': 0.6902, 'min_treino': 0.61}\n"}
+,{"stream_name":"stdout","time":107.154192424,"data":"bertimbau_q {'epoca': 3, 'perda_treino': 0.7916, 'acerto_validacao': 0.7368, 'min_treino': 0.89}\n"}
+,{"stream_name":"stdout","time":124.706810193,"data":"bertimbau_q {'epoca': 4, 'perda_treino': 0.5015, 'acerto_validacao': 0.7481, 'min_treino': 1.16}\n"}
+,{"stream_name":"stdout","time":142.406476622,"data":"bertimbau_q {'epoca': 5, 'perda_treino': 0.3553, 'acerto_validacao': 0.7582, 'min_treino': 1.44}\n"}
+,{"stream_name":"stdout","time":160.229666454,"data":"bertimbau_q {'epoca': 6, 'perda_treino': 0.2936, 'acerto_validacao': 0.7531, 'min_treino': 1.72}\n"}
+,{"stream_name":"stdout","time":163.908209586,"data":"bertimbau_q {'nome': 'neuralmind/bert-base-portuguese-cased', 'coluna': 'texto_q', 'lora': False, 'epocas': 6, 'lr': 5e-05, 'batch': 32, 'epoca_escolhida': 5, 'acerto_validacao': 0.7582, 'min_treino': 1.72, 'parametros_treinaveis': 108954665, 'parametros_total': 108954665, 'ms_por_item_lote_gpu': 0.424, 'ms_um_a_um_gpu': 11.64, 'ms_um_a_um_cpu': 62.29, 'cpu_threads': 2, 'min_total': 1.97}\n"}
+,{"stream_name":"stderr","time":184.928600687,"data":"[transformers] \u001b[1mQwen2ForSequenceClassification LOAD REPORT\u001b[0m from: Qwen/Qwen2.5-1.5B-Instruct\n"}
+,{"stream_name":"stderr","time":184.928641937,"data":"Key          | Status  | \n"}
+,{"stream_name":"stderr","time":184.928652492,"data":"-------------+---------+-\n"}
+,{"stream_name":"stderr","time":184.928655905,"data":"score.weight | MISSING | \n"}
+,{"stream_name":"stderr","time":184.928659173,"data":"\n"}
+,{"stream_name":"stderr","time":184.928662379,"data":"Notes:\n"}
+,{"stream_name":"stderr","time":184.928665627,"data":"- MISSING:\tthose params were newly initialized because missing from the checkpoint. Consider training on your downstream task.\n"}
+,{"stream_name":"stderr","time":184.928669286,"data":"\n"}
+,{"stream_name":"stderr","time":184.928672293,"data":"[transformers] \u001b[1mQwen2ForSequenceClassification LOAD REPORT\u001b[0m from: Qwen/Qwen2.5-1.5B-Instruct\n"}
+,{"stream_name":"stderr","time":184.928675625,"data":"Key          | Status  | \n"}
+,{"stream_name":"stderr","time":184.928678662,"data":"-------------+---------+-\n"}
+,{"stream_name":"stderr","time":184.928681766,"data":"score.weight | MISSING | \n"}
+,{"stream_name":"stderr","time":184.928684795,"data":"\n"}
+,{"stream_name":"stderr","time":184.928687712,"data":"Notes:\n"}
+,{"stream_name":"stderr","time":184.928690735,"data":"- MISSING:\tthose params were newly initialized because missing from the checkpoint. Consider training on your downstream task.\n"}
+,{"stream_name":"stdout","time":186.349482708,"data":"qwen15_lora_q: 18,527,744 de 1,562,305,024 parâmetros treinam (1.19%)\n"}
+,{"stream_name":"stderr","time":187.238100786,"data":"/tmp/ipykernel_23/2566074551.py:81: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate\n"}
+,{"stream_name":"stderr","time":187.238139628,"data":"  scaler.step(opt); scaler.update(); sched.step()\n"}
+,{"stream_name":"stderr","time":187.238145323,"data":"\n"}
+,{"stream_name":"stderr","time":187.238151339,"data":"/tmp/ipykernel_23/2566074551.py:81: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate\n"}
+,{"stream_name":"stderr","time":187.238172435,"data":"  scaler.step(opt); scaler.update(); sched.step()\n"}
+,{"stream_name":"stdout","time":300.151949467,"data":"qwen15_lora_q {'epoca': 1, 'perda_treino': 2.4742, 'acerto_validacao': 0.7607, 'min_treino': 1.8}\n"}
+,{"stream_name":"stdout","time":431.592700998,"data":"qwen15_lora_q {'epoca': 2, 'perda_treino': 0.5265, 'acerto_validacao': 0.7884, 'min_treino': 3.7}\n"}
+,{"stream_name":"stdout","time":562.341595545,"data":"qwen15_lora_q {'epoca': 3, 'perda_treino': 0.1487, 'acerto_validacao': 0.8048, 'min_treino': 5.58}\n"}
+,{"stream_name":"stdout","time":592.598557552,"data":"qwen15_lora_q {'nome': 'Qwen/Qwen2.5-1.5B-Instruct', 'coluna': 'texto_q', 'lora': True, 'epocas': 3, 'lr': 0.0002, 'batch': 32, 'epoca_escolhida': 3, 'acerto_validacao': 0.8048, 'min_treino': 5.58, 'parametros_treinaveis': 18527744, 'parametros_total': 1562305024, 'ms_por_item_lote_gpu': 7.225, 'ms_um_a_um_gpu': 89.33, 'ms_um_a_um_cpu': 904.07, 'cpu_threads': 2, 'min_total': 7.14}\n"}
+,{"stream_name":"stderr","time":593.981269654,"data":"[transformers] \u001b[1mBertForSequenceClassification LOAD REPORT\u001b[0m from: neuralmind/bert-base-portuguese-cased\n"}
+,{"stream_name":"stderr","time":593.981438162,"data":"Key                                        | Status     | \n"}
+,{"stream_name":"stderr","time":593.981554466,"data":"-------------------------------------------+------------+-\n"}
+,{"stream_name":"stderr","time":593.98156171,"data":"cls.seq_relationship.weight                | UNEXPECTED | \n"}
+,{"stream_name":"stderr","time":593.98156716,"data":"cls.predictions.bias                       | UNEXPECTED | \n"}
+,{"stream_name":"stderr","time":593.981572374,"data":"cls.predictions.decoder.weight             | UNEXPECTED | \n"}
+,{"stream_name":"stderr","time":593.98157765,"data":"cls.seq_relationship.bias                  | UNEXPECTED | \n"}
+,{"stream_name":"stderr","time":593.981582792,"data":"cls.predictions.transform.dense.weight     | UNEXPECTED | \n"}
+,{"stream_name":"stderr","time":593.98158773,"data":"cls.predictions.transform.LayerNorm.weight | UNEXPECTED | \n"}
+,{"stream_name":"stderr","time":593.9815927,"data":"cls.predictions.transform.dense.bias       | UNEXPECTED | \n"}
+,{"stream_name":"stderr","time":593.981597665,"data":"cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | \n"}
+,{"stream_name":"stderr","time":593.981602707,"data":"classifier.weight                          | MISSING    | \n"}
+,{"stream_name":"stderr","time":593.981607586,"data":"classifier.bias                            | MISSING    | \n"}
+,{"stream_name":"stderr","time":593.981612594,"data":"\n"}
+,{"stream_name":"stderr","time":593.981617393,"data":"Notes:\n"}
+,{"stream_name":"stderr","time":593.98162232,"data":"- UNEXPECTED:\tcan be ignored when loading from different task/architecture; not ok if you expect identical arch.\n"}
+,{"stream_name":"stderr","time":593.981628244,"data":"- MISSING:\tthose params were newly initialized because missing from the checkpoint. Consider training on your downstream task.\n"}
+,{"stream_name":"stderr","time":593.981633843,"data":"\n"}
+,{"stream_name":"stderr","time":593.981638622,"data":"[transformers] \u001b[1mBertForSequenceClassification LOAD REPORT\u001b[0m from: neuralmind/bert-base-portuguese-cased\n"}
+,{"stream_name":"stderr","time":593.981644083,"data":"Key                                        | Status     | \n"}
+,{"stream_name":"stderr","time":593.981649115,"data":"-------------------------------------------+------------+-\n"}
+,{"stream_name":"stderr","time":593.981654055,"data":"cls.seq_relationship.weight                | UNEXPECTED | \n"}
+,{"stream_name":"stderr","time":593.981673912,"data":"cls.predictions.bias                       | UNEXPECTED | \n"}
+,{"stream_name":"stderr","time":593.981682633,"data":"cls.predictions.decoder.weight             | UNEXPECTED | \n"}
+,{"stream_name":"stderr","time":593.981686764,"data":"cls.seq_relationship.bias                  | UNEXPECTED | \n"}
+,{"stream_name":"stderr","time":593.981690755,"data":"cls.predictions.transform.dense.weight     | UNEXPECTED | \n"}
+,{"stream_name":"stderr","time":593.981694878,"data":"cls.predictions.transform.LayerNorm.weight | UNEXPECTED | \n"}
+,{"stream_name":"stderr","time":593.98169876,"data":"cls.predictions.transform.dense.bias       | UNEXPECTED | \n"}
+,{"stream_name":"stderr","time":593.981703352,"data":"cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | \n"}
+,{"stream_name":"stderr","time":593.9817074,"data":"classifier.weight                          | MISSING    | \n"}
+,{"stream_name":"stderr","time":593.981711384,"data":"classifier.bias                            | MISSING    | \n"}
+,{"stream_name":"stderr","time":593.981715522,"data":"\n"}
+,{"stream_name":"stderr","time":593.981719284,"data":"Notes:\n"}
+,{"stream_name":"stderr","time":593.981723258,"data":"- UNEXPECTED:\tcan be ignored when loading from different task/architecture; not ok if you expect identical arch.\n"}
+,{"stream_name":"stderr","time":593.981733268,"data":"- MISSING:\tthose params were newly initialized because missing from the checkpoint. Consider training on your downstream task.\n"}
+,{"stream_name":"stdout","time":594.304443572,"data":"bertimbau_sem_q: 108,954,665 de 108,954,665 parâmetros treinam (100.00%)\n"}
+,{"stream_name":"stdout","time":610.792504289,"data":"bertimbau_sem_q {'epoca': 1, 'perda_treino': 2.8995, 'acerto_validacao': 0.5756, 'min_treino': 0.27}\n"}
+,{"stream_name":"stdout","time":628.467233423,"data":"bertimbau_sem_q {'epoca': 2, 'perda_treino': 1.397, 'acerto_validacao': 0.6814, 'min_treino': 0.55}\n"}
+,{"stream_name":"stdout","time":646.117682775,"data":"bertimbau_sem_q {'epoca': 3, 'perda_treino': 0.8056, 'acerto_validacao': 0.7103, 'min_treino': 0.83}\n"}
+,{"stream_name":"stdout","time":663.52810935,"data":"bertimbau_sem_q {'epoca': 4, 'perda_treino': 0.5036, 'acerto_validacao': 0.733, 'min_treino': 1.1}\n"}
+,{"stream_name":"stdout","time":680.815507467,"data":"bertimbau_sem_q {'epoca': 5, 'perda_treino': 0.3556, 'acerto_validacao': 0.7456, 'min_treino': 1.37}\n"}
+,{"stream_name":"stdout","time":698.194362345,"data":"bertimbau_sem_q {'epoca': 6, 'perda_treino': 0.2935, 'acerto_validacao': 0.7431, 'min_treino': 1.65}\n"}
+,{"stream_name":"stdout","time":698.802169838,"data":"bertimbau_sem_q {'nome': 'neuralmind/bert-base-portuguese-cased', 'coluna': 'texto', 'lora': False, 'epocas': 6, 'lr': 5e-05, 'batch': 32, 'epoca_escolhida': 5, 'acerto_validacao': 0.7456, 'min_treino': 1.65, 'parametros_treinaveis': 108954665, 'parametros_total': 108954665, 'ms_por_item_lote_gpu': 0.392, 'ms_um_a_um_gpu': 11.41, 'min_total': 1.76}\n"}
+,{"stream_name":"stderr","time":735.679951874,"data":"[transformers] \u001b[1mQwen2ForSequenceClassification LOAD REPORT\u001b[0m from: Qwen/Qwen2.5-3B-Instruct\n"}
+,{"stream_name":"stderr","time":735.679990541,"data":"Key          | Status  | \n"}
+,{"stream_name":"stderr","time":735.679997173,"data":"-------------+---------+-\n"}
+,{"stream_name":"stderr","time":735.680001612,"data":"score.weight | MISSING | \n"}
+,{"stream_name":"stderr","time":735.680006135,"data":"\n"}
+,{"stream_name":"stderr","time":735.680010637,"data":"Notes:\n"}
+,{"stream_name":"stderr","time":735.680015109,"data":"- MISSING:\tthose params were newly initialized because missing from the checkpoint. Consider training on your downstream task.\n"}
+,{"stream_name":"stderr","time":735.680042734,"data":"\n"}
+,{"stream_name":"stderr","time":735.680045796,"data":"[transformers] \u001b[1mQwen2ForSequenceClassification LOAD REPORT\u001b[0m from: Qwen/Qwen2.5-3B-Instruct\n"}
+,{"stream_name":"stderr","time":735.680048237,"data":"Key          | Status  | \n"}
+,{"stream_name":"stderr","time":735.680050374,"data":"-------------+---------+-\n"}
+,{"stream_name":"stderr","time":735.680052503,"data":"score.weight | MISSING | \n"}
+,{"stream_name":"stderr","time":735.68005472,"data":"\n"}
+,{"stream_name":"stderr","time":735.680056817,"data":"Notes:\n"}
+,{"stream_name":"stderr","time":735.680059043,"data":"- MISSING:\tthose params were newly initialized because missing from the checkpoint. Consider training on your downstream task.\n"}
+,{"stream_name":"stdout","time":738.300802522,"data":"qwen3b_lora_q: 30,017,536 de 3,116,040,192 parâmetros treinam (0.96%)\n"}
+,{"stream_name":"stderr","time":739.386200402,"data":"/tmp/ipykernel_23/2566074551.py:81: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate\n"}
+,{"stream_name":"stderr","time":739.386240731,"data":"  scaler.step(opt); scaler.update(); sched.step()\n"}
+,{"stream_name":"stderr","time":739.386246665,"data":"\n"}
+,{"stream_name":"stderr","time":739.386250994,"data":"/tmp/ipykernel_23/2566074551.py:81: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate\n"}
+,{"stream_name":"stderr","time":739.386255609,"data":"  scaler.step(opt); scaler.update(); sched.step()\n"}
+,{"stream_name":"stdout","time":760.293526355,"data":"3B pulado: OutOfMemoryError('CUDA out of memory. Tried to allocate 56.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 48.81 MiB is free. Including non-PyTorch memory, this process has 14.51 GiB memory in use. Of the allocated memory 13.50 GiB is allocated by PyTorch, and 889.24 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https:/\n"}
+,{"stream_name":"stdout","time":760.293562322,"data":"{\n"}
+,{"stream_name":"stdout","time":760.293565901,"data":" \"bertimbau_q\": {\n"}
+,{"stream_name":"stdout","time":760.29356843,"data":"  \"nome\": \"neuralmind/bert-base-portuguese-cased\",\n"}
+,{"stream_name":"stdout","time":760.293571046,"data":"  \"coluna\": \"texto_q\",\n"}
+,{"stream_name":"stdout","time":760.293573432,"data":"  \"lora\": false,\n"}
+,{"stream_name":"stdout","time":760.293575642,"data":"  \"epocas\": 6,\n"}
+,{"stream_name":"stdout","time":760.293577936,"data":"  \"lr\": 5e-05,\n"}
+,{"stream_name":"stdout","time":760.293580164,"data":"  \"batch\": 32,\n"}
+,{"stream_name":"stdout","time":760.293582404,"data":"  \"epoca_escolhida\": 5,\n"}
+,{"stream_name":"stdout","time":760.293584695,"data":"  \"acerto_validacao\": 0.7582,\n"}
+,{"stream_name":"stdout","time":760.293586909,"data":"  \"min_treino\": 1.72,\n"}
+,{"stream_name":"stdout","time":760.293589389,"data":"  \"parametros_treinaveis\": 108954665,\n"}
+,{"stream_name":"stdout","time":760.293601291,"data":"  \"parametros_total\": 108954665,\n"}
+,{"stream_name":"stdout","time":760.293603997,"data":"  \"ms_por_item_lote_gpu\": 0.424,\n"}
+,{"stream_name":"stdout","time":760.293606284,"data":"  \"ms_um_a_um_gpu\": 11.64,\n"}
+,{"stream_name":"stdout","time":760.29363715,"data":"  \"ms_um_a_um_cpu\": 62.29,\n"}
+,{"stream_name":"stdout","time":760.293641054,"data":"  \"cpu_threads\": 2,\n"}
+,{"stream_name":"stdout","time":760.293644709,"data":"  \"min_total\": 1.97\n"}
+,{"stream_name":"stdout","time":760.293647729,"data":" },\n"}
+,{"stream_name":"stdout","time":760.293650649,"data":" \"qwen15_lora_q\": {\n"}
+,{"stream_name":"stdout","time":760.293653674,"data":"  \"nome\": \"Qwen/Qwen2.5-1.5B-Instruct\",\n"}
+,{"stream_name":"stdout","time":760.293656983,"data":"  \"coluna\": \"texto_q\",\n"}
+,{"stream_name":"stdout","time":760.293660112,"data":"  \"lora\": true,\n"}
+,{"stream_name":"stdout","time":760.293663286,"data":"  \"epocas\": 3,\n"}
+,{"stream_name":"stdout","time":760.293666361,"data":"  \"lr\": 0.0002,\n"}
+,{"stream_name":"stdout","time":760.293669584,"data":"  \"batch\": 32,\n"}
+,{"stream_name":"stdout","time":760.293672744,"data":"  \"epoca_escolhida\": 3,\n"}
+,{"stream_name":"stdout","time":760.293676181,"data":"  \"acerto_validacao\": 0.8048,\n"}
+,{"stream_name":"stdout","time":760.293680619,"data":"  \"min_treino\": 5.58,\n"}
+,{"stream_name":"stdout","time":760.293684119,"data":"  \"parametros_treinaveis\": 18527744,\n"}
+,{"stream_name":"stdout","time":760.293688271,"data":"  \"parametros_total\": 1562305024,\n"}
+,{"stream_name":"stdout","time":760.293691493,"data":"  \"ms_por_item_lote_gpu\": 7.225,\n"}
+,{"stream_name":"stdout","time":760.293694856,"data":"  \"ms_um_a_um_gpu\": 89.33,\n"}
+,{"stream_name":"stdout","time":760.29369799,"data":"  \"ms_um_a_um_cpu\": 904.07,\n"}
+,{"stream_name":"stdout","time":760.293701551,"data":"  \"cpu_threads\": 2,\n"}
+,{"stream_name":"stdout","time":760.293704788,"data":"  \"min_total\": 7.14\n"}
+,{"stream_name":"stdout","time":760.293708056,"data":" },\n"}
+,{"stream_name":"stdout","time":760.293711108,"data":" \"bertimbau_sem_q\": {\n"}
+,{"stream_name":"stdout","time":760.293714672,"data":"  \"nome\": \"neuralmind/bert-base-portuguese-cased\",\n"}
+,{"stream_name":"stdout","time":760.293718134,"data":"  \"coluna\": \"texto\",\n"}
+,{"stream_name":"stdout","time":760.293721225,"data":"  \"lora\": false,\n"}
+,{"stream_name":"stdout","time":760.293724399,"data":"  \"epocas\": 6,\n"}
+,{"stream_name":"stdout","time":760.293727917,"data":"  \"lr\": 5e-05,\n"}
+,{"stream_name":"stdout","time":760.293731691,"data":"  \"batch\": 32,\n"}
+,{"stream_name":"stdout","time":760.293735208,"data":"  \"epoca_escolhida\": 5,\n"}
+,{"stream_name":"stdout","time":760.293738299,"data":"  \"acerto_validacao\": 0.7456,\n"}
+,{"stream_name":"stdout","time":760.293741686,"data":"  \"min_treino\": 1.65,\n"}
+,{"stream_name":"stdout","time":760.293745144,"data":"  \"parametros_treinaveis\": 108954665,\n"}
+,{"stream_name":"stdout","time":760.293748754,"data":"  \"parametros_total\": 108954665,\n"}
+,{"stream_name":"stdout","time":760.293752102,"data":"  \"ms_por_item_lote_gpu\": 0.392,\n"}
+,{"stream_name":"stdout","time":760.29375547,"data":"  \"ms_um_a_um_gpu\": 11.41,\n"}
+,{"stream_name":"stdout","time":760.293759378,"data":"  \"min_total\": 1.76\n"}
+,{"stream_name":"stdout","time":760.293762794,"data":" },\n"}
+,{"stream_name":"stdout","time":760.293766064,"data":" \"qwen3b_lora_q\": {\n"}
+,{"stream_name":"stdout","time":760.293774228,"data":"  \"pulado\": \"OutOfMemoryError('CUDA out of memory. Tried to allocate 56.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 48.81 MiB is free. Including non-PyTorch memory, this process has 14.51 GiB memory in use. Of the allocated memory 13.50 GiB is allocated by PyTorch, and 889.24 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https:/\"\n"}
+,{"stream_name":"stdout","time":760.293786961,"data":" }\n"}
+,{"stream_name":"stdout","time":760.293790421,"data":"}\n"}
+,{"stream_name":"stderr","time":766.741037446,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":766.741066786,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":766.927991842,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":766.928017589,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":767.71296369,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":767.833473431,"data":"[NbConvertApp] Writing 376501 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":770.273829658,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":770.905504608,"data":"[NbConvertApp] Writing 654283 bytes to __results__.html\n"}
+]

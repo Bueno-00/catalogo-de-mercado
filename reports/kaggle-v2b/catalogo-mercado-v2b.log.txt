@@ -1,0 +1,78 @@
+[{"stream_name":"stderr","time":7.442248421,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.442287249,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.442294053,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.442298489,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.024052704,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.02408185,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.024086334,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.024090062,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":40.017367927,"data":"dados=/kaggle/input/datasets/rafabueno/catalogo-mercado-br | gpu=True Tesla T4 | torch 2.11.0+cu130 | transformers 5.20.2 | peft 0.21.2 | cpus=4\n"}
+,{"stream_name":"stdout","time":40.811992176,"data":"treino sem a marca (exemplos): [('Geleia Frutas Vermelhas Diet Queensberry Vidro 280g GUEENSBERRY | quantidade: 280 g', 'Geleia Frutas Vermelhas Diet Queensberry Vidro 280g | quantidade: 280 g'), ('Selz Sabor Clásico 35 g | quantidade: 35 g', 'Sabor Clásico 35 g | quantidade: 35 g'), ('Batata lisa original Romanha 90g | quantidade: 90 g', 'Batata lisa original 90g | quantidade: 90 g')]\n"}
+,{"stream_name":"stdout","time":40.812023944,"data":"treino 5,552 | validação 794 | teste 1,587 | 41 categorias\n"}
+,{"stream_name":"stdout","time":40.812028985,"data":"                                                 texto                                                                  texto_q\n"}
+,{"stream_name":"stdout","time":40.812032923,"data":"0             Iogurte integral sabor baunilha Atilatte                                 Iogurte integral sabor baunilha Atilatte\n"}
+,{"stream_name":"stdout","time":40.812036518,"data":"1                   Pettiz amendoim crocante 150g Dori                   Pettiz amendoim crocante 150g Dori | quantidade: 150 g\n"}
+,{"stream_name":"stdout","time":40.812041342,"data":"2  Goodnes Jalea Protein 10g Nestlé 4 unidades de 110g  Goodnes Jalea Protein 10g Nestlé 4 unidades de 110g | quantidade: 110 g\n"}
+,{"stream_name":"stdout","time":40.812045554,"data":"3  Salgadinho De Milho Queijo Nacho Doritos Pacote 84g   Salgadinho De Milho Queijo Nacho Doritos Pacote 84g | quantidade: 84 g\n"}
+,{"stream_name":"stdout","time":40.812050086,"data":"4                    prestígio de doce de leite Nestlé                                        prestígio de doce de leite Nestlé\n"}
+,{"stream_name":"stderr","time":40.979250858,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":40.979274819,"data":"\n"}
+,{"stream_name":"stderr","time":40.97927977,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":65.078829079,"data":"[transformers] \u001b[1mQwen2ForSequenceClassification LOAD REPORT\u001b[0m from: Qwen/Qwen2.5-1.5B-Instruct\n"}
+,{"stream_name":"stderr","time":65.078871049,"data":"Key          | Status  | \n"}
+,{"stream_name":"stderr","time":65.078877012,"data":"-------------+---------+-\n"}
+,{"stream_name":"stderr","time":65.0788816,"data":"score.weight | MISSING | \n"}
+,{"stream_name":"stderr","time":65.078897498,"data":"\n"}
+,{"stream_name":"stderr","time":65.078901484,"data":"Notes:\n"}
+,{"stream_name":"stderr","time":65.078904919,"data":"- MISSING:\tthose params were newly initialized because missing from the checkpoint. Consider training on your downstream task.\n"}
+,{"stream_name":"stderr","time":65.078908648,"data":"\n"}
+,{"stream_name":"stderr","time":65.078911801,"data":"[transformers] \u001b[1mQwen2ForSequenceClassification LOAD REPORT\u001b[0m from: Qwen/Qwen2.5-1.5B-Instruct\n"}
+,{"stream_name":"stderr","time":65.078915375,"data":"Key          | Status  | \n"}
+,{"stream_name":"stderr","time":65.078918477,"data":"-------------+---------+-\n"}
+,{"stream_name":"stderr","time":65.078921789,"data":"score.weight | MISSING | \n"}
+,{"stream_name":"stderr","time":65.078924873,"data":"\n"}
+,{"stream_name":"stderr","time":65.07892804,"data":"Notes:\n"}
+,{"stream_name":"stderr","time":65.078931486,"data":"- MISSING:\tthose params were newly initialized because missing from the checkpoint. Consider training on your downstream task.\n"}
+,{"stream_name":"stdout","time":67.052131403,"data":"qwen15_lora_q5m: 18,527,744 de 1,562,305,024 parâmetros treinam (1.19%)\n"}
+,{"stream_name":"stderr","time":69.631187769,"data":"/tmp/ipykernel_23/730375071.py:84: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate\n"}
+,{"stream_name":"stderr","time":69.631244436,"data":"  scaler.step(opt); scaler.update(); sched.step()\n"}
+,{"stream_name":"stderr","time":69.631249879,"data":"\n"}
+,{"stream_name":"stderr","time":69.631254001,"data":"/tmp/ipykernel_23/730375071.py:84: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate\n"}
+,{"stream_name":"stderr","time":69.631259029,"data":"  scaler.step(opt); scaler.update(); sched.step()\n"}
+,{"stream_name":"stdout","time":169.70942006,"data":"qwen15_lora_q5m {'epoca': 1, 'perda_treino': 2.4644, 'acerto_validacao': 0.7116, 'min_treino': 1.63}\n"}
+,{"stream_name":"stdout","time":281.450295502,"data":"qwen15_lora_q5m {'epoca': 2, 'perda_treino': 0.6836, 'acerto_validacao': 0.7746, 'min_treino': 3.25}\n"}
+,{"stream_name":"stdout","time":393.414180143,"data":"qwen15_lora_q5m {'epoca': 3, 'perda_treino': 0.3152, 'acerto_validacao': 0.7872, 'min_treino': 4.88}\n"}
+,{"stream_name":"stdout","time":505.495256152,"data":"qwen15_lora_q5m {'epoca': 4, 'perda_treino': 0.1437, 'acerto_validacao': 0.7846, 'min_treino': 6.51}\n"}
+,{"stream_name":"stdout","time":607.686961973,"data":"qwen15_lora_q5m {'epoca': 5, 'perda_treino': 0.0636, 'acerto_validacao': 0.7909, 'min_treino': 8.13}\n"}
+,{"stream_name":"stdout","time":644.315967236,"data":"qwen15_lora_q5m {'nome': 'Qwen/Qwen2.5-1.5B-Instruct', 'coluna': 'texto_q', 'lora': True, 'epocas': 5, 'lr': 0.0002, 'batch': 32, 'epoca_escolhida': 5, 'acerto_validacao': 0.7909, 'min_treino': 8.13, 'parametros_treinaveis': 18527744, 'parametros_total': 1562305024, 'ms_por_item_lote_gpu_adapter': 5.866, 'ms_um_a_um_gpu_adapter': 92.86, 'ms_por_item_lote_gpu': 4.381, 'ms_um_a_um_gpu': 43.6, 'ms_um_a_um_cpu': 884.96, 'cpu_threads': 2, 'min_total': 10.06}\n"}
+,{"stream_name":"stdout","time":645.257299555,"data":"{\n"}
+,{"stream_name":"stdout","time":645.257355117,"data":" \"qwen15_lora_q5m\": {\n"}
+,{"stream_name":"stdout","time":645.25736357,"data":"  \"nome\": \"Qwen/Qwen2.5-1.5B-Instruct\",\n"}
+,{"stream_name":"stdout","time":645.257367926,"data":"  \"coluna\": \"texto_q\",\n"}
+,{"stream_name":"stdout","time":645.257371894,"data":"  \"lora\": true,\n"}
+,{"stream_name":"stdout","time":645.25737525,"data":"  \"epocas\": 5,\n"}
+,{"stream_name":"stdout","time":645.257378936,"data":"  \"lr\": 0.0002,\n"}
+,{"stream_name":"stdout","time":645.257383472,"data":"  \"batch\": 32,\n"}
+,{"stream_name":"stdout","time":645.25738723,"data":"  \"epoca_escolhida\": 5,\n"}
+,{"stream_name":"stdout","time":645.257390684,"data":"  \"acerto_validacao\": 0.7909,\n"}
+,{"stream_name":"stdout","time":645.257394047,"data":"  \"min_treino\": 8.13,\n"}
+,{"stream_name":"stdout","time":645.257397414,"data":"  \"parametros_treinaveis\": 18527744,\n"}
+,{"stream_name":"stdout","time":645.257400899,"data":"  \"parametros_total\": 1562305024,\n"}
+,{"stream_name":"stdout","time":645.257404227,"data":"  \"ms_por_item_lote_gpu_adapter\": 5.866,\n"}
+,{"stream_name":"stdout","time":645.257407714,"data":"  \"ms_um_a_um_gpu_adapter\": 92.86,\n"}
+,{"stream_name":"stdout","time":645.257411135,"data":"  \"ms_por_item_lote_gpu\": 4.381,\n"}
+,{"stream_name":"stdout","time":645.257420541,"data":"  \"ms_um_a_um_gpu\": 43.6,\n"}
+,{"stream_name":"stdout","time":645.257423873,"data":"  \"ms_um_a_um_cpu\": 884.96,\n"}
+,{"stream_name":"stdout","time":645.257426149,"data":"  \"cpu_threads\": 2,\n"}
+,{"stream_name":"stdout","time":645.257428426,"data":"  \"min_total\": 10.06\n"}
+,{"stream_name":"stdout","time":645.257430715,"data":" }\n"}
+,{"stream_name":"stdout","time":645.257432864,"data":"}\n"}
+,{"stream_name":"stderr","time":651.037254656,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":651.037284406,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":651.222388327,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":651.222409252,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":651.986902645,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":652.071186896,"data":"[NbConvertApp] Writing 122776 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":654.511806133,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":655.087455476,"data":"[NbConvertApp] Writing 450469 bytes to __results__.html\n"}
+]

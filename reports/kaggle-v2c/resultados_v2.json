@@ -1,0 +1,18 @@
+{
+ "modelos": {
+  "lora_v1_escrita": {
+   "jeito": "escrevendo (igual ao v1), LoRA fundido",
+   "acerto_validacao": 0.8148614609571788,
+   "acerto_teste_rapido": 0.7895400126023945,
+   "ms_por_item_lote_gpu": 20.1,
+   "ms_um_a_um_gpu": 349.8
+  },
+  "lora_v1_pontos": {
+   "jeito": "pontuando as 41 categorias, LoRA fundido",
+   "acerto_validacao": 0.818639798488665,
+   "acerto_teste_rapido": 0.7882797731568998,
+   "ms_por_item_lote_gpu": 525.33,
+   "ms_um_a_um_gpu": 523.0
+  }
+ }
+}

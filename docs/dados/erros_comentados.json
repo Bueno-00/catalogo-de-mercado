@@ -1,58 +1,52 @@
 {
  "erros": [
   {
+   "texto": "Leite Nestlé 34 g",
+   "tipo": "ambiguo",
+   "pt": "É a barra de chocolate “Leite” da Nestlé, mas o texto não diz chocolate. Foi o exemplo do Rafael: não existe caixa de leite de 34 g, então a quantidade deveria desempatar. A faixa entrou nos modelos, mas o nome “Leite” ainda pesa mais. Uma pessoa também erraria sem ver a embalagem: cadastro precisa de mais que o nome (foto, código de barras).",
+   "en": "It is Nestlé’s “Leite” chocolate bar, but the text never says chocolate. This was Rafael’s example: there is no 34 g carton of milk, so the quantity should break the tie. The range went into the models, but the word “Leite” (milk) still weighs more. A person would also miss it without the package: a catalog needs more than the name (photo, barcode)."
+  },
+  {
    "texto": "Doritos Sabor Queso 90g",
-   "certo": "salgadinhos",
-   "previsto": "queijos",
-   "caminho": "tfidf",
    "tipo": "modelo",
-   "pt": "O clássico só vê palavras: “queso” puxa para queijo, e a marca Doritos nunca apareceu no treino. A IA ajustada e a de 7 B acertam porque já sabem o que é Doritos. É onde a IA ganha do clássico.",
-   "en": "The classic model only sees words: “queso” (cheese) pulls it to cheese, and the Doritos brand never appeared in training. The tuned AI and the 7B model get it right because they already know what Doritos is. This is where the AI beats the classic model."
+   "pt": "O clássico v1 só via palavras: “queso” puxava para queijo, e a marca Doritos nunca apareceu no treino. As IAs sabem o que é Doritos. No v2 o clássico também acerta: o treino sem a marca ajuda, e no Doritos de 125 g foi a faixa de peso que virou a resposta.",
+   "en": "Classic v1 only saw words: “queso” (cheese) pulled it to cheese, and the Doritos brand never appeared in training. The AIs know what Doritos is. In v2 the classic model also gets it right: training without the brand helps, and for the 125 g Doritos it was the weight range that flipped the answer."
   },
   {
    "texto": "Chocapic Nestlé 210 g",
-   "certo": "cereais_matinais",
-   "previsto": "chocolates",
-   "caminho": "lora_1_5b",
    "tipo": "modelo",
-   "pt": "A IA ajustada lê “Choc” e responde chocolate. O clássico e o modelo de 7 B acertam (cereal matinal). Toda a Nestlé ficou no teste (divisão por marca), então nenhum modelo viu Chocapic no treino.",
-   "en": "The tuned AI reads “Choc” and answers chocolate. The classic model and the 7B model get it right (breakfast cereal). All of Nestlé landed in the test set (split by brand), so no model saw Chocapic in training."
+   "pt": "A IA v1 lia “Choc” e respondia chocolate. Toda a Nestlé ficou no teste (divisão por marca), então nenhum modelo viu Chocapic no treino.",
+   "en": "AI v1 read “Choc” and answered chocolate. All of Nestlé landed in the test set (split by brand), so no model saw Chocapic in training."
   },
   {
    "texto": "Ristretto Nestlé 104 g",
-   "certo": "cafe",
-   "previsto": "chocolates",
-   "caminho": "lora_1_5b",
    "tipo": "modelo",
-   "pt": "Nenhuma palavra conhecida do treino diz café. Só o modelo de 7 B sabe que ristretto é café; o clássico chuta biscoito e a IA ajustada, chocolate. Um modelo maior sabe mais coisas do mundo.",
-   "en": "No word known from training says coffee. Only the 7B model knows ristretto is coffee; the classic model guesses biscuit and the tuned AI, chocolate. A bigger model knows more about the world."
+   "pt": "Nenhuma palavra conhecida do treino diz café. Só um modelo que conhece o mundo sabe que ristretto é café. É o tipo de erro que só some com mais conhecimento (modelo maior) ou mais dado (foto, descrição).",
+   "en": "No word known from training says coffee. Only a model that knows the world knows ristretto is coffee. This kind of error only goes away with more knowledge (a bigger model) or more data (photo, description)."
   },
   {
    "texto": "Quilmes Cerveza Argentina Clásica 710 ml",
-   "certo": "alcoolicas",
-   "previsto": "cervejas",
-   "caminho": "lora_1_5b",
    "tipo": "rotulo",
-   "pt": "Os três modelos dizem cerveja, e é cerveja. Na base ela só tinha a tag “bebida alcoólica”, então caiu em vinhos e destilados. Erro do rótulo, não do modelo.",
-   "en": "All three models say beer, and it is a beer. In the database it only had the “alcoholic beverage” tag, so it fell into wine and spirits. A labeling error, not a model error."
+   "pt": "É cerveja, e os modelos dizem cerveja. Na base ela só tinha a tag “bebida alcoólica”, então caiu em vinhos e destilados. Erro do rótulo, não do modelo: na revisão do teste ela conta como certa.",
+   "en": "It is a beer, and the models say beer. In the database it only had the “alcoholic beverage” tag, so it fell into wine and spirits. A labeling error, not a model error: on the reviewed test it counts as right."
   },
   {
    "texto": "Ervilha em conserva Bonare 170g/280g",
-   "certo": "geleias_mel",
-   "previsto": "conservas",
-   "caminho": "lora_1_5b",
    "tipo": "rotulo",
-   "pt": "Ervilha em conserva rotulada como geleia na base colaborativa. Os três acertam (conservas) e ficam com o erro na conta. Por isso um ponto de acerto aqui vale pouco.",
-   "en": "Canned peas labeled as jam in the crowdsourced database. All three are right (canned food) and still get counted as wrong. That is why one accuracy point here means little."
+   "pt": "Ervilha em conserva rotulada como geleia na base colaborativa. Os modelos acertam (conservas) e, no número original, ficam com o erro na conta.",
+   "en": "Canned peas labeled as jam in the crowdsourced database. The models are right (canned food) and, in the original number, still get counted as wrong."
   },
   {
-   "texto": "Leite Nestlé 34 g",
-   "certo": "chocolates",
-   "previsto": "leites",
-   "caminho": "tfidf",
+   "texto": "Leite Fermentado c/Fibras Danone Activia",
+   "tipo": "rotulo",
+   "pt": "Leite fermentado está, pelo nome, em “Iogurtes e leites fermentados”, mas a base tinha só a tag de leite. Apareceram 5 casos assim no teste; os modelos que dizem iogurte estão certos.",
+   "en": "Fermented milk belongs, by name, in “Yogurts and fermented milks”, but the database only had the milk tag. There were 5 such cases in the test set; the models that say yogurt are right."
+  },
+  {
+   "texto": "Mel Silvestre Da Matina 500g",
    "tipo": "ambiguo",
-   "pt": "É a barra de chocolate “Leite” da Nestlé, mas o texto não diz chocolate. Só os 34 g dão a pista. Uma pessoa também erraria sem ver a embalagem: cadastro precisa de mais que o nome.",
-   "en": "It is Nestlé's “Leite” chocolate bar, but the text never says chocolate; only the 34 g hints at it. A person would also miss it without the package: a catalog needs more than the name."
+   "pt": "Problema da régua, não do produto: pela regra das tags, mel vai para “Açúcar e adoçante”, mas o nome da outra categoria é “Geleias, mel e cremes de passar”. Os dois valem. Foram 18 méis assim no teste: na revisão, os dois contam como certos.",
+   "en": "A ruler problem, not a product problem: by the tag rule, honey goes to “Sugar and sweeteners”, but the other category is called “Jams, honey and sweet spreads”. Both are fine. There were 18 such honeys in the test set: on the review, both count as right."
   }
  ]
 }

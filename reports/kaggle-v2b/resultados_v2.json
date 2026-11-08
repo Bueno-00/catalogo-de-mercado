@@ -1,0 +1,100 @@
+{
+ "classes": [
+  "achocolatado",
+  "acucar_adocante",
+  "aguas",
+  "alcoolicas",
+  "balas_doces",
+  "barras",
+  "bebidas_vegetais",
+  "biscoitos",
+  "bolos_panetones",
+  "cafe",
+  "carnes_frios",
+  "castanhas",
+  "cereais_matinais",
+  "cervejas",
+  "chas",
+  "chocolates",
+  "conservas",
+  "energeticos",
+  "farinhas",
+  "geleias_mel",
+  "graos",
+  "hortifruti",
+  "iogurtes",
+  "leite_condensado_creme",
+  "leites",
+  "manteiga_margarina",
+  "massas",
+  "molhos",
+  "oleos_azeites",
+  "ovos",
+  "paes",
+  "peixes",
+  "pratos_prontos",
+  "queijos",
+  "refrigerantes",
+  "salgadinhos",
+  "sobremesas",
+  "sorvetes",
+  "sucos",
+  "suplementos",
+  "temperos"
+ ],
+ "n_teste": 1587,
+ "modelos": {
+  "qwen15_lora_q5m": {
+   "nome": "Qwen/Qwen2.5-1.5B-Instruct",
+   "coluna": "texto_q",
+   "lora": true,
+   "epocas": 5,
+   "lr": 0.0002,
+   "batch": 32,
+   "epoca_escolhida": 5,
+   "acerto_validacao": 0.7909,
+   "historico": [
+    {
+     "epoca": 1,
+     "perda_treino": 2.4644,
+     "acerto_validacao": 0.7116,
+     "min_treino": 1.63
+    },
+    {
+     "epoca": 2,
+     "perda_treino": 0.6836,
+     "acerto_validacao": 0.7746,
+     "min_treino": 3.25
+    },
+    {
+     "epoca": 3,
+     "perda_treino": 0.3152,
+     "acerto_validacao": 0.7872,
+     "min_treino": 4.88
+    },
+    {
+     "epoca": 4,
+     "perda_treino": 0.1437,
+     "acerto_validacao": 0.7846,
+     "min_treino": 6.51
+    },
+    {
+     "epoca": 5,
+     "perda_treino": 0.0636,
+     "acerto_validacao": 0.7909,
+     "min_treino": 8.13
+    }
+   ],
+   "min_treino": 8.13,
+   "parametros_treinaveis": 18527744,
+   "parametros_total": 1562305024,
+   "ms_por_item_lote_gpu_adapter": 5.866,
+   "ms_um_a_um_gpu_adapter": 92.86,
+   "ms_por_item_lote_gpu": 4.381,
+   "ms_um_a_um_gpu": 43.6,
+   "ms_um_a_um_cpu": 884.96,
+   "cpu_threads": 2,
+   "min_total": 10.06
+  }
+ }
+}

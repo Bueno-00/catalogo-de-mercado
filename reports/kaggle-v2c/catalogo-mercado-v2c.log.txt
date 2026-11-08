@@ -1,0 +1,41 @@
+[{"stream_name":"stderr","time":7.593708904,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.593782002,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.593789547,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.593794007,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.187244592,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.187272835,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.187282919,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.18728574,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":40.469253727,"data":"dados=/kaggle/input/datasets/rafabueno/catalogo-mercado-br | adapter=/kaggle/input/datasets/rafabueno/catalogo-mercado-lora-v1-adapter | gpu=True Tesla T4 | transformers 5.20.2 | peft 0.21.2\n"}
+,{"stream_name":"stderr","time":40.821120427,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":40.821143883,"data":"\n"}
+,{"stream_name":"stderr","time":40.821164474,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":128.02314362,"data":"lora_v1_escrita {\"jeito\": \"escrevendo (igual ao v1), LoRA fundido\", \"acerto_validacao\": 0.8148614609571788, \"acerto_teste_rapido\": 0.7895400126023945, \"ms_por_item_lote_gpu\": 20.1, \"ms_um_a_um_gpu\": 349.8}\n"}
+,{"stream_name":"stdout","time":1389.402613618,"data":"lora_v1_pontos {\"jeito\": \"pontuando as 41 categorias, LoRA fundido\", \"acerto_validacao\": 0.818639798488665, \"acerto_teste_rapido\": 0.7882797731568998, \"ms_por_item_lote_gpu\": 525.33, \"ms_um_a_um_gpu\": 523.0}\n"}
+,{"stream_name":"stdout","time":1389.403507765,"data":"{\n"}
+,{"stream_name":"stdout","time":1389.403523524,"data":" \"modelos\": {\n"}
+,{"stream_name":"stdout","time":1389.403529629,"data":"  \"lora_v1_escrita\": {\n"}
+,{"stream_name":"stdout","time":1389.403534762,"data":"   \"jeito\": \"escrevendo (igual ao v1), LoRA fundido\",\n"}
+,{"stream_name":"stdout","time":1389.403540005,"data":"   \"acerto_validacao\": 0.8148614609571788,\n"}
+,{"stream_name":"stdout","time":1389.403544398,"data":"   \"acerto_teste_rapido\": 0.7895400126023945,\n"}
+,{"stream_name":"stdout","time":1389.403548644,"data":"   \"ms_por_item_lote_gpu\": 20.1,\n"}
+,{"stream_name":"stdout","time":1389.403552837,"data":"   \"ms_um_a_um_gpu\": 349.8\n"}
+,{"stream_name":"stdout","time":1389.403557029,"data":"  },\n"}
+,{"stream_name":"stdout","time":1389.403561245,"data":"  \"lora_v1_pontos\": {\n"}
+,{"stream_name":"stdout","time":1389.403571278,"data":"   \"jeito\": \"pontuando as 41 categorias, LoRA fundido\",\n"}
+,{"stream_name":"stdout","time":1389.403574569,"data":"   \"acerto_validacao\": 0.818639798488665,\n"}
+,{"stream_name":"stdout","time":1389.403577885,"data":"   \"acerto_teste_rapido\": 0.7882797731568998,\n"}
+,{"stream_name":"stdout","time":1389.403581135,"data":"   \"ms_por_item_lote_gpu\": 525.33,\n"}
+,{"stream_name":"stdout","time":1389.403584044,"data":"   \"ms_um_a_um_gpu\": 523.0\n"}
+,{"stream_name":"stdout","time":1389.403586846,"data":"  }\n"}
+,{"stream_name":"stdout","time":1389.403598642,"data":" }\n"}
+,{"stream_name":"stdout","time":1389.403601692,"data":"}\n"}
+,{"stream_name":"stderr","time":1395.389334613,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1395.389367178,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1395.560624375,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1395.56065095,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1396.321051946,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":1396.407096648,"data":"[NbConvertApp] Writing 123534 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":1398.854604301,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1399.417893446,"data":"[NbConvertApp] Writing 423732 bytes to __results__.html\n"}
+]

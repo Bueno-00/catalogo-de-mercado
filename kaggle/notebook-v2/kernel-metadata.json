@@ -1,0 +1,15 @@
+{
+  "id": "rafabueno/catalogo-mercado-v2",
+  "title": "Catalogo Mercado v2",
+  "code_file": "catalogo-mercado-v2.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "dataset_sources": ["rafabueno/catalogo-mercado-br"],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": []
+}

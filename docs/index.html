@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Catálogo de mercado</title>
-<meta name="description" content="Qual a categoria de um produto de mercado? IA sem treino, modelo clássico e IA ajustada com LoRA, medidos no mesmo teste com produtos do Brasil (Open Food Facts).">
+<meta name="description" content="Qual a categoria de um produto de mercado? Clássico, IA sem treino, IA ajustada e os dois juntos, medidos no mesmo teste com produtos do Brasil (Open Food Facts), antes e depois.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -21,6 +21,7 @@
     <nav>
       <a class="so-pc" href="#experimente" data-t="nav_demo">Experimente</a>
       <a class="so-pc" href="#resultados" data-t="nav_res">Resultados</a>
+      <a class="so-pc" href="#custo" data-t="nav_custo">Vale a pena?</a>
       <a class="so-pc" href="#como" data-t="nav_como">Como foi medido</a>
       <a href="https://github.com/Bueno-00/catalogo-de-mercado">GitHub</a>
       <span class="idioma" role="group" aria-label="Idioma / Language">
@@ -36,14 +37,14 @@
     <div>
       <span class="selo" data-t="selo">Projeto de estudo · Rafael Bueno</span>
       <h1 data-t="titulo">Qual é a categoria deste produto?</h1>
-      <p class="lead" data-t="lead">Lojista cadastra "LEITE COND MOÇA 395G" e o sistema precisa saber que é leite condensado, para a busca e as vitrines acharem o produto. Aqui, três jeitos de responder, medidos no mesmo teste, com marcas que nenhum modelo viu no treino.</p>
+      <p class="lead" data-t="lead">Lojista cadastra "LEITE COND MOÇA 395G" e o sistema precisa saber que é leite condensado, para a busca e as vitrines acharem o produto. Aqui, vários jeitos de responder, medidos no mesmo teste, com marcas que nenhum modelo viu no treino.</p>
     </div>
     <div class="placar" id="placar"><p class="carregando">…</p></div>
   </div>
 
   <section id="experimente">
     <h2 data-t="demo_t">Experimente</h2>
-    <p class="intro" data-t="demo_i">Digite um produto como ele apareceria num catálogo. O modelo clássico responde na hora, aqui no seu navegador. As respostas das duas IAs foram calculadas na GPU gratuita do Kaggle para os produtos do teste (não há servidor ligado): escolha um produto do teste para ver as três lado a lado.</p>
+    <p class="intro" data-t="demo_i">Digite um produto como ele apareceria num catálogo.</p>
     <div class="cartao demo">
       <form class="entrada" id="form" autocomplete="off">
         <label for="q" class="sr" style="position:absolute;left:-9999px" data-t="rotulo_q">Produto</label>
@@ -56,24 +57,43 @@
         <span class="sortear">
           <select id="filtro" aria-label="Filtro">
             <option value="todos" data-t="f_todos">Qualquer produto do teste</option>
-            <option value="lora_erra" data-t="f_lora">Onde a IA ajustada errou</option>
-            <option value="tfidf_erra" data-t="f_tfidf">Onde o clássico errou</option>
-            <option value="discordam" data-t="f_disc">Onde os três discordam</option>
+            <option value="ia_erra" data-t="f_ia">Onde a IA ajustada errou</option>
+            <option value="classico_erra" data-t="f_classico">Onde o clássico errou</option>
+            <option value="juntos_erra" data-t="f_juntos">Onde até os dois juntos erraram</option>
+            <option value="revisto" data-t="f_revisto">Rótulo revisto (errado ou ambíguo)</option>
           </select>
           <button class="btn" type="button" id="sortear" style="height:34px" data-t="btn_sortear">Sortear</button>
         </span>
       </div>
-      <div class="sug" id="sug"><p data-t="sug_t">Produtos parecidos no teste (com a resposta das três):</p><ul id="sugl"></ul></div>
+      <div class="sug" id="sug"><p data-t="sug_t">Produtos parecidos no teste:</p><ul id="sugl"></ul></div>
       <div class="certo" id="certo"></div>
       <div class="res3" id="res3"></div>
-      <p class="aviso" data-t="aviso">Categoria "certa" = a do Open Food Facts, base colaborativa: às vezes ela mesma está errada (veja os erros comentados abaixo).</p>
+      <p class="aviso" data-t="aviso">Categoria “certa” = a do Open Food Facts.</p>
     </div>
   </section>
 
   <section id="resultados">
-    <h2 data-t="res_t">Resultados no teste</h2>
+    <h2 data-t="res_t">Resultados no teste: antes e depois</h2>
     <p class="intro" id="res_i"></p>
     <div class="cartao" style="overflow:hidden"><table class="tabela" id="tabela"></table></div>
+    <p class="aviso" id="res_rodape"></p>
+  </section>
+
+  <section id="custo">
+    <h2 data-t="custo_t">Vale a pena a IA? Custo x ganho</h2>
+    <p class="intro" id="custo_i"></p>
+    <div class="custo-grid">
+      <div class="cartao texto">
+        <h3 data-t="mil_t">A cada 1.000 produtos</h3>
+        <div class="rolagem-x"><table class="tabela mil" id="mil"></table></div>
+        <div class="cascata vaz" id="cascata"></div>
+      </div>
+      <div class="cartao texto">
+        <h3 data-t="quando_t">Quando vale e quando não vale</h3>
+        <ul id="quando"></ul>
+        <div class="recomenda" id="recomenda"></div>
+      </div>
+    </div>
   </section>
 
   <section>
@@ -81,12 +101,44 @@
     <div class="achados" id="achados"></div>
   </section>
 
+  <section id="quantidade">
+    <div class="duas">
+      <div class="cartao texto">
+        <h3 data-t="q_t">A quantidade como pista (gramas, litros, unidades)</h3>
+        <p id="q_p1"></p>
+        <div class="vaz" id="q_barras"></div>
+        <p id="q_p2"></p>
+      </div>
+      <div class="cartao texto">
+        <h3 data-t="rev_t">Rótulo errado não é erro do modelo</h3>
+        <p id="rev_p1"></p>
+        <div class="vaz" id="rev_barras"></div>
+        <p id="rev_p2"></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="categorias">
+    <details class="cartao" open>
+      <summary data-t="cat_t">Acerto por categoria e onde ainda erra</summary>
+      <div class="cat-onde" id="cat_onde"></div>
+      <div class="rolagem"><table class="tabela f1t" id="f1t"></table></div>
+    </details>
+  </section>
+
+  <section>
+    <details class="cartao" id="det-erros" open>
+      <summary data-t="err_t">Erros comentados</summary>
+      <div class="erros" id="erros"></div>
+    </details>
+  </section>
+
   <section id="como">
     <div class="duas">
       <div class="cartao texto">
         <h3 data-t="imp_t">Por que isso importa</h3>
-        <p data-t="imp_p1">Em marketplace de comida e de mercado, quem cadastra o produto é o lojista, com texto curto, abreviado e sem padrão. Categoria errada some da busca, aparece na vitrine errada e atrapalha a recomendação. O time de catálogo do iFood descreve exatamente esse problema: classificar ofertas numa taxonomia e usar LLM para rotular dados e vigiar os classificadores.</p>
-        <p data-t="imp_p2">Este projeto é um recorte pequeno e público desse problema, feito para medir com honestidade quando vale treinar uma IA e quando o clássico resolve.</p>
+        <p data-t="imp_p1">Em marketplace de comida e de mercado, quem cadastra o produto é o lojista.</p>
+        <p data-t="imp_p2">Este projeto é um recorte pequeno e público desse problema.</p>
         <ul>
           <li><a href="https://wamlm-kdd.github.io/wamlm/roundtables/wamlm_kdd24_anna_castro.pdf" data-t="ref1">Castro e Menezes (iFood), workshop WAMLM no KDD 2024</a></li>
           <li><a href="https://github.com/openfoodfacts/robotoff" data-t="ref2">Robotoff, o robô de categorias do próprio Open Food Facts</a></li>
@@ -99,26 +151,12 @@
       </div>
     </div>
   </section>
-
-  <section>
-    <details class="cartao" id="det-erros" open>
-      <summary data-t="err_t">Erros comentados</summary>
-      <div class="erros" id="erros"></div>
-    </details>
-  </section>
-
-  <section>
-    <details class="cartao">
-      <summary data-t="f1_t">Acerto por categoria (F1)</summary>
-      <div class="rolagem"><table class="tabela f1t" id="f1t"></table></div>
-    </details>
-  </section>
 </main>
 
 <footer>
   <div class="wrap">
     <p data-t="rod1">Dados: Open Food Facts (world.openfoodfacts.org), base aberta sob a licença ODbL. O recorte usado aqui também é ODbL. Código sob licença MIT.</p>
-    <p data-t="rod2">Modelos abertos: Qwen2.5-1.5B-Instruct e Qwen2.5-7B-Instruct (Apache 2.0). Nenhuma API paga foi usada.</p>
+    <p data-t="rod2">Modelos abertos: Qwen2.5 (Apache 2.0) e BERTimbau (MIT). Nenhuma API paga foi usada.</p>
     <p><a href="https://github.com/Bueno-00/catalogo-de-mercado">github.com/Bueno-00/catalogo-de-mercado</a></p>
   </div>
 </footer>

@@ -23,15 +23,17 @@ threading.Thread(target=srv.serve_forever, daemon=True).start()
 url = f"http://127.0.0.1:{porta}/" + ("?lang=en" if lang == "en" else "")
 problemas = []
 with sync_playwright() as p:
-    import glob, os
+    import glob
+    import os
+
     cand = sorted(glob.glob(os.path.expanduser("~/.cache/ms-playwright/chromium-*/chrome-linux*/chrome")))
     nav = p.chromium.launch(executable_path=os.environ.get("CHROMIUM_PATH") or (cand[-1] if cand else None))
     for nome, w, h in (("pc", 1440, 900), ("cel", 390, 844)):
         for tema in ("light", "dark"):
             pg = nav.new_page(viewport={"width": w, "height": h}, color_scheme=tema, device_scale_factor=1)
             erros = []
-            pg.on("console", lambda m: erros.append(m.text) if m.type == "error" else None)
-            pg.on("pageerror", lambda e: erros.append(str(e)))
+            pg.on("console", lambda m, erros=erros: erros.append(m.text) if m.type == "error" else None)
+            pg.on("pageerror", lambda e, erros=erros: erros.append(str(e)))
             pg.goto(url, wait_until="networkidle")
             pg.wait_for_selector(".res .barras", timeout=15000)
             larg = pg.evaluate("document.documentElement.scrollWidth")
@@ -46,7 +48,7 @@ with sync_playwright() as p:
                 pg.fill("#q", "Biscoito recheado chocolate 140g")
                 pg.wait_for_timeout(400)
                 pg.locator("#experimente").screenshot(path=str(saida / f"{lang}-{nome}-livre.png"))
-                pg.select_option("#filtro", "lora_erra") if pg.locator("#filtro option[value=lora_erra]").count() else None
+                pg.select_option("#filtro", "ia_erra")
                 pg.click("#sortear"); pg.wait_for_timeout(400)
                 pg.locator("#experimente").screenshot(path=str(saida / f"{lang}-{nome}-sorteado.png"))
             else:

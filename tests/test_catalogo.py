@@ -7,6 +7,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
+from catalogo.quantidade import faixa_tokens, ler, texto_com_quantidade
 from catalogo.rotulos import CATEGORIAS, rotular
 from catalogo.texto import marca_principal, norm, texto_produto
 from catalogo.web_modelo import ModeloWeb, ngramas_pedacos
@@ -28,6 +29,21 @@ def test_texto_produto_sem_nan_e_sem_repetir():
     assert texto_produto("Biscoito Maizena Isabela", "Isabela", float("nan")) == "Biscoito Maizena Isabela"
     assert marca_principal("Nestlé, Moça") == "nestle"
     assert marca_principal(None) == ""
+
+
+def test_quantidade():
+    assert ler("Leite Nestlé 34 g")["tipo"] == "massa" and ler("Leite Nestlé 34 g")["valor"] == 34
+    assert ler("Arroz 5kg")["valor"] == 5000 and ler("Coca-Cola 2L")["valor"] == 2000
+    assert ler("Chá 22,5g")["valor"] == 22.5 and ler("Azeite 1.000 ml")["valor"] == 1000
+    assert ler("Queijo 0,500 kg")["valor"] == 500 and ler("Cerveja 6x350ml")["pacote"] == 6
+    assert ler("Bombom 2 UNIDADES")["tipo"] == "unid"
+    # "12 garrafas" e "1 lata" não são unidade de medida
+    assert ler("12 garrafas")["tipo"] == "nenhum" and ler("Milho 1 lata")["tipo"] == "nenhum"
+    # a última quantidade vale (o campo quantidade vem no fim da linha)
+    assert ler("Batata Palha 215g 120g")["valor"] == 120
+    assert faixa_tokens("Leite Nestlé 34 g") == "qt_m qf_m1" and faixa_tokens("Leite UHT 1 L") == "qt_v qf_v3"
+    assert texto_com_quantidade("Leite Moça 1kg") == "Leite Moça 1kg | quantidade: 1 kg"
+    assert texto_com_quantidade("Pão de forma") == "Pão de forma"
 
 
 def test_rotulo_prioridade():
@@ -65,7 +81,7 @@ def test_split_sem_marca_repetida():
 def test_modelo_web_igual_ao_medido():
     """O modelo do navegador (pesos em int8) responde igual ao medido no teste em >= 99,5% dos produtos."""
     te = pd.read_parquet(SPLIT / "teste.parquet")
-    medido = pd.read_csv(RAIZ / "reports" / "predicoes" / "tfidf.csv").set_index("id")["pred"]
+    medido = pd.read_csv(RAIZ / "reports" / "predicoes" / "classico_v2.csv").set_index("id")["pred"]
     m = ModeloWeb(MODELO)
     web = [m.prever(t, 1)[0][0] for t in te.texto]
     iguais = np.mean([a == b for a, b in zip(web, medido.loc[te.id])])
@@ -90,6 +106,21 @@ def test_javascript_igual_ao_python():
     assert max(abs(a - b) for (_, a), (_, b) in zip(js, py)) < 1e-4
     # normalização igual nos dois lados, inclusive com acento e símbolo
     casos = ["Leite Condensado Moça 395g", "AÇÚCAR União 1kg", "Pão de Queijo Forno de Minas", "Coca-Cola Zero 2L", "Guaraná Antarctica"]
-    out = subprocess.run(["node", "-e", f"const C=require({json.dumps(str(RAIZ / 'docs' / 'classificador.js'))});"
-                          f"console.log(JSON.stringify({json.dumps(casos)}.map(C.norm)))"], capture_output=True, text=True, check=True)
+    js_norm = (f"const C=require({json.dumps(str(RAIZ / 'docs' / 'classificador.js'))});"
+               f"console.log(JSON.stringify({json.dumps(casos)}.map(C.norm)))")
+    out = subprocess.run(["node", "-e", js_norm], capture_output=True, text=True, check=True)
     assert json.loads(out.stdout) == [norm(c) for c in casos]
+
+
+@pytest.mark.skipif(not (SPLIT / "teste.parquet").exists() or shutil.which("node") is None, reason="precisa do split e do Node")
+def test_quantidade_javascript_igual_ao_python():
+    """A leitura da quantidade no navegador é a mesma do Python, em todos os produtos de treino, validação e teste."""
+    textos = list(pd.concat([pd.read_parquet(SPLIT / f"{n}.parquet") for n in ("treino", "validacao", "teste")]).texto)
+    textos += ["Chá 22,5g", "Azeite 1.000 ml", "Queijo 0,500 kg", "Whey 50 g / 1.7 oz", "12 garrafas", "Cerveja 6x350ml"]
+    script = f"""
+    const C = require({json.dumps(str(RAIZ / 'docs' / 'classificador.js'))});
+    const textos = JSON.parse(require('fs').readFileSync(0, 'utf8'));
+    console.log(JSON.stringify(textos.map(t => C.faixaTokens(t).join(" "))));
+    """
+    out = subprocess.run(["node", "-e", script], input=json.dumps(textos), capture_output=True, text=True, check=True)
+    assert json.loads(out.stdout) == [faixa_tokens(t) for t in textos]

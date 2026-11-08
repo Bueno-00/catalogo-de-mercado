@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import math
 import re
 import unicodedata
 
@@ -24,7 +25,7 @@ def marca_principal(brands: str | None) -> str:
 
 def _limpo(x) -> str:
     """None, NaN e "nan" viram vazio."""
-    if x is None or (isinstance(x, float) and x != x):
+    if x is None or (isinstance(x, float) and math.isnan(x)):
         return ""
     s = str(x).strip()
     return "" if s.lower() in ("nan", "none", "null") else s

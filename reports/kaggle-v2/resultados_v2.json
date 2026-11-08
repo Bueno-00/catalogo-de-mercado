@@ -1,0 +1,199 @@
+{
+ "classes": [
+  "achocolatado",
+  "acucar_adocante",
+  "aguas",
+  "alcoolicas",
+  "balas_doces",
+  "barras",
+  "bebidas_vegetais",
+  "biscoitos",
+  "bolos_panetones",
+  "cafe",
+  "carnes_frios",
+  "castanhas",
+  "cereais_matinais",
+  "cervejas",
+  "chas",
+  "chocolates",
+  "conservas",
+  "energeticos",
+  "farinhas",
+  "geleias_mel",
+  "graos",
+  "hortifruti",
+  "iogurtes",
+  "leite_condensado_creme",
+  "leites",
+  "manteiga_margarina",
+  "massas",
+  "molhos",
+  "oleos_azeites",
+  "ovos",
+  "paes",
+  "peixes",
+  "pratos_prontos",
+  "queijos",
+  "refrigerantes",
+  "salgadinhos",
+  "sobremesas",
+  "sorvetes",
+  "sucos",
+  "suplementos",
+  "temperos"
+ ],
+ "n_teste": 1587,
+ "modelos": {
+  "bertimbau_q": {
+   "nome": "neuralmind/bert-base-portuguese-cased",
+   "coluna": "texto_q",
+   "lora": false,
+   "epocas": 6,
+   "lr": 5e-05,
+   "batch": 32,
+   "epoca_escolhida": 5,
+   "acerto_validacao": 0.7582,
+   "historico": [
+    {
+     "epoca": 1,
+     "perda_treino": 2.8817,
+     "acerto_validacao": 0.5756,
+     "min_treino": 0.34
+    },
+    {
+     "epoca": 2,
+     "perda_treino": 1.3932,
+     "acerto_validacao": 0.6902,
+     "min_treino": 0.61
+    },
+    {
+     "epoca": 3,
+     "perda_treino": 0.7916,
+     "acerto_validacao": 0.7368,
+     "min_treino": 0.89
+    },
+    {
+     "epoca": 4,
+     "perda_treino": 0.5015,
+     "acerto_validacao": 0.7481,
+     "min_treino": 1.16
+    },
+    {
+     "epoca": 5,
+     "perda_treino": 0.3553,
+     "acerto_validacao": 0.7582,
+     "min_treino": 1.44
+    },
+    {
+     "epoca": 6,
+     "perda_treino": 0.2936,
+     "acerto_validacao": 0.7531,
+     "min_treino": 1.72
+    }
+   ],
+   "min_treino": 1.72,
+   "parametros_treinaveis": 108954665,
+   "parametros_total": 108954665,
+   "ms_por_item_lote_gpu": 0.424,
+   "ms_um_a_um_gpu": 11.64,
+   "ms_um_a_um_cpu": 62.29,
+   "cpu_threads": 2,
+   "min_total": 1.97
+  },
+  "qwen15_lora_q": {
+   "nome": "Qwen/Qwen2.5-1.5B-Instruct",
+   "coluna": "texto_q",
+   "lora": true,
+   "epocas": 3,
+   "lr": 0.0002,
+   "batch": 32,
+   "epoca_escolhida": 3,
+   "acerto_validacao": 0.8048,
+   "historico": [
+    {
+     "epoca": 1,
+     "perda_treino": 2.4742,
+     "acerto_validacao": 0.7607,
+     "min_treino": 1.8
+    },
+    {
+     "epoca": 2,
+     "perda_treino": 0.5265,
+     "acerto_validacao": 0.7884,
+     "min_treino": 3.7
+    },
+    {
+     "epoca": 3,
+     "perda_treino": 0.1487,
+     "acerto_validacao": 0.8048,
+     "min_treino": 5.58
+    }
+   ],
+   "min_treino": 5.58,
+   "parametros_treinaveis": 18527744,
+   "parametros_total": 1562305024,
+   "ms_por_item_lote_gpu": 7.225,
+   "ms_um_a_um_gpu": 89.33,
+   "ms_um_a_um_cpu": 904.07,
+   "cpu_threads": 2,
+   "min_total": 7.14
+  },
+  "bertimbau_sem_q": {
+   "nome": "neuralmind/bert-base-portuguese-cased",
+   "coluna": "texto",
+   "lora": false,
+   "epocas": 6,
+   "lr": 5e-05,
+   "batch": 32,
+   "epoca_escolhida": 5,
+   "acerto_validacao": 0.7456,
+   "historico": [
+    {
+     "epoca": 1,
+     "perda_treino": 2.8995,
+     "acerto_validacao": 0.5756,
+     "min_treino": 0.27
+    },
+    {
+     "epoca": 2,
+     "perda_treino": 1.397,
+     "acerto_validacao": 0.6814,
+     "min_treino": 0.55
+    },
+    {
+     "epoca": 3,
+     "perda_treino": 0.8056,
+     "acerto_validacao": 0.7103,
+     "min_treino": 0.83
+    },
+    {
+     "epoca": 4,
+     "perda_treino": 0.5036,
+     "acerto_validacao": 0.733,
+     "min_treino": 1.1
+    },
+    {
+     "epoca": 5,
+     "perda_treino": 0.3556,
+     "acerto_validacao": 0.7456,
+     "min_treino": 1.37
+    },
+    {
+     "epoca": 6,
+     "perda_treino": 0.2935,
+     "acerto_validacao": 0.7431,
+     "min_treino": 1.65
+    }
+   ],
+   "min_treino": 1.65,
+   "parametros_treinaveis": 108954665,
+   "parametros_total": 108954665,
+   "ms_por_item_lote_gpu": 0.392,
+   "ms_um_a_um_gpu": 11.41,
+   "min_total": 1.76
+  },
+  "qwen3b_lora_q": {
+   "pulado": "OutOfMemoryError('CUDA out of memory. Tried to allocate 56.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 48.81 MiB is free. Including non-PyTorch memory, this process has 14.51 GiB memory in use. Of the allocated memory 13.50 GiB is allocated by PyTorch, and 889.24 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https:/"
+  }
+ }
+}

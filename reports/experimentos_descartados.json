@@ -1,0 +1,10 @@
+{
+ "nota": "Ideias testadas na tarde de 08/11/2026 que NÃO entraram, todas medidas só com treino + validação (validação cruzada agrupada por marca, 5 dobras, 6.346 produtos). O teste não foi usado para nenhuma delas.",
+ "experimentos": [
+  {"ideia": "Quantidade combinada com a 1ª palavra do nome (ex.: 'leite' + 20 a 45 g) no clássico", "sem": 0.7854, "com": 0.7833, "decisao": "saiu (piorou)"},
+  {"ideia": "LightGBM em cima das notas do clássico + quantidade em números (empilhamento)", "sem": 0.7854, "com": 0.7674, "decisao": "saiu (piorou; aprende demais com 5 mil produtos)"},
+  {"ideia": "Tirar do treino os produtos com rótulo suspeito (o próprio modelo dá menos de 2% ao rótulo)", "sem": 0.7888, "com": 0.7808, "decisao": "saiu (piorou; a validação tem o mesmo tipo de ruído)"},
+  {"ideia": "Tirar do treino os produtos com rótulo suspeito (menos de 5%)", "sem": 0.7888, "com": 0.7729, "decisao": "saiu (piorou)"},
+  {"ideia": "Qwen2.5-3B + LoRA (o dobro do tamanho)", "decisao": "não rodou: faltou memória na T4 e dobraria o tempo de resposta"}
+ ]
+}
