@@ -25,7 +25,8 @@
       rod2: "Modelos abertos: Qwen2.5 (Apache 2.0) e BERTimbau (MIT). Nenhuma API paga foi usada.",
       k_classico: "Clássico (CPU)", k_ia: "IA ajustada", k_juntos: "Clássico + IA", k_cascata: "Cascata barata", antes: "antes", acerto: "acerto",
       certo: "Categoria certa (Open Food Facts):", acertou: "Acertou", errou: "Errou",
-      so_teste: "Esta resposta foi calculada só para os produtos do teste. Escolha um parecido abaixo ou sorteie.",
+      so_teste: "A IA precisa de GPU e não roda no seu navegador. Toque num produto parecido abaixo para ver a resposta dela.",
+      so_teste_sem: "A IA precisa de GPU e não roda no seu navegador. Toque em Sortear para ver a resposta dela num produto do teste.",
       digite: "Digite um produto acima.", desconhecido: "Nenhuma palavra conhecida: o modelo está chutando a categoria mais comum.",
       th_c: "Caminho", th_a: "Acerto (faixa de 95%)", th_r: "Teste revisado", th_f: "F1 macro", th_t: "Tempo por produto", th_o: "Onde roda",
       lote: "em lote", um: "um por vez", cpu: "CPU comum ou navegador", gpu: "GPU T4 (grátis no Kaggle)",
@@ -55,7 +56,8 @@
       rod2: "Open models: Qwen2.5 (Apache 2.0) and BERTimbau (MIT). No paid API was used.",
       k_classico: "Classic (CPU)", k_ia: "Tuned AI", k_juntos: "Classic + AI", k_cascata: "Cheap cascade", antes: "before", acerto: "accuracy",
       certo: "Correct category (Open Food Facts):", acertou: "Right", errou: "Wrong",
-      so_teste: "This answer was computed only for test products. Pick a similar one below or draw one at random.",
+      so_teste: "The AI needs a GPU and does not run in your browser. Tap a similar product below to see its answer.",
+      so_teste_sem: "The AI needs a GPU and does not run in your browser. Tap Random to see its answer on a test product.",
       digite: "Type a product above.", desconhecido: "No known word: the model is guessing the most common category.",
       th_c: "Approach", th_a: "Accuracy (95% range)", th_r: "Reviewed test", th_f: "Macro F1", th_t: "Time per product", th_o: "Runs on",
       lote: "batched", um: "one at a time", cpu: "Regular CPU or browser", gpu: "T4 GPU (free on Kaggle)",
@@ -320,7 +322,7 @@
   function montarChips() {
     var quer = (R.chips || []).filter(function (s) { return idx.has(Classificador.norm(s)); }).slice(0, 5);
     $("chips").innerHTML = quer.map(function (s) { return '<button type="button" class="chip">' + esc(s) + "</button>"; }).join(" ");
-    $("chips").querySelectorAll("button").forEach(function (b) { b.addEventListener("click", function () { $("q").value = b.textContent; classificar(b.textContent); }); });
+    $("chips").querySelectorAll("button").forEach(function (b) { b.addEventListener("click", function () { $("q").value = b.textContent; classificar(b.textContent, true); }); });
   }
 
   function montarTudo() { montarPlacar(); montarTabela(); montarCusto(); montarAchados(); montarQuantidade(); montarCategorias(); montarErros(); montarComo(); montarChips(); }
@@ -351,8 +353,11 @@
 
   function marca(ok) { return ok ? '<span class="marca-ok">✓ ' + t("acertou") + "</span>" : '<span class="marca-erro">✕ ' + t("errou") + "</span>"; }
 
-  function cardIA(c) {
-    if (atual.linha == null) return '<p class="vazio">' + (atual.texto.trim() ? t("so_teste") : t("digite")) + "</p>";
+  function cardIA(c, temParecidos) {
+    if (atual.linha == null) {
+      if (!atual.texto.trim()) return '<p class="vazio">' + t("digite") + "</p>";
+      return '<p class="nota-ia">' + esc(t(temParecidos ? "so_teste" : "so_teste_sem")) + "</p>";
+    }
     var l = linhas[atual.linha], p = l[col[c]], h = '<div class="resposta">' + esc(nomeCat(p)) + "</div>";
     if (c === IA && tem("qwen15_lora_q") && col.qwen15_lora_q != null) {
       var p1 = l[col.qwen15_lora_q];
@@ -366,10 +371,11 @@
 
   function render() {
     if (!R) return;
+    var ps = atual.linha == null && atual.texto.trim().length >= 3 ? parecidos(atual.texto, 6) : [];
     var cards = [CL, IA, JU].filter(Boolean);
     $("res3").innerHTML = cards.map(function (c) {
-      return '<article class="res"><header><span class="ponto" style="background:' + COR[c] + '"></span>' + esc(nomeC(c)) + '</header><div class="onde">' + esc(ONDE[L][c] || "") + "</div>" +
-        (c === CL ? cardClassico(atual.texto) : cardIA(c)) + "</article>";
+      return '<article class="res' + (c === CL ? " res-cl" : "") + '"><header><span class="ponto" style="background:' + COR[c] + '"></span>' + esc(nomeC(c)) + '</header><div class="onde">' + esc(ONDE[L][c] || "") + "</div>" +
+        (c === CL ? cardClassico(atual.texto) : cardIA(c, ps.length > 0)) + "</article>";
     }).join("");
     var certo = $("certo");
     if (atual.linha != null) {
@@ -381,7 +387,6 @@
     } else certo.classList.remove("on");
     var sug = $("sug");
     if (atual.linha == null && atual.texto.trim().length >= 3) {
-      var ps = parecidos(atual.texto, 6);
       if (ps.length) {
         $("sugl").innerHTML = ps.map(function (i) { return '<li><button type="button" data-i="' + i + '">' + esc(linhas[i][col.texto]) + "</button></li>"; }).join("");
         $("sugl").querySelectorAll("button").forEach(function (b) { b.addEventListener("click", function () { escolher(+b.dataset.i); }); });
@@ -390,14 +395,27 @@
     } else sug.classList.remove("on");
   }
 
-  function classificar(texto) {
+  function classificar(texto, mostrar) {
     atual.texto = texto;
     var i = idx.get(Classificador.norm(texto));
     atual.linha = i == null ? null : i;
     render();
+    if (mostrar) mostrarResposta();
   }
 
-  function escolher(i) { $("q").value = linhas[i][col.texto]; classificar(linhas[i][col.texto]); }
+  /* retorno visível: realça o cartão do clássico e rola até a resposta se ela estiver fora da tela */
+  var semMovimento = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function mostrarResposta() {
+    var cl = document.querySelector("#res3 .res-cl");
+    if (cl) { cl.classList.remove("realce"); void cl.offsetWidth; cl.classList.add("realce"); }
+    var alvo = $("certo").classList.contains("on") ? $("certo") : $("res3");
+    var r = alvo.getBoundingClientRect(), topo = 72;
+    if (r.top < topo || r.top > window.innerHeight * 0.55) {
+      window.scrollTo({ top: window.scrollY + r.top - topo, behavior: semMovimento ? "auto" : "smooth" });
+    }
+  }
+
+  function escolher(i) { $("q").value = linhas[i][col.texto]; classificar(linhas[i][col.texto], true); }
 
   function sortear() {
     var f = $("filtro").value, cand = [];
@@ -598,7 +616,11 @@
   });
   var timer = null;
   $("q").addEventListener("input", function () { clearTimeout(timer); var v = this.value; timer = setTimeout(function () { classificar(v); }, 90); });
-  $("form").addEventListener("submit", function (e) { e.preventDefault(); classificar($("q").value); });
+  $("form").addEventListener("submit", function (e) {
+    e.preventDefault(); clearTimeout(timer);
+    if (window.matchMedia && window.matchMedia("(pointer: coarse)").matches) $("q").blur(); // no celular, fecha o teclado para a resposta aparecer
+    classificar($("q").value, true);
+  });
   $("sortear").addEventListener("click", sortear);
 
   carregar().then(function () {
