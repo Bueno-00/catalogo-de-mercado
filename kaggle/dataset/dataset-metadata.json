@@ -1,0 +1,7 @@
+{
+  "title": "Catalogo Mercado BR",
+  "id": "rafabueno/catalogo-mercado-br",
+  "licenses": [{"name": "ODbL-1.0"}],
+  "subtitle": "Produtos do Brasil (Open Food Facts) em 41 categorias, divisao por marca",
+  "description": "Recorte do Open Food Facts (licença ODbL; https://world.openfoodfacts.org) com produtos que têm o Brasil em countries_tags, rotulados em 41 categorias de prateleira e divididos por marca (treino, validação, teste). Contains information from Open Food Facts, made available under the Open Database License (ODbL). Projeto: https://github.com/Bueno-00/catalogo-de-mercado"
+}

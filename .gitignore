@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.tmp/
+.pip-torch.log
+data/.off_esparso.parquet
+data/off_brasil.parquet
+data/split_aleatorio/
+data/extracao.log
+kaggle/dataset/*.parquet
+kaggle/dataset/categorias.json
+reports/kaggle/adapter/
+.env

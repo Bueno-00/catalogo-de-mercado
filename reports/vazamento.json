@@ -1,0 +1,7 @@
+{
+ "acuracia": 0.8292375551354757,
+ "f1_macro": 0.8214560537830667,
+ "n_treino": 5552,
+ "n_teste": 1587,
+ "marcas_do_teste_vistas_no_treino": 0.7189666036546944
+}

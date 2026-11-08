@@ -1,0 +1,117 @@
+{
+ "modelo": "Qwen/Qwen2.5-1.5B-Instruct",
+ "n_teste": 1587,
+ "categorias": 41,
+ "zero_shot_1_5b": {
+  "seg_total": 186.9,
+  "ms_por_item_lote": 117.78,
+  "ms_um_a_um_mediana": 470.2,
+  "lote": 32,
+  "fora_da_lista": 308,
+  "acerto_rapido": 0.27473219911783237
+ },
+ "lora_treino": {
+  "min": 8.2,
+  "passos": 346,
+  "exemplos": 5552,
+  "epocas": 2,
+  "lr": 0.0002,
+  "r": 16,
+  "alpha": 32,
+  "historico": [
+   {
+    "passo": 25,
+    "perda_treino": 1.241,
+    "min": 0.6
+   },
+   {
+    "passo": 50,
+    "perda_treino": 0.1722,
+    "min": 1.1
+   },
+   {
+    "passo": 75,
+    "perda_treino": 0.1497,
+    "min": 1.7
+   },
+   {
+    "passo": 100,
+    "perda_treino": 0.1153,
+    "min": 2.2
+   },
+   {
+    "passo": 125,
+    "perda_treino": 0.1083,
+    "min": 2.8
+   },
+   {
+    "passo": 150,
+    "perda_treino": 0.0922,
+    "min": 3.3
+   },
+   {
+    "epoca": 1,
+    "perda_validacao": 0.0927,
+    "min": 4.1
+   },
+   {
+    "passo": 175,
+    "perda_treino": 0.0997,
+    "min": 4.2
+   },
+   {
+    "passo": 200,
+    "perda_treino": 0.0633,
+    "min": 4.7
+   },
+   {
+    "passo": 225,
+    "perda_treino": 0.0556,
+    "min": 5.3
+   },
+   {
+    "passo": 250,
+    "perda_treino": 0.059,
+    "min": 5.8
+   },
+   {
+    "passo": 275,
+    "perda_treino": 0.0605,
+    "min": 6.4
+   },
+   {
+    "passo": 300,
+    "perda_treino": 0.0619,
+    "min": 6.9
+   },
+   {
+    "passo": 325,
+    "perda_treino": 0.0529,
+    "min": 7.5
+   },
+   {
+    "epoca": 2,
+    "perda_validacao": 0.0812,
+    "min": 8.2
+   }
+  ],
+  "parametros_treinaveis": 18464768,
+  "parametros_total": 1562179072
+ },
+ "lora_1_5b": {
+  "seg_total": 58.4,
+  "ms_por_item_lote": 36.8,
+  "ms_um_a_um_mediana": 713.4,
+  "lote": 64,
+  "fora_da_lista": 46,
+  "acerto_rapido": 0.7889098928796471
+ },
+ "zero_shot_7b_4bit": {
+  "seg_total": 779.6,
+  "ms_por_item_lote": 491.22,
+  "ms_um_a_um_mediana": 1065.8,
+  "lote": 24,
+  "fora_da_lista": 73,
+  "acerto_rapido": 0.6691871455576559
+ }
+}

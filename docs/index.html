@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catálogo de mercado</title>
+<meta name="description" content="Qual a categoria de um produto de mercado? IA sem treino, modelo clássico e IA ajustada com LoRA, medidos no mesmo teste com produtos do Brasil (Open Food Facts).">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilo.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230d7a63'/%3E%3Cpath d='M9 9h8l7 7-8 8-7-7z' fill='none' stroke='white' stroke-width='2.4' stroke-linejoin='round'/%3E%3Ccircle cx='13' cy='13' r='1.7' fill='white'/%3E%3C/svg%3E">
+</head>
+<body>
+<header class="topo">
+  <div class="wrap">
+    <a class="marca" href="#">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="var(--c-lora)"/><path d="M9 9h8l7 7-8 8-7-7z" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"/><circle cx="13" cy="13" r="1.7" fill="#fff"/></svg>
+      <span data-t="marca">Catálogo de mercado</span>
+    </a>
+    <nav>
+      <a class="so-pc" href="#experimente" data-t="nav_demo">Experimente</a>
+      <a class="so-pc" href="#resultados" data-t="nav_res">Resultados</a>
+      <a class="so-pc" href="#como" data-t="nav_como">Como foi medido</a>
+      <a href="https://github.com/Bueno-00/catalogo-de-mercado">GitHub</a>
+      <span class="idioma" role="group" aria-label="Idioma / Language">
+        <button type="button" data-lang="pt" aria-pressed="true">PT</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="abertura">
+    <div>
+      <span class="selo" data-t="selo">Projeto de estudo · Rafael Bueno</span>
+      <h1 data-t="titulo">Qual é a categoria deste produto?</h1>
+      <p class="lead" data-t="lead">Lojista cadastra "LEITE COND MOÇA 395G" e o sistema precisa saber que é leite condensado, para a busca e as vitrines acharem o produto. Aqui, três jeitos de responder, medidos no mesmo teste, com marcas que nenhum modelo viu no treino.</p>
+    </div>
+    <div class="placar" id="placar"><p class="carregando">…</p></div>
+  </div>
+
+  <section id="experimente">
+    <h2 data-t="demo_t">Experimente</h2>
+    <p class="intro" data-t="demo_i">Digite um produto como ele apareceria num catálogo. O modelo clássico responde na hora, aqui no seu navegador. As respostas das duas IAs foram calculadas na GPU gratuita do Kaggle para os produtos do teste (não há servidor ligado): escolha um produto do teste para ver as três lado a lado.</p>
+    <div class="cartao demo">
+      <form class="entrada" id="form" autocomplete="off">
+        <label for="q" class="sr" style="position:absolute;left:-9999px" data-t="rotulo_q">Produto</label>
+        <input id="q" type="text" placeholder="Leite Condensado Moça 395g" maxlength="160">
+        <button class="btn" type="submit" data-t="btn_ok">Classificar</button>
+      </form>
+      <div class="linha-ctrl">
+        <span data-t="exemplos">Exemplos:</span>
+        <span id="chips"></span>
+        <span class="sortear">
+          <select id="filtro" aria-label="Filtro">
+            <option value="todos" data-t="f_todos">Qualquer produto do teste</option>
+            <option value="lora_erra" data-t="f_lora">Onde a IA ajustada errou</option>
+            <option value="tfidf_erra" data-t="f_tfidf">Onde o clássico errou</option>
+            <option value="discordam" data-t="f_disc">Onde os três discordam</option>
+          </select>
+          <button class="btn" type="button" id="sortear" style="height:34px" data-t="btn_sortear">Sortear</button>
+        </span>
+      </div>
+      <div class="sug" id="sug"><p data-t="sug_t">Produtos parecidos no teste (com a resposta das três):</p><ul id="sugl"></ul></div>
+      <div class="certo" id="certo"></div>
+      <div class="res3" id="res3"></div>
+      <p class="aviso" data-t="aviso">Categoria "certa" = a do Open Food Facts, base colaborativa: às vezes ela mesma está errada (veja os erros comentados abaixo).</p>
+    </div>
+  </section>
+
+  <section id="resultados">
+    <h2 data-t="res_t">Resultados no teste</h2>
+    <p class="intro" id="res_i"></p>
+    <div class="cartao" style="overflow:hidden"><table class="tabela" id="tabela"></table></div>
+  </section>
+
+  <section>
+    <h2 data-t="ach_t">O que isso quer dizer</h2>
+    <div class="achados" id="achados"></div>
+  </section>
+
+  <section id="como">
+    <div class="duas">
+      <div class="cartao texto">
+        <h3 data-t="imp_t">Por que isso importa</h3>
+        <p data-t="imp_p1">Em marketplace de comida e de mercado, quem cadastra o produto é o lojista, com texto curto, abreviado e sem padrão. Categoria errada some da busca, aparece na vitrine errada e atrapalha a recomendação. O time de catálogo do iFood descreve exatamente esse problema: classificar ofertas numa taxonomia e usar LLM para rotular dados e vigiar os classificadores.</p>
+        <p data-t="imp_p2">Este projeto é um recorte pequeno e público desse problema, feito para medir com honestidade quando vale treinar uma IA e quando o clássico resolve.</p>
+        <ul>
+          <li><a href="https://wamlm-kdd.github.io/wamlm/roundtables/wamlm_kdd24_anna_castro.pdf" data-t="ref1">Castro e Menezes (iFood), workshop WAMLM no KDD 2024</a></li>
+          <li><a href="https://github.com/openfoodfacts/robotoff" data-t="ref2">Robotoff, o robô de categorias do próprio Open Food Facts</a></li>
+        </ul>
+      </div>
+      <div class="cartao texto">
+        <h3 data-t="como_t">Como foi medido</h3>
+        <ul id="como_l"></ul>
+        <div class="vaz" id="vaz"></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <details class="cartao" id="det-erros" open>
+      <summary data-t="err_t">Erros comentados</summary>
+      <div class="erros" id="erros"></div>
+    </details>
+  </section>
+
+  <section>
+    <details class="cartao">
+      <summary data-t="f1_t">Acerto por categoria (F1)</summary>
+      <div class="rolagem"><table class="tabela f1t" id="f1t"></table></div>
+    </details>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p data-t="rod1">Dados: Open Food Facts (world.openfoodfacts.org), base aberta sob a licença ODbL. O recorte usado aqui também é ODbL. Código sob licença MIT.</p>
+    <p data-t="rod2">Modelos abertos: Qwen2.5-1.5B-Instruct e Qwen2.5-7B-Instruct (Apache 2.0). Nenhuma API paga foi usada.</p>
+    <p><a href="https://github.com/Bueno-00/catalogo-de-mercado">github.com/Bueno-00/catalogo-de-mercado</a></p>
+  </div>
+</footer>
+
+<script src="classificador.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

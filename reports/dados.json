@@ -1,0 +1,221 @@
+{
+ "produtos_brasil_com_nome_e_categoria": 9654,
+ "com_rotulo_curado": 8115,
+ "textos_contraditorios_removidos": 6,
+ "depois_de_tirar_repetidos": 7933,
+ "categorias_removidas_por_poucos_exemplos": [],
+ "categorias": 41,
+ "treino": 5552,
+ "validacao": 794,
+ "teste": 1587,
+ "grupos_treino": 1976,
+ "grupos_teste": 576,
+ "produtos_sem_marca": 313,
+ "por_categoria": {
+  "achocolatado": {
+   "treino": 41,
+   "validacao": 9,
+   "teste": 16
+  },
+  "acucar_adocante": {
+   "treino": 91,
+   "validacao": 13,
+   "teste": 27
+  },
+  "aguas": {
+   "treino": 33,
+   "validacao": 5,
+   "teste": 10
+  },
+  "alcoolicas": {
+   "treino": 58,
+   "validacao": 8,
+   "teste": 17
+  },
+  "balas_doces": {
+   "treino": 167,
+   "validacao": 24,
+   "teste": 47
+  },
+  "barras": {
+   "treino": 113,
+   "validacao": 16,
+   "teste": 33
+  },
+  "bebidas_vegetais": {
+   "treino": 48,
+   "validacao": 7,
+   "teste": 14
+  },
+  "biscoitos": {
+   "treino": 478,
+   "validacao": 68,
+   "teste": 136
+  },
+  "bolos_panetones": {
+   "treino": 140,
+   "validacao": 37,
+   "teste": 44
+  },
+  "cafe": {
+   "treino": 92,
+   "validacao": 11,
+   "teste": 26
+  },
+  "carnes_frios": {
+   "treino": 186,
+   "validacao": 25,
+   "teste": 53
+  },
+  "castanhas": {
+   "treino": 109,
+   "validacao": 16,
+   "teste": 32
+  },
+  "cereais_matinais": {
+   "treino": 163,
+   "validacao": 23,
+   "teste": 47
+  },
+  "cervejas": {
+   "treino": 70,
+   "validacao": 10,
+   "teste": 20
+  },
+  "chas": {
+   "treino": 95,
+   "validacao": 13,
+   "teste": 26
+  },
+  "chocolates": {
+   "treino": 264,
+   "validacao": 37,
+   "teste": 75
+  },
+  "conservas": {
+   "treino": 42,
+   "validacao": 6,
+   "teste": 12
+  },
+  "energeticos": {
+   "treino": 33,
+   "validacao": 8,
+   "teste": 10
+  },
+  "farinhas": {
+   "treino": 123,
+   "validacao": 18,
+   "teste": 35
+  },
+  "geleias_mel": {
+   "treino": 173,
+   "validacao": 25,
+   "teste": 50
+  },
+  "graos": {
+   "treino": 139,
+   "validacao": 19,
+   "teste": 39
+  },
+  "hortifruti": {
+   "treino": 44,
+   "validacao": 6,
+   "teste": 12
+  },
+  "iogurtes": {
+   "treino": 314,
+   "validacao": 41,
+   "teste": 88
+  },
+  "leite_condensado_creme": {
+   "treino": 67,
+   "validacao": 10,
+   "teste": 20
+  },
+  "leites": {
+   "treino": 242,
+   "validacao": 34,
+   "teste": 69
+  },
+  "manteiga_margarina": {
+   "treino": 107,
+   "validacao": 15,
+   "teste": 30
+  },
+  "massas": {
+   "treino": 157,
+   "validacao": 22,
+   "teste": 44
+  },
+  "molhos": {
+   "treino": 213,
+   "validacao": 28,
+   "teste": 60
+  },
+  "oleos_azeites": {
+   "treino": 73,
+   "validacao": 11,
+   "teste": 21
+  },
+  "ovos": {
+   "treino": 31,
+   "validacao": 4,
+   "teste": 9
+  },
+  "paes": {
+   "treino": 210,
+   "validacao": 30,
+   "teste": 60
+  },
+  "peixes": {
+   "treino": 106,
+   "validacao": 13,
+   "teste": 30
+  },
+  "pratos_prontos": {
+   "treino": 138,
+   "validacao": 16,
+   "teste": 36
+  },
+  "queijos": {
+   "treino": 250,
+   "validacao": 36,
+   "teste": 72
+  },
+  "refrigerantes": {
+   "treino": 112,
+   "validacao": 12,
+   "teste": 28
+  },
+  "salgadinhos": {
+   "treino": 202,
+   "validacao": 29,
+   "teste": 57
+  },
+  "sobremesas": {
+   "treino": 64,
+   "validacao": 9,
+   "teste": 18
+  },
+  "sorvetes": {
+   "treino": 119,
+   "validacao": 17,
+   "teste": 35
+  },
+  "sucos": {
+   "treino": 122,
+   "validacao": 18,
+   "teste": 36
+  },
+  "suplementos": {
+   "treino": 193,
+   "validacao": 27,
+   "teste": 55
+  },
+  "temperos": {
+   "treino": 130,
+   "validacao": 18,
+   "teste": 38
+  }
+ }
+}

@@ -1,0 +1,66 @@
+{
+ "config": {
+  "max_palavras": 30000,
+  "max_pedacos": 60000,
+  "C": 3.0
+ },
+ "grade_validacao": [
+  {
+   "max_palavras": 5000,
+   "max_pedacos": 10000,
+   "C": 1.0,
+   "acuracia": 0.7732997481108312,
+   "f1_macro": 0.7763759158646083,
+   "seg": 28.3
+  },
+  {
+   "max_palavras": 5000,
+   "max_pedacos": 10000,
+   "C": 3.0,
+   "acuracia": 0.7808564231738035,
+   "f1_macro": 0.7809722488946327,
+   "seg": 29.3
+  },
+  {
+   "max_palavras": 5000,
+   "max_pedacos": 10000,
+   "C": 10.0,
+   "acuracia": 0.7858942065491183,
+   "f1_macro": 0.7768456590857098,
+   "seg": 37.3
+  },
+  {
+   "max_palavras": 30000,
+   "max_pedacos": 60000,
+   "C": 1.0,
+   "acuracia": 0.7758186397984886,
+   "f1_macro": 0.7840957629715221,
+   "seg": 23.7
+  },
+  {
+   "max_palavras": 30000,
+   "max_pedacos": 60000,
+   "C": 3.0,
+   "acuracia": 0.7884130982367759,
+   "f1_macro": 0.788161271243531,
+   "seg": 26.3
+  },
+  {
+   "max_palavras": 30000,
+   "max_pedacos": 60000,
+   "C": 10.0,
+   "acuracia": 0.7846347607052897,
+   "f1_macro": 0.7767522681753438,
+   "seg": 30.0
+  }
+ ],
+ "teste": {
+  "acuracia": 0.7580340264650284,
+  "f1_macro": 0.7540033448593935
+ },
+ "treino_seg": 28.7,
+ "ms_por_item_lote": 0.3694098327771327,
+ "ms_por_item_um_a_um_mediana": 8.232826017774642,
+ "n_atributos": 21243,
+ "tamanho_json_bytes": 1496099
+}

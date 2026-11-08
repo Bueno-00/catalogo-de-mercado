@@ -1,0 +1,93 @@
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+dados=/kaggle/input/catalogo-mercado-br | saída=/kaggle/working | gpu=True Tesla T4
+torch 2.11.0+cu130 | transformers 5.20.2 | peft 0.21.2
+treino 5,552 | validação 794 | teste 1,587 | 41 categorias
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+<|im_start|>system
+You are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Você organiza o catálogo de um supermercado. Escolha a categoria de prateleira do produto.
+Categorias possíveis:
+- Achocolatado e cacau em pó
+- Arroz, feijão e grãos
+- Açúcar e adoçante
+- Balas, gomas e doces
+- Barras de cereal e de proteína
+- Bebidas vegetais
+- Biscoitos e bolachas
+- Bolos, panetones e doces de padaria
+- Café
+- Carnes, frios e embutidos
+- Castanhas e amendoim
+- Cereais matinais e aveia
+- Cervejas
+- Chocolates e bombons
+- Chás
+- Conservas e enlatados
+- Energéticos
+zero_shot_1_5b {"seg_total": 186.9, "ms_por_item_lote": 117.78, "ms_um_a_um_mediana": 470.2, "lote": 32, "fora_da_lista": 308, "acerto_rapido": 0.27473219911783237}
+trainable params: 18,464,768 || all params: 1,562,179,072 || trainable%: 1.1820
+{'passo': 25, 'perda_treino': 1.241, 'min': 0.6}
+{'passo': 50, 'perda_treino': 0.1722, 'min': 1.1}
+{'passo': 75, 'perda_treino': 0.1497, 'min': 1.7}
+{'passo': 100, 'perda_treino': 0.1153, 'min': 2.2}
+{'passo': 125, 'perda_treino': 0.1083, 'min': 2.8}
+{'passo': 150, 'perda_treino': 0.0922, 'min': 3.3}
+{'epoca': 1, 'perda_validacao': 0.0927, 'min': 4.1}
+{'passo': 175, 'perda_treino': 0.0997, 'min': 4.2}
+{'passo': 200, 'perda_treino': 0.0633, 'min': 4.7}
+{'passo': 225, 'perda_treino': 0.0556, 'min': 5.3}
+{'passo': 250, 'perda_treino': 0.059, 'min': 5.8}
+{'passo': 275, 'perda_treino': 0.0605, 'min': 6.4}
+{'passo': 300, 'perda_treino': 0.0619, 'min': 6.9}
+{'passo': 325, 'perda_treino': 0.0529, 'min': 7.5}
+{'epoca': 2, 'perda_validacao': 0.0812, 'min': 8.2}
+treino: 8.2 min, 346 passos
+lora_1_5b {"seg_total": 58.4, "ms_por_item_lote": 36.8, "ms_um_a_um_mediana": 713.4, "lote": 64, "fora_da_lista": 46, "acerto_rapido": 0.7889098928796471}
+zero_shot_7b_4bit {"seg_total": 779.6, "ms_por_item_lote": 491.22, "ms_um_a_um_mediana": 1065.8, "lote": 24, "fora_da_lista": 73, "acerto_rapido": 0.6691871455576559}
+{
+ "modelo": "Qwen/Qwen2.5-1.5B-Instruct",
+ "n_teste": 1587,
+ "categorias": 41,
+ "zero_shot_1_5b": {
+  "seg_total": 186.9,
+  "ms_por_item_lote": 117.78,
+  "ms_um_a_um_mediana": 470.2,
+  "lote": 32,
+  "fora_da_lista": 308,
+  "acerto_rapido": 0.27473219911783237
+ },
+ "lora_1_5b": {
+  "seg_total": 58.4,
+  "ms_por_item_lote": 36.8,
+  "ms_um_a_um_mediana": 713.4,
+  "lote": 64,
+  "fora_da_lista": 46,
+  "acerto_rapido": 0.7889098928796471
+ },
+ "zero_shot_7b_4bit": {
+  "seg_total": 779.6,
+  "ms_por_item_lote": 491.22,
+  "ms_um_a_um_mediana": 1065.8,
+  "lote": 24,
+  "fora_da_lista": 73,
+  "acerto_rapido": 0.6691871455576559
+ }
+}
+/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+  cells[i][c] = re.sub('\\\\\|', '|', cell)
+/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+[NbConvertApp] Writing 261041 bytes to __notebook__.ipynb
+[NbConvertApp] Converting notebook __notebook__.ipynb to html
+[NbConvertApp] Writing 544773 bytes to __results__.html
