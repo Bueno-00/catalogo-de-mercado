@@ -1,14 +1,16 @@
 # Kaggle (GPU T4 grátis): as IAs
 
-Tudo **privado** na conta `rafabueno`. Dataset `rafabueno/catalogo-mercado-br`: `data/split/` (treino, validação,
-teste) + `categorias.json` (licença ODbL). Os notebooks são gerados por script (fonte única; não edite o `.ipynb` à mão).
+Conta `rafabueno`. Dataset [`rafabueno/catalogo-mercado-br`](https://www.kaggle.com/datasets/rafabueno/catalogo-mercado-br)
+(**público desde 15/11/2026**): `data/split/` (treino, validação, teste) + `categorias.json` (licença ODbL). O adapter do v1 está em
+[`rafabueno/catalogo-mercado-lora-v1-adapter`](https://www.kaggle.com/datasets/rafabueno/catalogo-mercado-lora-v1-adapter) (público).
+Os notebooks abaixo foram criados privados; abrir é um clique no site (Share > Public), sem rodar de novo. Os notebooks são gerados por script (fonte única; não edite o `.ipynb` à mão).
 
-| Notebook (privado) | Gerador | O que roda | Saída no repositório |
+| Notebook | Gerador | O que roda | Saída no repositório |
 |---|---|---|---|
 | `rafabueno/catalogo-mercado-lora` (v1, manhã de 08/11/2026) | `gerar_notebook.py` | Qwen2.5-1.5B sem treino, Qwen2.5-7B sem treino, Qwen2.5-1.5B + LoRA que escreve a categoria | `reports/kaggle/`, `reports/predicoes/kaggle.csv` |
 | `rafabueno/catalogo-mercado-v2` (v2, tarde de 08/11/2026) | `gerar_notebook_v2.py` | BERTimbau (com e sem a quantidade), Qwen2.5-1.5B + LoRA com cabeça de classificação (o extra de 3 B faltou memória) | `reports/kaggle-v2/` (probabilidades da validação e do teste) |
 | `rafabueno/catalogo-mercado-v2b` (v2, 2ª rodada) | `gerar_notebook_v2b.py` | a IA classificadora com 5 épocas e metade do treino sem a marca; tempo com o LoRA fundido | `reports/kaggle-v2b/` |
-| `rafabueno/catalogo-mercado-v2c` (v2, IA da manhã de volta) | `gerar_notebook_v2c.py` | o adapter do v1 (dataset privado `rafabueno/catalogo-mercado-lora-v1-adapter`, nada treinado de novo) respondendo validação e teste, com confiança | `reports/kaggle-v2c/` |
+| `rafabueno/catalogo-mercado-v2c` (v2, IA da manhã de volta) | `gerar_notebook_v2c.py` | o adapter do v1 (dataset `rafabueno/catalogo-mercado-lora-v1-adapter`, nada treinado de novo) respondendo validação e teste, com confiança | `reports/kaggle-v2c/` |
 
 ```bash
 # 1. gerar e testar aqui na CPU com modelos minúsculos

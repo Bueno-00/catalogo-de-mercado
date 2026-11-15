@@ -42,6 +42,11 @@ Detalhe por categoria e confusões: [reports/resultados.md](reports/resultados.m
 cada produto do teste: [reports/predicoes/](reports/predicoes/) e [reports/kaggle-v2/](reports/kaggle-v2/),
 [kaggle-v2b/](reports/kaggle-v2b/), [kaggle-v2c/](reports/kaggle-v2c/).
 
+**No Kaggle (públicos desde 15/11/2026):** dataset [rafabueno/catalogo-mercado-br](https://www.kaggle.com/datasets/rafabueno/catalogo-mercado-br)
+(treino, validação e teste com a divisão por marca, ODbL) e o adapter LoRA do v1 em
+[rafabueno/catalogo-mercado-lora-v1-adapter](https://www.kaggle.com/datasets/rafabueno/catalogo-mercado-lora-v1-adapter).
+Os notebooks da GPU (`catalogo-mercado-lora`, `-v2`, `-v2b`, `-v2c`) ficam no perfil [kaggle.com/rafabueno](https://www.kaggle.com/rafabueno).
+
 ## O que mudou da manhã para a tarde
 
 1. **Clássico v2** (+3,3 pontos, faixa 2,0 a 4,6): outro modelo linear (LinearSVC no

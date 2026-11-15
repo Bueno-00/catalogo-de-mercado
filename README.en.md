@@ -42,6 +42,11 @@ Per-category detail and confusions: [reports/resultados.md](reports/resultados.m
 test product: [reports/predicoes/](reports/predicoes/) and [reports/kaggle-v2/](reports/kaggle-v2/),
 [kaggle-v2b/](reports/kaggle-v2b/), [kaggle-v2c/](reports/kaggle-v2c/).
 
+**On Kaggle (public since 2026-11-15):** dataset [rafabueno/catalogo-mercado-br](https://www.kaggle.com/datasets/rafabueno/catalogo-mercado-br)
+(train, validation and test with the split by brand, ODbL) and the v1 LoRA adapter at
+[rafabueno/catalogo-mercado-lora-v1-adapter](https://www.kaggle.com/datasets/rafabueno/catalogo-mercado-lora-v1-adapter).
+The GPU notebooks (`catalogo-mercado-lora`, `-v2`, `-v2b`, `-v2c`) live on the profile [kaggle.com/rafabueno](https://www.kaggle.com/rafabueno).
+
 ## What changed from morning to afternoon
 
 1. **Classic v2** (+3.3 points, range 2.0 to 4.6): a different linear model (LinearSVC instead of
