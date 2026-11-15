@@ -270,4 +270,6 @@ make pagina     # http://127.0.0.1:8000
   Hugging Face on Kaggle; not redistributed here. No paid API was used.
 
 A study project by Rafael Bueno ([github.com/Bueno-00](https://github.com/Bueno-00)), part of the same portfolio as
-[Raio-X Fiscal](https://github.com/Bueno-00/raio-x-fiscal) (product description to tax code classification).
+[Raio-X Fiscal](https://github.com/Bueno-00/raio-x-fiscal) (product description to tax code classification, live app at
+https://raiox.zemploo.com.br), the [Pergunte ao Simples](https://github.com/Bueno-00/pergunte-ao-simples) chat and the
+[Próxima compra](https://github.com/Bueno-00/proxima-compra) recommender. Personal page: https://zemploo.com.br/rafael-bueno.

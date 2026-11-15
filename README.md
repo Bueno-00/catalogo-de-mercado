@@ -278,4 +278,6 @@ make pagina     # http://127.0.0.1:8000
   Face no Kaggle; não são redistribuídos aqui. Nenhuma API paga foi usada.
 
 Projeto de estudo de Rafael Bueno ([github.com/Bueno-00](https://github.com/Bueno-00)), parte do mesmo portfólio do
-[Raio-X Fiscal](https://github.com/Bueno-00/raio-x-fiscal) (classificação de descrição de produto em NCM).
+[Raio-X Fiscal](https://github.com/Bueno-00/raio-x-fiscal) (classificação de descrição de produto em NCM, app no ar em
+https://raiox.zemploo.com.br), do chat [Pergunte ao Simples](https://github.com/Bueno-00/pergunte-ao-simples) e da
+recomendação [Próxima compra](https://github.com/Bueno-00/proxima-compra). Página pessoal: https://zemploo.com.br/rafael-bueno.
